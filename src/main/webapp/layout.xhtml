@@ -2,7 +2,8 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui">
+	xmlns:p="http://primefaces.org/ui"
+	lang="#{localeManager.language}">
 <h:head>
 
 	<ui:insert name="head">
@@ -32,6 +33,8 @@ h1,h2,h3 {
 	margin-bottom: 5px;
 }
 </style>
+
+<f:view locale="#{localeManager.locale}"></f:view>
 </h:head>
 
 <h:body>
@@ -42,6 +45,14 @@ h1,h2,h3 {
 				<p:graphicImage library="img" width="247px" height="86px" name="hska_Trans.gif" style="float:left;" />
 				<p:graphicImage library="img" name="Zahnraeder.jpg" style="float:right;" />
 			</DIV>
+			
+			<h:form>
+    			<h:selectOneMenu value="#{localeManager.language}" onchange="submit()">
+    				<f:selectItem itemValue="de" itemLabel="Deutsch" />
+        			<f:selectItem itemValue="en" itemLabel="English" />
+        			<f:selectItem itemValue="ru" itemLabel="Русский" />
+    			</h:selectOneMenu>
+			</h:form>
 
 			<div style="clear:both;margin-top: 5px;">
 				<ui:insert name="menu">
