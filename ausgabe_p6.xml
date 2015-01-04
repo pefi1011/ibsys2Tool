@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PeriodResults period="6" user="ktm" game="HSKASS2014" date="11.05.2014 15:47:37">
+<ProductionOrders>
+	<Entry Period="6" OrderNumber="1" Item="Rearwheel Group - W - 5" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="2" Item="Rearwheel Group - M - 6" Quantity="40" Completed="40" />
+	<Entry Period="5" OrderNumber="3" Item="Rearwheel Group - C - 4" Quantity="70" Completed="70" />
+	<Entry Period="6" OrderNumber="3" Item="Frontwheel Group - W - 8" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="4" Item="Frontwheel Group - M - 9" Quantity="20" Completed="20" />
+	<Entry Period="6" OrderNumber="5" Item="Rearshield - W - 11" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="6" Item="Rearshield - M - 12" Quantity="40" Completed="40" />
+	<Entry Period="6" OrderNumber="7" Item="Frontshield - W - 14" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="8" Item="Frontshield - M - 15" Quantity="20" Completed="20" />
+	<Entry Period="6" OrderNumber="9" Item="Steering Wheel Complete - CWM - 16" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="10" Item="Saddle Complete - CWM - 17" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="11" Item="Frame - W - 19" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="12" Item="Frame - M - 20" Quantity="20" Completed="20" />
+	<Entry Period="6" OrderNumber="13" Item="Pedal Complete - CWM - 26" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="14" Item="Frontwheel Complete - W - 54" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="15" Item="Frontwheel Mounted - M - 29" Quantity="40" Completed="40" />
+	<Entry Period="6" OrderNumber="16" Item="Frame and Wheels - C - 50" Quantity="15" Completed="15" />
+	<Entry Period="6" OrderNumber="17" Item="Frame and Wheels - W - 55" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="18" Item="Frame and Wheels - M - 30" Quantity="60" Completed="60" />
+	<Entry Period="6" OrderNumber="19" Item="Bicycle without Pedal - C - 51" Quantity="55" Completed="55" />
+	<Entry Period="5" OrderNumber="20" Item="Frontwheel Complete - C - 49" Quantity="60" Completed="60" />
+	<Entry Period="6" OrderNumber="20" Item="Bicycle without Pedal - W - 56" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="21" Item="Bicycle without Pedal - M - 31" Quantity="80" Completed="80" />
+	<Entry Period="6" OrderNumber="22" Item="Children Bicycle - C - 1" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="23" Item="Womens Bicycle - W - 2" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="24" Item="Mans Bicycle - M - 3" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="25" Item="Rearwheel Group - W - 5" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="26" Item="Frontwheel Group - W - 8" Quantity="90" Completed="90" />
+	<Entry Period="4" OrderNumber="27" Item="Frontwheel Group - C - 7" Quantity="130" Completed="130" />
+	<Entry Period="6" OrderNumber="27" Item="Rearshield - W - 11" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="28" Item="Frontshield - W - 14" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="29" Item="Steering Wheel Complete - CWM - 16" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="30" Item="Saddle Complete - CWM - 17" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="31" Item="Frame - W - 19" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="32" Item="Pedal Complete - CWM - 26" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="33" Item="Frontwheel Complete - W - 54" Quantity="90" Completed="90" />
+	<Entry Period="4" OrderNumber="34" Item="Frontwheel Complete - C - 49" Quantity="130" Completed="130" />
+	<Entry Period="6" OrderNumber="34" Item="Frame and Wheels - W - 55" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="35" Item="Bicycle without Pedal - W - 56" Quantity="90" Completed="90" />
+	<Entry Period="5" OrderNumber="36" Item="Frontshield - C - 13" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="36" Item="Womens Bicycle - W - 2" Quantity="100" Completed="70" />
+	<Entry Period="5" OrderNumber="37" Item="Frontshield - W - 14" Quantity="60" Completed="60" />
+	<Entry Period="6" OrderNumber="37" Item="Rearwheel Group - W - 5" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="38" Item="Frontwheel Group - W - 8" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="39" Item="Rearshield - W - 11" Quantity="100" Completed="100" />
+	<Entry Period="5" OrderNumber="40" Item="Frame - W - 19" Quantity="60" Completed="60" />
+	<Entry Period="6" OrderNumber="40" Item="Frontshield - W - 14" Quantity="100" Completed="100" />
+	<Entry Period="5" OrderNumber="41" Item="Pedal Complete - CWM - 26" Quantity="150" Completed="150" />
+	<Entry Period="6" OrderNumber="41" Item="Steering Wheel Complete - CWM - 16" Quantity="100" Completed="100" />
+	<Entry Period="5" OrderNumber="42" Item="Frontwheel Complete - C - 49" Quantity="60" Completed="40" />
+	<Entry Period="6" OrderNumber="42" Item="Saddle Complete - CWM - 17" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="43" Item="Frame - W - 19" Quantity="100" Completed="100" />
+	<Entry Period="5" OrderNumber="44" Item="Frame and Wheels - C - 50" Quantity="80" Completed="80" />
+	<Entry Period="6" OrderNumber="44" Item="Pedal Complete - CWM - 26" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="45" Item="Frontwheel Complete - W - 54" Quantity="100" Completed="100" />
+	<Entry Period="5" OrderNumber="46" Item="Bicycle without Pedal - C - 51" Quantity="90" Completed="90" />
+	<Entry Period="6" OrderNumber="46" Item="Frame and Wheels - W - 55" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="47" Item="Bicycle without Pedal - W - 56" Quantity="100" Completed="40" />
+	<Entry Period="6" OrderNumber="48" Item="Womens Bicycle - W - 2" Quantity="110" Completed="0" />
+	<Entry Period="5" OrderNumber="49" Item="Womens Bicycle - W - 2" Quantity="80" Completed="80" />
+	<Entry Period="6" OrderNumber="49" Item="Rearwheel Group - W - 5" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="50" Item="Frontwheel Group - W - 8" Quantity="100" Completed="20" />
+	<Entry Period="6" OrderNumber="51" Item="Rearshield - W - 11" Quantity="100" Completed="100" />
+	<Entry Period="5" OrderNumber="52" Item="Pedal Complete - CWM - 26" Quantity="150" Completed="150" />
+	<Entry Period="6" OrderNumber="52" Item="Frontshield - W - 14" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="53" Item="Steering Wheel Complete - CWM - 16" Quantity="215" Completed="215" />
+	<Entry Period="6" OrderNumber="54" Item="Saddle Complete - CWM - 17" Quantity="215" Completed="215" />
+	<Entry Period="6" OrderNumber="55" Item="Pedal Complete - CWM - 26" Quantity="100" Completed="100" />
+	<Entry Period="6" OrderNumber="56" Item="Frontwheel Complete - W - 54" Quantity="100" Completed="90" />
+	<Entry Period="6" OrderNumber="57" Item="Frame and Wheels - W - 55" Quantity="100" Completed="80" />
+	<Entry Period="6" OrderNumber="58" Item="Bicycle without Pedal - W - 56" Quantity="100" Completed="0" />
+</ProductionOrders>
+<WarehouseStock>
+	<Entry Item="Children Bicycle - C - 1" InitialAmount="150" Amount="100" RelativeChange="66,67%" Price="163,63" StockValue="16.362,55" />
+	<Entry Item="Womens Bicycle - W - 2" InitialAmount="60" Amount="20" RelativeChange="33,33%" Price="170,23" StockValue="3.404,55" />
+	<Entry Item="Mans Bicycle - M - 3" InitialAmount="50" Amount="50" RelativeChange="100,00%" Price="170,74" StockValue="8.536,76" />
+	<Entry Item="Rearwheel Group - C - 4" InitialAmount="30" Amount="5" RelativeChange="16,67%" Price="42,12" StockValue="210,60" />
+	<Entry Item="Rearwheel Group - W - 5" InitialAmount="70" Amount="80" RelativeChange="114,29%" Price="41,70" StockValue="3.335,62" />
+	<Entry Item="Rearwheel Group - M - 6" InitialAmount="70" Amount="50" RelativeChange="71,43%" Price="41,89" StockValue="2.094,35" />
+	<Entry Item="Frontwheel Group - C - 7" InitialAmount="20" Amount="0" RelativeChange="0,00%" Price="35,92" StockValue="0,00" />
+	<Entry Item="Frontwheel Group - W - 8" InitialAmount="70" Amount="0" RelativeChange="0,00%" Price="37,60" StockValue="0,00" />
+	<Entry Item="Frontwheel Group - M - 9" InitialAmount="70" Amount="50" RelativeChange="71,43%" Price="37,40" StockValue="1.870,01" />
+	<Entry Item="Rearshield - C - 10" InitialAmount="150" Amount="55" RelativeChange="36,67%" Price="13,56" StockValue="745,86" />
+	<Entry Item="Rearshield - W - 11" InitialAmount="70" Amount="80" RelativeChange="114,29%" Price="14,54" StockValue="1.162,90" />
+	<Entry Item="Rearshield - M - 12" InitialAmount="70" Amount="50" RelativeChange="71,43%" Price="14,41" StockValue="720,53" />
+	<Entry Item="Frontshield - C - 13" InitialAmount="173" Amount="73" RelativeChange="42,20%" Price="13,79" StockValue="1.006,38" />
+	<Entry Item="Frontshield - W - 14" InitialAmount="10" Amount="80" RelativeChange="800,00%" Price="14,03" StockValue="1.122,58" />
+	<Entry Item="Frontshield - M - 15" InitialAmount="70" Amount="50" RelativeChange="71,43%" Price="14,62" StockValue="731,04" />
+	<Entry Item="Steering Wheel Complete - CWM - 16" InitialAmount="160" Amount="310" RelativeChange="193,75%" Price="7,08" StockValue="2.194,95" />
+	<Entry Item="Saddle Complete - CWM - 17" InitialAmount="160" Amount="310" RelativeChange="193,75%" Price="7,44" StockValue="2.305,92" />
+	<Entry Item="Frame - C - 18" InitialAmount="200" Amount="80" RelativeChange="40,00%" Price="15,05" StockValue="1.203,74" />
+	<Entry Item="Frame - W - 19" InitialAmount="10" Amount="0" RelativeChange="0,00%" Price="16,80" StockValue="0,00" />
+	<Entry Item="Frame - M - 20" InitialAmount="70" Amount="50" RelativeChange="71,43%" Price="17,34" StockValue="866,83" />
+	<Entry Item="Chain - C - 21" InitialAmount="300" Amount="200" RelativeChange="66,67%" Price="5,00" StockValue="1.000,00" />
+	<Entry Item="Chain - W - 22" InitialAmount="390" Amount="180" RelativeChange="46,15%" Price="6,50" StockValue="1.170,00" />
+	<Entry Item="Chain - M - 23" InitialAmount="250" Amount="150" RelativeChange="60,00%" Price="6,50" StockValue="975,00" />
+	<Entry Item="Nut 3/8&quot; - CWM - 24" InitialAmount="7060" Amount="3660" RelativeChange="51,84%" Price="0,06" StockValue="219,60" />
+	<Entry Item="Disc 3/8&quot; - CWM - 25" InitialAmount="1100" Amount="1690" RelativeChange="153,64%" Price="0,06" StockValue="101,40" />
+	<Entry Item="Pedal Complete - CWM - 26" InitialAmount="5" Amount="205" RelativeChange="4100,00%" Price="11,87" StockValue="2.433,20" />
+	<Entry Item="Screw 3/8&quot; - CWM - 27" InitialAmount="80" Amount="5" RelativeChange="6,25%" Price="0,10" StockValue="0,50" />
+	<Entry Item="Pipe 3/4&quot; - CWM - 28" InitialAmount="6520" Amount="4705" RelativeChange="72,16%" Price="1,20" StockValue="5.646,00" />
+	<Entry Item="Frontwheel Mounted - M - 29" InitialAmount="70" Amount="50" RelativeChange="71,43%" Price="72,85" StockValue="3.642,45" />
+	<Entry Item="Frame and Wheels - M - 30" InitialAmount="70" Amount="50" RelativeChange="71,43%" Price="132,23" StockValue="6.611,75" />
+	<Entry Item="Bicycle without Pedal - M - 31" InitialAmount="70" Amount="50" RelativeChange="71,43%" Price="148,64" StockValue="7.432,05" />
+	<Entry Item="Color - CWM - 32" InitialAmount="1467" Amount="2897" RelativeChange="197,48%" Price="0,75" StockValue="2.172,75" />
+	<Entry Item="Rim Complete - M - 33" InitialAmount="410" Amount="350" RelativeChange="85,37%" Price="22,00" StockValue="7.700,00" />
+	<Entry Item="Spoke - M - 34" InitialAmount="26360" Amount="24200" RelativeChange="91,81%" Price="0,10" StockValue="2.420,00" />
+	<Entry Item="Cone - CWM - 35" InitialAmount="5540" Amount="3700" RelativeChange="66,79%" Price="1,00" StockValue="3.700,00" />
+	<Entry Item="Free-Wheel - CWM - 36" InitialAmount="1230" Amount="740" RelativeChange="60,16%" Price="8,00" StockValue="5.920,00" />
+	<Entry Item="Fork - CWM - 37" InitialAmount="1390" Amount="960" RelativeChange="69,06%" Price="1,50" StockValue="1.440,00" />
+	<Entry Item="Shaft - CWM - 38" InitialAmount="640" Amount="510" RelativeChange="79,69%" Price="1,50" StockValue="765,00" />
+	<Entry Item="Sheet Metal - CWM - 39" InitialAmount="1427" Amount="2407" RelativeChange="168,68%" Price="1,50" StockValue="3.610,50" />
+	<Entry Item="Steering Wheel - CWM - 40" InitialAmount="1080" Amount="565" RelativeChange="52,31%" Price="2,50" StockValue="1.412,50" />
+	<Entry Item="Nut 3/4&quot; - CWM - 41" InitialAmount="580" Amount="965" RelativeChange="166,38%" Price="0,06" StockValue="57,90" />
+	<Entry Item="Handle - CWM - 42" InitialAmount="2160" Amount="1130" RelativeChange="52,31%" Price="0,10" StockValue="113,00" />
+	<Entry Item="Saddle - CWM - 43" InitialAmount="280" Amount="1165" RelativeChange="416,07%" Price="5,00" StockValue="5.825,00" />
+	<Entry Item="Bar 1/2&quot; - CWM - 44" InitialAmount="830" Amount="1215" RelativeChange="146,39%" Price="0,50" StockValue="607,50" />
+	<Entry Item="Nut 1/4&quot; - CWM - 45" InitialAmount="1080" Amount="565" RelativeChange="52,31%" Price="0,06" StockValue="33,90" />
+	<Entry Item="Screw 1/4&quot; - CWM - 46" InitialAmount="1080" Amount="565" RelativeChange="52,31%" Price="0,10" StockValue="56,50" />
+	<Entry Item="Cog - CWM - 47" InitialAmount="1235" Amount="625" RelativeChange="50,61%" Price="3,50" StockValue="2.187,50" />
+	<Entry Item="Pedal - CWM - 48" InitialAmount="2450" Amount="1250" RelativeChange="51,02%" Price="1,50" StockValue="1.875,00" />
+	<Entry Item="Frontwheel Complete - C - 49" InitialAmount="0" Amount="35" RelativeChange="35,00%" Price="68,82" StockValue="2.408,67" />
+	<Entry Item="Frame and Wheels - C - 50" InitialAmount="0" Amount="30" RelativeChange="30,00%" Price="127,30" StockValue="3.818,93" />
+	<Entry Item="Bicycle without Pedal - C - 51" InitialAmount="120" Amount="85" RelativeChange="70,83%" Price="144,15" StockValue="12.252,48" />
+	<Entry Item="Rim Complete - C - 52" InitialAmount="1400" Amount="1230" RelativeChange="87,86%" Price="22,00" StockValue="27.060,00" />
+	<Entry Item="Spoke - C - 53" InitialAmount="40200" Amount="34080" RelativeChange="84,78%" Price="0,10" StockValue="3.408,00" />
+	<Entry Item="Frontwheel Complete - W - 54" InitialAmount="70" Amount="70" RelativeChange="100,00%" Price="72,18" StockValue="5.052,91" />
+	<Entry Item="Frame and Wheels - W - 55" InitialAmount="70" Amount="210" RelativeChange="300,00%" Price="131,55" StockValue="27.624,49" />
+	<Entry Item="Bicycle without Pedal - W - 56" InitialAmount="110" Amount="120" RelativeChange="109,09%" Price="149,28" StockValue="17.913,13" />
+	<Entry Item="Rim Complete - W - 57" InitialAmount="910" Amount="150" RelativeChange="16,48%" Price="22,00" StockValue="3.300,00" />
+	<Entry Item="Spoke - W - 58" InitialAmount="33960" Amount="6600" RelativeChange="19,43%" Price="0,10" StockValue="660,00" />
+	<Entry Item="Filler Rod - CWM - 59" InitialAmount="1150" Amount="2230" RelativeChange="193,91%" Price="0,15" StockValue="334,50" />
+</WarehouseStock>
+<InwardStockMovements>
+	<Entry OrderNumber="4 - 11" Supplier="Normal" Item="Color - CWM - 32" OrderedQuantity="2700" DeliveredQuantity="2700" Arrival="Day 3 21:50:00" Available="On Arrival" MaterialCost="2.025,00" OrderCost="50,00" TotalCost="2.075,00" PieceCost="0,77" />
+	<Entry OrderNumber="5 - 1" Supplier="Normal" Item="Disc 3/8&quot; - CWM - 25" OrderedQuantity="2700" DeliveredQuantity="2700" Arrival="Day 1 02:47:00" Available="On Arrival" MaterialCost="162,00" OrderCost="50,00" TotalCost="212,00" PieceCost="0,08" />
+	<Entry OrderNumber="5 - 2" Supplier="Normal" Item="Screw 3/8&quot; - CWM - 27" OrderedQuantity="700" DeliveredQuantity="700" Arrival="Day 1 04:50:00" Available="On Arrival" MaterialCost="70,00" OrderCost="75,00" TotalCost="145,00" PieceCost="0,21" />
+	<Entry OrderNumber="5 - 5" Supplier="Fast" Item="Saddle - CWM - 43" OrderedQuantity="1400" DeliveredQuantity="1400" Arrival="Day 0 00:00:00" Available="On Arrival" MaterialCost="7.000,00" OrderCost="750,00" TotalCost="7.750,00" PieceCost="5,54" />
+	<Entry OrderNumber="5 - 6" Supplier="Normal" Item="Bar 1/2&quot; - CWM - 44" OrderedQuantity="2100" DeliveredQuantity="2100" Arrival="Day 1 14:21:00" Available="On Arrival" MaterialCost="1.050,00" OrderCost="50,00" TotalCost="1.100,00" PieceCost="0,52" />
+	<Entry OrderNumber="6 - 8" Supplier="Fast" Item="Shaft - CWM - 38" OrderedQuantity="300" DeliveredQuantity="300" Arrival="Day 5 06:00:00" Available="Next Period" MaterialCost="450,00" OrderCost="500,00" TotalCost="950,00" PieceCost="3,17" />
+	<Entry OrderNumber="6 - 9" Supplier="Fast" Item="Sheet Metal - CWM - 39" OrderedQuantity="1800" DeliveredQuantity="1800" Arrival="Day 4 18:00:00" Available="On Arrival" MaterialCost="2.700,00" OrderCost="750,00" TotalCost="3.450,00" PieceCost="1,92" />
+	<Entry OrderNumber="6 - 11" Supplier="Normal" Item="Nut 3/4&quot; - CWM - 41" OrderedQuantity="900" DeliveredQuantity="900" Arrival="Day 5 18:50:00" Available="Next Period" MaterialCost="54,00" OrderCost="50,00" TotalCost="104,00" PieceCost="0,12" />
+	<Entry OrderNumber="6 - 16" Supplier="Normal" Item="Filler Rod - CWM - 59" OrderedQuantity="1800" DeliveredQuantity="1800" Arrival="Day 4 10:27:00" Available="On Arrival" MaterialCost="270,00" OrderCost="50,00" TotalCost="320,00" PieceCost="0,18" />
+</InwardStockMovements>
+<FutureInwardStockMovements>
+	<Entry OrderNumber="6 - 1" Supplier="Normal" Item="Chain - C - 21" ItemNumber="21" Quantity="300" />
+	<Entry OrderNumber="6 - 2" Supplier="Normal" Item="Chain - W - 22" ItemNumber="22" Quantity="300" />
+	<Entry OrderNumber="6 - 3" Supplier="Fast" Item="Nut 3/8&quot; - CWM - 24" ItemNumber="24" Quantity="6100" />
+	<Entry OrderNumber="6 - 4" Supplier="Normal" Item="Pipe 3/4&quot; - CWM - 28" ItemNumber="28" Quantity="4500" />
+	<Entry OrderNumber="6 - 5" Supplier="Normal" Item="Rim Complete - M - 33" ItemNumber="33" Quantity="900" />
+	<Entry OrderNumber="6 - 6" Supplier="Normal" Item="Cone - CWM - 35" ItemNumber="35" Quantity="3600" />
+	<Entry OrderNumber="6 - 7" Supplier="Normal" Item="Fork - CWM - 37" ItemNumber="37" Quantity="900" />
+	<Entry OrderNumber="6 - 10" Supplier="Normal" Item="Steering Wheel - CWM - 40" ItemNumber="40" Quantity="900" />
+	<Entry OrderNumber="6 - 12" Supplier="Normal" Item="Handle - CWM - 42" ItemNumber="42" Quantity="1800" />
+	<Entry OrderNumber="6 - 13" Supplier="Normal" Item="Nut 1/4&quot; - CWM - 45" ItemNumber="45" Quantity="900" />
+	<Entry OrderNumber="6 - 14" Supplier="Normal" Item="Rim Complete - W - 57" ItemNumber="57" Quantity="600" />
+	<Entry OrderNumber="6 - 15" Supplier="Normal" Item="Spoke - W - 58" ItemNumber="58" Quantity="2200" />
+</FutureInwardStockMovements>
+<WorkplaceCosts>
+	<Entry WorkplaceNumber="1" MountEvents="5" IdleTime="220" WorkTime="3280" MachineFixCost="2,20" MachineVariableCost="164,00" IdleWageCost="198,00" ProductionWageCost="1.872,00" TotalCost="2.236,20" />
+	<Entry WorkplaceNumber="2" MountEvents="8" IdleTime="0" WorkTime="2800" MachineFixCost="0,00" MachineVariableCost="140,00" IdleWageCost="0,00" ProductionWageCost="1.440,00" TotalCost="1.580,00" />
+	<Entry WorkplaceNumber="3" MountEvents="9" IdleTime="1195" WorkTime="2305" MachineFixCost="11,95" MachineVariableCost="115,25" IdleWageCost="735,75" ProductionWageCost="1.334,25" TotalCost="2.197,20" />
+	<Entry WorkplaceNumber="4" MountEvents="4" IdleTime="1930" WorkTime="2870" MachineFixCost="19,30" MachineVariableCost="143,50" IdleWageCost="978,50" ProductionWageCost="1.421,50" TotalCost="2.562,80" />
+	<Entry WorkplaceNumber="6" MountEvents="7" IdleTime="305" WorkTime="2095" MachineFixCost="3,05" MachineVariableCost="628,50" IdleWageCost="137,25" ProductionWageCost="942,75" TotalCost="1.711,55" />
+	<Entry WorkplaceNumber="7" MountEvents="48" IdleTime="330" WorkTime="4620" MachineFixCost="3,30" MachineVariableCost="1.386,00" IdleWageCost="184,00" ProductionWageCost="2.351,00" TotalCost="3.924,30" />
+	<Entry WorkplaceNumber="8" MountEvents="28" IdleTime="1585" WorkTime="3215" MachineFixCost="15,85" MachineVariableCost="964,50" IdleWageCost="854,75" ProductionWageCost="1.545,25" TotalCost="3.380,35" />
+	<Entry WorkplaceNumber="9" MountEvents="26" IdleTime="935" WorkTime="3865" MachineFixCost="233,75" MachineVariableCost="3.092,00" IdleWageCost="492,75" ProductionWageCost="1.907,25" TotalCost="5.725,75" />
+	<Entry WorkplaceNumber="10" MountEvents="11" IdleTime="870" WorkTime="4180" MachineFixCost="130,50" MachineVariableCost="1.254,00" IdleWageCost="444,00" ProductionWageCost="2.181,00" TotalCost="4.009,50" />
+	<Entry WorkplaceNumber="11" MountEvents="11" IdleTime="170" WorkTime="2930" MachineFixCost="17,00" MachineVariableCost="879,00" IdleWageCost="99,00" ProductionWageCost="1.611,00" TotalCost="2.606,00" />
+	<Entry WorkplaceNumber="12" MountEvents="0" IdleTime="40" WorkTime="2460" MachineFixCost="4,00" MachineVariableCost="738,00" IdleWageCost="36,00" ProductionWageCost="1.134,00" TotalCost="1.912,00" />
+	<Entry WorkplaceNumber="13" MountEvents="0" IdleTime="760" WorkTime="1640" MachineFixCost="114,00" MachineVariableCost="820,00" IdleWageCost="342,00" ProductionWageCost="738,00" TotalCost="2.014,00" />
+	<Entry WorkplaceNumber="14" MountEvents="0" IdleTime="855" WorkTime="1545" MachineFixCost="8,55" MachineVariableCost="77,25" IdleWageCost="384,75" ProductionWageCost="695,25" TotalCost="1.165,80" />
+	<Entry WorkplaceNumber="15" MountEvents="20" IdleTime="1125" WorkTime="3675" MachineFixCost="11,25" MachineVariableCost="183,75" IdleWageCost="563,25" ProductionWageCost="1.836,75" TotalCost="2.595,00" />
+</WorkplaceCosts>
+<WorkplaceWaitinglist>
+	<Entry WorkplaceNumber="1" Period="5" OrderNumber="42" BatchNumber="4 - 6" Item="Frontwheel Complete - C - 49" Quantity="20" RequiredTime="120" />
+	<Entry WorkplaceNumber="2" Period="6" OrderNumber="57" BatchNumber="8 - 10" Item="Frame and Wheels - W - 55" Quantity="10" RequiredTime="50" />
+	<Entry WorkplaceNumber="3" Period="6" OrderNumber="47" BatchNumber="4 - 10" Item="Bicycle without Pedal - W - 56" Quantity="50" RequiredTime="300" />
+	<Entry WorkplaceNumber="3" Period="6" OrderNumber="58" BatchNumber="0 - 10" Item="Bicycle without Pedal - W - 56" Quantity="100" RequiredTime="600" />
+	<Entry WorkplaceNumber="4" Period="6" OrderNumber="36" BatchNumber="7 - 10" Item="Womens Bicycle - W - 2" Quantity="20" RequiredTime="140" />
+	<Entry WorkplaceNumber="4" Period="6" OrderNumber="48" BatchNumber="0 - 11" Item="Womens Bicycle - W - 2" Quantity="110" RequiredTime="770" />
+	<Entry WorkplaceNumber="11" Period="6" OrderNumber="50" BatchNumber="2 - 10" Item="Frontwheel Group - W - 8" Quantity="70" RequiredTime="210" />
+</WorkplaceWaitinglist>
+<StockWaitinglist>
+	<Entry RequiredItem="Frontwheel Group - C - 7" Period="5" OrderNumber="42" BatchRange="4 - 6" Item="Frontwheel Complete - C - 49" Quantity="20" />
+	<Entry RequiredItem="Frontwheel Group - W - 8" Period="6" OrderNumber="56" BatchRange="9 - 10" Item="Frontwheel Complete - W - 54" Quantity="10" />
+	<Entry RequiredItem="Frame - W - 19" Period="6" OrderNumber="56" BatchRange="9 - 10" Item="Frontwheel Complete - W - 54" Quantity="10" />
+</StockWaitinglist>
+<OrdersBeeingProcessed>
+	<Entry WorkplaceNumber="2" Period="6" OrderNumber="57" BatchNumber="9" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" />
+	<Entry WorkplaceNumber="11" Period="6" OrderNumber="50" BatchNumber="3" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="30" />
+</OrdersBeeingProcessed>
+<ProcessedOrders>
+	<Entry Period="6" OrderNumber="22" BatchNumber="1" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="90" Cost="1.638,52" />
+	<Entry Period="6" OrderNumber="22" BatchNumber="2" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="60" Cost="1.630,14" />
+	<Entry Period="6" OrderNumber="22" BatchNumber="3" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="60" Cost="1.630,51" />
+	<Entry Period="6" OrderNumber="22" BatchNumber="4" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="60" Cost="1.630,75" />
+	<Entry Period="6" OrderNumber="22" BatchNumber="5" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="60" Cost="1.631,12" />
+	<Entry Period="6" OrderNumber="22" BatchNumber="6" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="60" Cost="1.631,58" />
+	<Entry Period="6" OrderNumber="22" BatchNumber="7" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="60" Cost="1.631,76" />
+	<Entry Period="6" OrderNumber="22" BatchNumber="8" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="60" Cost="1.631,76" />
+	<Entry Period="6" OrderNumber="22" BatchNumber="9" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="60" Cost="1.631,76" />
+	<Entry Period="6" OrderNumber="22" BatchNumber="10" Item="Children Bicycle - C - 1" Quantity="10" CycleTime="540" Cost="1.625,76" />
+	<Entry Period="5" OrderNumber="49" BatchNumber="1" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.693,30" />
+	<Entry Period="5" OrderNumber="49" BatchNumber="2" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.693,47" />
+	<Entry Period="5" OrderNumber="49" BatchNumber="3" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.687,42" />
+	<Entry Period="5" OrderNumber="49" BatchNumber="4" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.684,73" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="1" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="90" Cost="1.699,77" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="2" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.689,77" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="3" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.689,77" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="4" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.689,77" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="5" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.689,77" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="6" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.696,77" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="7" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.696,77" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="8" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.703,01" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="9" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.700,45" />
+	<Entry Period="6" OrderNumber="23" BatchNumber="10" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.699,40" />
+	<Entry Period="6" OrderNumber="36" BatchNumber="1" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="90" Cost="1.726,40" />
+	<Entry Period="6" OrderNumber="36" BatchNumber="2" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.712,37" />
+	<Entry Period="6" OrderNumber="36" BatchNumber="3" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.711,81" />
+	<Entry Period="6" OrderNumber="36" BatchNumber="4" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="550" Cost="1.705,33" />
+	<Entry Period="6" OrderNumber="36" BatchNumber="5" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.712,38" />
+	<Entry Period="6" OrderNumber="36" BatchNumber="6" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.708,84" />
+	<Entry Period="6" OrderNumber="36" BatchNumber="7" Item="Womens Bicycle - W - 2" Quantity="10" CycleTime="70" Cost="1.714,85" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="1" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="100" Cost="1.721,06" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="2" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="550" Cost="1.695,74" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="3" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="70" Cost="1.695,74" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="4" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="70" Cost="1.701,15" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="5" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="70" Cost="1.704,05" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="6" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="70" Cost="1.709,47" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="7" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="70" Cost="1.709,47" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="8" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="70" Cost="1.709,47" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="9" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="70" Cost="1.716,47" />
+	<Entry Period="6" OrderNumber="24" BatchNumber="10" Item="Mans Bicycle - M - 3" Quantity="10" CycleTime="70" Cost="1.731,83" />
+	<Entry Period="5" OrderNumber="3" BatchNumber="1" Item="Rearwheel Group - C - 4" Quantity="10" CycleTime="100" Cost="444,50" />
+	<Entry Period="5" OrderNumber="3" BatchNumber="2" Item="Rearwheel Group - C - 4" Quantity="10" CycleTime="70" Cost="426,00" />
+	<Entry Period="5" OrderNumber="3" BatchNumber="3" Item="Rearwheel Group - C - 4" Quantity="10" CycleTime="70" Cost="426,00" />
+	<Entry Period="5" OrderNumber="3" BatchNumber="4" Item="Rearwheel Group - C - 4" Quantity="10" CycleTime="70" Cost="426,00" />
+	<Entry Period="5" OrderNumber="3" BatchNumber="5" Item="Rearwheel Group - C - 4" Quantity="10" CycleTime="890" Cost="412,50" />
+	<Entry Period="5" OrderNumber="3" BatchNumber="6" Item="Rearwheel Group - C - 4" Quantity="10" CycleTime="880" Cost="412,50" />
+	<Entry Period="5" OrderNumber="3" BatchNumber="7" Item="Rearwheel Group - C - 4" Quantity="10" CycleTime="870" Cost="412,50" />
+	<Entry Period="6" OrderNumber="1" BatchNumber="1" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="870" Cost="437,00" />
+	<Entry Period="6" OrderNumber="1" BatchNumber="2" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="840" Cost="412,50" />
+	<Entry Period="6" OrderNumber="1" BatchNumber="3" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="830" Cost="412,50" />
+	<Entry Period="6" OrderNumber="1" BatchNumber="4" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="820" Cost="412,50" />
+	<Entry Period="6" OrderNumber="1" BatchNumber="5" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="810" Cost="412,50" />
+	<Entry Period="6" OrderNumber="1" BatchNumber="6" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="800" Cost="426,50" />
+	<Entry Period="6" OrderNumber="1" BatchNumber="7" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="790" Cost="426,50" />
+	<Entry Period="6" OrderNumber="1" BatchNumber="8" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="780" Cost="408,50" />
+	<Entry Period="6" OrderNumber="1" BatchNumber="9" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="340" Cost="408,50" />
+	<Entry Period="6" OrderNumber="25" BatchNumber="1" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1010" Cost="437,00" />
+	<Entry Period="6" OrderNumber="25" BatchNumber="2" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="980" Cost="412,50" />
+	<Entry Period="6" OrderNumber="25" BatchNumber="3" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="970" Cost="412,50" />
+	<Entry Period="6" OrderNumber="25" BatchNumber="4" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="960" Cost="412,50" />
+	<Entry Period="6" OrderNumber="25" BatchNumber="5" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="950" Cost="412,50" />
+	<Entry Period="6" OrderNumber="25" BatchNumber="6" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="940" Cost="426,50" />
+	<Entry Period="6" OrderNumber="25" BatchNumber="7" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="930" Cost="422,00" />
+	<Entry Period="6" OrderNumber="25" BatchNumber="8" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="490" Cost="422,00" />
+	<Entry Period="6" OrderNumber="25" BatchNumber="9" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="480" Cost="422,00" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="1" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1210" Cost="437,00" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="2" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1180" Cost="412,50" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="3" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1170" Cost="412,50" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="4" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1160" Cost="412,50" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="5" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1150" Cost="412,50" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="6" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1140" Cost="412,50" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="7" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1130" Cost="412,50" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="8" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1120" Cost="412,50" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="9" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1110" Cost="426,00" />
+	<Entry Period="6" OrderNumber="37" BatchNumber="10" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1100" Cost="426,00" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="1" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1390" Cost="431,00" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="2" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1360" Cost="408,50" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="3" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1350" Cost="408,50" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="4" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1340" Cost="412,50" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="5" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1330" Cost="412,50" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="6" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1320" Cost="412,50" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="7" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1310" Cost="412,50" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="8" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1300" Cost="412,50" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="9" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1290" Cost="426,00" />
+	<Entry Period="6" OrderNumber="49" BatchNumber="10" Item="Rearwheel Group - W - 5" Quantity="10" CycleTime="1280" Cost="426,00" />
+	<Entry Period="6" OrderNumber="2" BatchNumber="1" Item="Rearwheel Group - M - 6" Quantity="10" CycleTime="350" Cost="438,50" />
+	<Entry Period="6" OrderNumber="2" BatchNumber="2" Item="Rearwheel Group - M - 6" Quantity="10" CycleTime="320" Cost="408,50" />
+	<Entry Period="6" OrderNumber="2" BatchNumber="3" Item="Rearwheel Group - M - 6" Quantity="10" CycleTime="310" Cost="422,00" />
+	<Entry Period="6" OrderNumber="2" BatchNumber="4" Item="Rearwheel Group - M - 6" Quantity="10" CycleTime="300" Cost="422,00" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="1" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="2" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="3" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="4" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="5" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="6" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="7" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="8" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="9" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="4" OrderNumber="27" BatchNumber="10" Item="Frontwheel Group - C - 7" Quantity="10" CycleTime="70" Cost="358,50" />
+	<Entry Period="6" OrderNumber="3" BatchNumber="1" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="310" Cost="411,00" />
+	<Entry Period="6" OrderNumber="3" BatchNumber="2" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="280" Cost="372,00" />
+	<Entry Period="6" OrderNumber="3" BatchNumber="3" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="270" Cost="372,00" />
+	<Entry Period="6" OrderNumber="3" BatchNumber="4" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1080" Cost="358,50" />
+	<Entry Period="6" OrderNumber="3" BatchNumber="5" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1070" Cost="358,50" />
+	<Entry Period="6" OrderNumber="3" BatchNumber="6" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1060" Cost="362,50" />
+	<Entry Period="6" OrderNumber="3" BatchNumber="7" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1050" Cost="362,50" />
+	<Entry Period="6" OrderNumber="3" BatchNumber="8" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1040" Cost="362,50" />
+	<Entry Period="6" OrderNumber="3" BatchNumber="9" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1030" Cost="362,50" />
+	<Entry Period="6" OrderNumber="26" BatchNumber="1" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="490" Cost="411,00" />
+	<Entry Period="6" OrderNumber="26" BatchNumber="2" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="460" Cost="372,00" />
+	<Entry Period="6" OrderNumber="26" BatchNumber="3" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1270" Cost="358,50" />
+	<Entry Period="6" OrderNumber="26" BatchNumber="4" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1260" Cost="358,50" />
+	<Entry Period="6" OrderNumber="26" BatchNumber="5" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1250" Cost="358,50" />
+	<Entry Period="6" OrderNumber="26" BatchNumber="6" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1240" Cost="358,50" />
+	<Entry Period="6" OrderNumber="26" BatchNumber="7" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1230" Cost="358,50" />
+	<Entry Period="6" OrderNumber="26" BatchNumber="8" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1220" Cost="358,50" />
+	<Entry Period="6" OrderNumber="26" BatchNumber="9" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1210" Cost="362,50" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="1" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1110" Cost="431,00" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="2" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1080" Cost="390,00" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="3" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1890" Cost="358,50" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="4" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1450" Cost="358,50" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="5" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1440" Cost="358,50" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="6" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1430" Cost="358,50" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="7" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1420" Cost="358,50" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="8" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1410" Cost="358,50" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="9" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1400" Cost="358,50" />
+	<Entry Period="6" OrderNumber="38" BatchNumber="10" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1390" Cost="358,50" />
+	<Entry Period="6" OrderNumber="50" BatchNumber="1" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1290" Cost="417,00" />
+	<Entry Period="6" OrderNumber="50" BatchNumber="2" Item="Frontwheel Group - W - 8" Quantity="10" CycleTime="1260" Cost="376,00" />
+	<Entry Period="6" OrderNumber="4" BatchNumber="1" Item="Frontwheel Group - M - 9" Quantity="10" CycleTime="1040" Cost="394,50" />
+	<Entry Period="6" OrderNumber="4" BatchNumber="2" Item="Frontwheel Group - M - 9" Quantity="10" CycleTime="1010" Cost="362,50" />
+	<Entry Period="6" OrderNumber="5" BatchNumber="1" Item="Rearshield - W - 11" Quantity="10" CycleTime="631" Cost="185,00" />
+	<Entry Period="6" OrderNumber="5" BatchNumber="2" Item="Rearshield - W - 11" Quantity="10" CycleTime="641" Cost="136,50" />
+	<Entry Period="6" OrderNumber="5" BatchNumber="3" Item="Rearshield - W - 11" Quantity="10" CycleTime="651" Cost="136,50" />
+	<Entry Period="6" OrderNumber="5" BatchNumber="4" Item="Rearshield - W - 11" Quantity="10" CycleTime="661" Cost="136,50" />
+	<Entry Period="6" OrderNumber="5" BatchNumber="5" Item="Rearshield - W - 11" Quantity="10" CycleTime="671" Cost="136,50" />
+	<Entry Period="6" OrderNumber="5" BatchNumber="6" Item="Rearshield - W - 11" Quantity="10" CycleTime="681" Cost="136,50" />
+	<Entry Period="6" OrderNumber="5" BatchNumber="7" Item="Rearshield - W - 11" Quantity="10" CycleTime="691" Cost="136,50" />
+	<Entry Period="6" OrderNumber="5" BatchNumber="8" Item="Rearshield - W - 11" Quantity="10" CycleTime="701" Cost="136,50" />
+	<Entry Period="6" OrderNumber="5" BatchNumber="9" Item="Rearshield - W - 11" Quantity="10" CycleTime="711" Cost="136,50" />
+	<Entry Period="6" OrderNumber="27" BatchNumber="1" Item="Rearshield - W - 11" Quantity="10" CycleTime="791" Cost="185,00" />
+	<Entry Period="6" OrderNumber="27" BatchNumber="2" Item="Rearshield - W - 11" Quantity="10" CycleTime="801" Cost="136,50" />
+	<Entry Period="6" OrderNumber="27" BatchNumber="3" Item="Rearshield - W - 11" Quantity="10" CycleTime="811" Cost="136,50" />
+	<Entry Period="6" OrderNumber="27" BatchNumber="4" Item="Rearshield - W - 11" Quantity="10" CycleTime="821" Cost="136,50" />
+	<Entry Period="6" OrderNumber="27" BatchNumber="5" Item="Rearshield - W - 11" Quantity="10" CycleTime="831" Cost="138,50" />
+	<Entry Period="6" OrderNumber="27" BatchNumber="6" Item="Rearshield - W - 11" Quantity="10" CycleTime="841" Cost="138,50" />
+	<Entry Period="6" OrderNumber="27" BatchNumber="7" Item="Rearshield - W - 11" Quantity="10" CycleTime="1331" Cost="135,50" />
+	<Entry Period="6" OrderNumber="27" BatchNumber="8" Item="Rearshield - W - 11" Quantity="10" CycleTime="1341" Cost="149,00" />
+	<Entry Period="6" OrderNumber="27" BatchNumber="9" Item="Rearshield - W - 11" Quantity="10" CycleTime="1426" Cost="176,50" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="1" Item="Rearshield - W - 11" Quantity="10" CycleTime="1901" Cost="188,50" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="2" Item="Rearshield - W - 11" Quantity="10" CycleTime="1911" Cost="138,50" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="3" Item="Rearshield - W - 11" Quantity="10" CycleTime="1921" Cost="138,50" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="4" Item="Rearshield - W - 11" Quantity="10" CycleTime="1931" Cost="138,50" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="5" Item="Rearshield - W - 11" Quantity="10" CycleTime="1941" Cost="138,50" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="6" Item="Rearshield - W - 11" Quantity="10" CycleTime="2431" Cost="144,50" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="7" Item="Rearshield - W - 11" Quantity="10" CycleTime="1481" Cost="149,00" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="8" Item="Rearshield - W - 11" Quantity="10" CycleTime="1566" Cost="176,50" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="9" Item="Rearshield - W - 11" Quantity="10" CycleTime="1576" Cost="131,50" />
+	<Entry Period="6" OrderNumber="39" BatchNumber="10" Item="Rearshield - W - 11" Quantity="10" CycleTime="1641" Cost="176,50" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="1" Item="Rearshield - W - 11" Quantity="10" CycleTime="2091" Cost="188,50" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="2" Item="Rearshield - W - 11" Quantity="10" CycleTime="2581" Cost="135,50" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="3" Item="Rearshield - W - 11" Quantity="10" CycleTime="2591" Cost="135,50" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="4" Item="Rearshield - W - 11" Quantity="10" CycleTime="2601" Cost="149,00" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="5" Item="Rearshield - W - 11" Quantity="10" CycleTime="2656" Cost="146,50" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="6" Item="Rearshield - W - 11" Quantity="10" CycleTime="2666" Cost="131,50" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="7" Item="Rearshield - W - 11" Quantity="10" CycleTime="2676" Cost="131,50" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="8" Item="Rearshield - W - 11" Quantity="10" CycleTime="2686" Cost="131,50" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="9" Item="Rearshield - W - 11" Quantity="10" CycleTime="2726" Cost="146,50" />
+	<Entry Period="6" OrderNumber="51" BatchNumber="10" Item="Rearshield - W - 11" Quantity="10" CycleTime="2736" Cost="140,50" />
+	<Entry Period="6" OrderNumber="6" BatchNumber="1" Item="Rearshield - M - 12" Quantity="10" CycleTime="736" Cost="185,00" />
+	<Entry Period="6" OrderNumber="6" BatchNumber="2" Item="Rearshield - M - 12" Quantity="10" CycleTime="746" Cost="136,50" />
+	<Entry Period="6" OrderNumber="6" BatchNumber="3" Item="Rearshield - M - 12" Quantity="10" CycleTime="1236" Cost="133,50" />
+	<Entry Period="6" OrderNumber="6" BatchNumber="4" Item="Rearshield - M - 12" Quantity="10" CycleTime="1246" Cost="133,50" />
+	<Entry Period="5" OrderNumber="36" BatchNumber="1" Item="Frontshield - C - 13" Quantity="10" CycleTime="4021" Cost="124,00" />
+	<Entry Period="5" OrderNumber="36" BatchNumber="2" Item="Frontshield - C - 13" Quantity="10" CycleTime="4031" Cost="124,00" />
+	<Entry Period="5" OrderNumber="37" BatchNumber="1" Item="Frontshield - W - 14" Quantity="10" CycleTime="4056" Cost="176,50" />
+	<Entry Period="5" OrderNumber="37" BatchNumber="2" Item="Frontshield - W - 14" Quantity="10" CycleTime="4066" Cost="131,50" />
+	<Entry Period="5" OrderNumber="37" BatchNumber="3" Item="Frontshield - W - 14" Quantity="10" CycleTime="4076" Cost="140,50" />
+	<Entry Period="5" OrderNumber="37" BatchNumber="4" Item="Frontshield - W - 14" Quantity="10" CycleTime="4086" Cost="140,50" />
+	<Entry Period="5" OrderNumber="37" BatchNumber="5" Item="Frontshield - W - 14" Quantity="10" CycleTime="4096" Cost="140,50" />
+	<Entry Period="5" OrderNumber="37" BatchNumber="6" Item="Frontshield - W - 14" Quantity="10" CycleTime="4106" Cost="140,50" />
+	<Entry Period="6" OrderNumber="7" BatchNumber="1" Item="Frontshield - W - 14" Quantity="10" CycleTime="1271" Cost="182,50" />
+	<Entry Period="6" OrderNumber="7" BatchNumber="2" Item="Frontshield - W - 14" Quantity="10" CycleTime="1281" Cost="135,50" />
+	<Entry Period="6" OrderNumber="7" BatchNumber="3" Item="Frontshield - W - 14" Quantity="10" CycleTime="1291" Cost="149,00" />
+	<Entry Period="6" OrderNumber="7" BatchNumber="4" Item="Frontshield - W - 14" Quantity="10" CycleTime="1301" Cost="157,75" />
+	<Entry Period="6" OrderNumber="7" BatchNumber="5" Item="Frontshield - W - 14" Quantity="10" CycleTime="1311" Cost="131,50" />
+	<Entry Period="6" OrderNumber="7" BatchNumber="6" Item="Frontshield - W - 14" Quantity="10" CycleTime="1321" Cost="131,50" />
+	<Entry Period="6" OrderNumber="7" BatchNumber="7" Item="Frontshield - W - 14" Quantity="10" CycleTime="1386" Cost="176,50" />
+	<Entry Period="6" OrderNumber="7" BatchNumber="8" Item="Frontshield - W - 14" Quantity="10" CycleTime="1396" Cost="131,50" />
+	<Entry Period="6" OrderNumber="7" BatchNumber="9" Item="Frontshield - W - 14" Quantity="10" CycleTime="1406" Cost="131,50" />
+	<Entry Period="6" OrderNumber="28" BatchNumber="1" Item="Frontshield - W - 14" Quantity="10" CycleTime="1451" Cost="176,50" />
+	<Entry Period="6" OrderNumber="28" BatchNumber="2" Item="Frontshield - W - 14" Quantity="10" CycleTime="1461" Cost="131,50" />
+	<Entry Period="6" OrderNumber="28" BatchNumber="3" Item="Frontshield - W - 14" Quantity="10" CycleTime="1471" Cost="131,50" />
+	<Entry Period="6" OrderNumber="28" BatchNumber="4" Item="Frontshield - W - 14" Quantity="10" CycleTime="1536" Cost="176,50" />
+	<Entry Period="6" OrderNumber="28" BatchNumber="5" Item="Frontshield - W - 14" Quantity="10" CycleTime="1546" Cost="131,50" />
+	<Entry Period="6" OrderNumber="28" BatchNumber="6" Item="Frontshield - W - 14" Quantity="10" CycleTime="1556" Cost="131,50" />
+	<Entry Period="6" OrderNumber="28" BatchNumber="7" Item="Frontshield - W - 14" Quantity="10" CycleTime="1566" Cost="131,50" />
+	<Entry Period="6" OrderNumber="28" BatchNumber="8" Item="Frontshield - W - 14" Quantity="10" CycleTime="1576" Cost="131,50" />
+	<Entry Period="6" OrderNumber="28" BatchNumber="9" Item="Frontshield - W - 14" Quantity="10" CycleTime="1586" Cost="134,50" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="1" Item="Frontshield - W - 14" Quantity="10" CycleTime="1666" Cost="176,50" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="2" Item="Frontshield - W - 14" Quantity="10" CycleTime="1676" Cost="131,50" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="3" Item="Frontshield - W - 14" Quantity="10" CycleTime="1686" Cost="131,50" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="4" Item="Frontshield - W - 14" Quantity="10" CycleTime="1696" Cost="131,50" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="5" Item="Frontshield - W - 14" Quantity="10" CycleTime="1706" Cost="131,50" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="6" Item="Frontshield - W - 14" Quantity="10" CycleTime="1716" Cost="131,50" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="7" Item="Frontshield - W - 14" Quantity="10" CycleTime="1726" Cost="134,50" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="8" Item="Frontshield - W - 14" Quantity="10" CycleTime="1736" Cost="134,50" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="9" Item="Frontshield - W - 14" Quantity="10" CycleTime="1746" Cost="162,75" />
+	<Entry Period="6" OrderNumber="40" BatchNumber="10" Item="Frontshield - W - 14" Quantity="10" CycleTime="1756" Cost="136,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="1" Item="Frontshield - W - 14" Quantity="10" CycleTime="1801" Cost="176,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="2" Item="Frontshield - W - 14" Quantity="10" CycleTime="1811" Cost="131,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="3" Item="Frontshield - W - 14" Quantity="10" CycleTime="1821" Cost="131,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="4" Item="Frontshield - W - 14" Quantity="10" CycleTime="1831" Cost="131,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="5" Item="Frontshield - W - 14" Quantity="10" CycleTime="1841" Cost="134,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="6" Item="Frontshield - W - 14" Quantity="10" CycleTime="1851" Cost="134,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="7" Item="Frontshield - W - 14" Quantity="10" CycleTime="1861" Cost="134,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="8" Item="Frontshield - W - 14" Quantity="10" CycleTime="1871" Cost="153,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="9" Item="Frontshield - W - 14" Quantity="10" CycleTime="1881" Cost="136,50" />
+	<Entry Period="6" OrderNumber="52" BatchNumber="10" Item="Frontshield - W - 14" Quantity="10" CycleTime="1891" Cost="152,00" />
+	<Entry Period="6" OrderNumber="8" BatchNumber="1" Item="Frontshield - M - 15" Quantity="10" CycleTime="1431" Cost="176,50" />
+	<Entry Period="6" OrderNumber="8" BatchNumber="2" Item="Frontshield - M - 15" Quantity="10" CycleTime="1441" Cost="140,50" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="1" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="50" Cost="70,20" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="2" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="60" Cost="70,20" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="3" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="70" Cost="70,20" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="4" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="80" Cost="70,20" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="5" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="90" Cost="70,20" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="6" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="100" Cost="70,20" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="7" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="110" Cost="70,20" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="8" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="120" Cost="70,20" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="9" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="130" Cost="70,20" />
+	<Entry Period="6" OrderNumber="9" BatchNumber="10" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="140" Cost="70,20" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="1" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="65" Cost="81,45" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="2" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="60" Cost="70,20" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="3" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="70" Cost="70,20" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="4" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="80" Cost="70,20" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="5" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="90" Cost="70,20" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="6" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="100" Cost="70,20" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="7" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="110" Cost="70,20" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="8" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="120" Cost="70,20" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="9" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="130" Cost="70,20" />
+	<Entry Period="6" OrderNumber="29" BatchNumber="10" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="140" Cost="70,20" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="1" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="65" Cost="81,45" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="2" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="60" Cost="70,20" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="3" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="70" Cost="70,20" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="4" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="80" Cost="70,20" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="5" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="90" Cost="70,20" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="6" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="100" Cost="70,20" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="7" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="110" Cost="70,20" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="8" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="120" Cost="70,20" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="9" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="130" Cost="70,20" />
+	<Entry Period="6" OrderNumber="41" BatchNumber="10" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="1100" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="1" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="65" Cost="81,45" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="2" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="60" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="3" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="70" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="4" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="80" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="5" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="90" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="6" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="100" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="7" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="110" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="8" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="1080" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="9" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="1090" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="10" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="1100" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="11" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="1110" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="12" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="1120" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="13" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="1130" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="14" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="180" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="15" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="190" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="16" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="200" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="17" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="210" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="18" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="220" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="19" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="230" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="20" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="240" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="21" Item="Steering Wheel Complete - CWM - 16" Quantity="10" CycleTime="250" Cost="70,20" />
+	<Entry Period="6" OrderNumber="53" BatchNumber="22" Item="Steering Wheel Complete - CWM - 16" Quantity="5" CycleTime="245" Cost="35,10" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="1" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="45" Cost="79,10" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="2" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="45" Cost="79,10" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="3" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="4" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="45" Cost="83,60" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="5" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="6" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="7" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="8" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="9" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="510" Cost="71,60" />
+	<Entry Period="6" OrderNumber="10" BatchNumber="10" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="1" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="2" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="3" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="4" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="5" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="6" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="7" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="8" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="9" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="30" BatchNumber="10" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="1" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="2" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="3" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="4" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="5" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="6" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="7" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="8" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="45" Cost="83,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="9" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="42" BatchNumber="10" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="510" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="1" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="2" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="3" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="45" Cost="79,10" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="4" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="5" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="6" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="45" Cost="79,10" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="7" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="8" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="9" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="10" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="11" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="12" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="13" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="14" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="15" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="45" Cost="83,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="16" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="45" Cost="83,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="17" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="74,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="18" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="510" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="19" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="20" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="45" Cost="79,10" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="21" Item="Saddle Complete - CWM - 17" Quantity="10" CycleTime="30" Cost="71,60" />
+	<Entry Period="6" OrderNumber="54" BatchNumber="22" Item="Saddle Complete - CWM - 17" Quantity="5" CycleTime="30" Cost="43,30" />
+	<Entry Period="5" OrderNumber="40" BatchNumber="1" Item="Frame - W - 19" Quantity="10" CycleTime="4361" Cost="231,50" />
+	<Entry Period="5" OrderNumber="40" BatchNumber="2" Item="Frame - W - 19" Quantity="10" CycleTime="4336" Cost="152,50" />
+	<Entry Period="5" OrderNumber="40" BatchNumber="3" Item="Frame - W - 19" Quantity="10" CycleTime="4326" Cost="158,50" />
+	<Entry Period="5" OrderNumber="40" BatchNumber="4" Item="Frame - W - 19" Quantity="10" CycleTime="4316" Cost="143,50" />
+	<Entry Period="5" OrderNumber="40" BatchNumber="5" Item="Frame - W - 19" Quantity="10" CycleTime="4306" Cost="143,50" />
+	<Entry Period="5" OrderNumber="40" BatchNumber="6" Item="Frame - W - 19" Quantity="10" CycleTime="4296" Cost="143,50" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="1" Item="Frame - W - 19" Quantity="10" CycleTime="1521" Cost="224,50" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="2" Item="Frame - W - 19" Quantity="10" CycleTime="1696" Cost="205,75" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="3" Item="Frame - W - 19" Quantity="10" CycleTime="1686" Cost="148,50" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="4" Item="Frame - W - 19" Quantity="10" CycleTime="1676" Cost="148,50" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="5" Item="Frame - W - 19" Quantity="10" CycleTime="1666" Cost="148,50" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="6" Item="Frame - W - 19" Quantity="10" CycleTime="1656" Cost="148,50" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="7" Item="Frame - W - 19" Quantity="10" CycleTime="1646" Cost="163,50" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="8" Item="Frame - W - 19" Quantity="10" CycleTime="1636" Cost="148,50" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="9" Item="Frame - W - 19" Quantity="10" CycleTime="1626" Cost="160,50" />
+	<Entry Period="6" OrderNumber="11" BatchNumber="10" Item="Frame - W - 19" Quantity="10" CycleTime="656" Cost="164,25" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="1" Item="Frame - W - 19" Quantity="10" CycleTime="1196" Cost="223,00" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="2" Item="Frame - W - 19" Quantity="10" CycleTime="1171" Cost="148,50" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="3" Item="Frame - W - 19" Quantity="10" CycleTime="1331" Cost="180,50" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="4" Item="Frame - W - 19" Quantity="10" CycleTime="1536" Cost="184,50" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="5" Item="Frame - W - 19" Quantity="10" CycleTime="1526" Cost="179,25" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="6" Item="Frame - W - 19" Quantity="10" CycleTime="556" Cost="164,25" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="7" Item="Frame - W - 19" Quantity="10" CycleTime="546" Cost="145,50" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="8" Item="Frame - W - 19" Quantity="10" CycleTime="536" Cost="145,50" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="9" Item="Frame - W - 19" Quantity="10" CycleTime="526" Cost="145,50" />
+	<Entry Period="6" OrderNumber="31" BatchNumber="10" Item="Frame - W - 19" Quantity="10" CycleTime="516" Cost="167,50" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="1" Item="Frame - W - 19" Quantity="10" CycleTime="1146" Cost="223,00" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="2" Item="Frame - W - 19" Quantity="10" CycleTime="1121" Cost="148,50" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="3" Item="Frame - W - 19" Quantity="10" CycleTime="1206" Cost="194,00" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="4" Item="Frame - W - 19" Quantity="10" CycleTime="616" Cost="206,25" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="5" Item="Frame - W - 19" Quantity="10" CycleTime="606" Cost="164,25" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="6" Item="Frame - W - 19" Quantity="10" CycleTime="596" Cost="186,25" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="7" Item="Frame - W - 19" Quantity="10" CycleTime="586" Cost="150,50" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="8" Item="Frame - W - 19" Quantity="10" CycleTime="576" Cost="150,50" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="9" Item="Frame - W - 19" Quantity="10" CycleTime="566" Cost="167,50" />
+	<Entry Period="6" OrderNumber="43" BatchNumber="10" Item="Frame - W - 19" Quantity="10" CycleTime="556" Cost="150,50" />
+	<Entry Period="6" OrderNumber="12" BatchNumber="1" Item="Frame - M - 20" Quantity="10" CycleTime="661" Cost="219,00" />
+	<Entry Period="6" OrderNumber="12" BatchNumber="2" Item="Frame - M - 20" Quantity="10" CycleTime="636" Cost="157,50" />
+	<Entry Period="5" OrderNumber="41" BatchNumber="1" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="924" Cost="148,50" />
+	<Entry Period="5" OrderNumber="41" BatchNumber="2" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="104" Cost="105,00" />
+	<Entry Period="5" OrderNumber="41" BatchNumber="3" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="104" Cost="135,00" />
+	<Entry Period="5" OrderNumber="41" BatchNumber="4" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="84" Cost="105,00" />
+	<Entry Period="5" OrderNumber="41" BatchNumber="5" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="94" Cost="105,00" />
+	<Entry Period="5" OrderNumber="41" BatchNumber="6" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="104" Cost="105,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="1" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="114" Cost="105,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="2" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="124" Cost="105,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="3" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="134" Cost="105,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="4" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="144" Cost="105,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="5" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="154" Cost="108,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="6" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="164" Cost="108,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="7" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="174" Cost="108,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="8" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="184" Cost="108,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="9" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="194" Cost="108,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="10" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="204" Cost="108,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="11" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="214" Cost="108,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="12" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="224" Cost="110,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="13" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="234" Cost="110,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="14" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="244" Cost="110,00" />
+	<Entry Period="5" OrderNumber="52" BatchNumber="15" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="254" Cost="110,00" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="1" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="124" Cost="144,50" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="2" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="104" Cost="110,00" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="3" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="114" Cost="110,00" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="4" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="124" Cost="110,00" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="5" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="134" Cost="110,00" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="6" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="144" Cost="110,00" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="7" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="154" Cost="110,00" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="8" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="164" Cost="110,00" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="9" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="174" Cost="110,00" />
+	<Entry Period="6" OrderNumber="13" BatchNumber="10" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="184" Cost="110,00" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="1" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="574" Cost="135,00" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="2" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="104" Cost="135,00" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="3" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="124" Cost="144,50" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="4" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="124" Cost="144,50" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="5" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="104" Cost="110,00" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="6" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="114" Cost="110,00" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="7" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="124" Cost="110,00" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="8" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="134" Cost="110,00" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="9" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="144" Cost="110,00" />
+	<Entry Period="6" OrderNumber="32" BatchNumber="10" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="154" Cost="110,00" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="1" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="554" Cost="135,00" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="2" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="84" Cost="105,00" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="3" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="124" Cost="135,00" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="4" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="95" Cost="144,50" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="5" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="80" Cost="135,50" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="6" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="60" Cost="110,00" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="7" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="70" Cost="110,00" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="8" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="80" Cost="110,00" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="9" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="90" Cost="110,00" />
+	<Entry Period="6" OrderNumber="44" BatchNumber="10" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="100" Cost="110,00" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="1" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="530" Cost="141,00" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="2" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="60" Cost="105,00" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="3" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="70" Cost="105,00" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="4" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="80" Cost="105,00" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="5" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="80" Cost="127,50" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="6" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="80" Cost="132,50" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="7" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="80" Cost="135,50" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="8" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="60" Cost="110,00" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="9" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="70" Cost="110,00" />
+	<Entry Period="6" OrderNumber="55" BatchNumber="10" Item="Pedal Complete - CWM - 26" Quantity="10" CycleTime="80" Cost="110,00" />
+	<Entry Period="6" OrderNumber="15" BatchNumber="1" Item="Frontwheel Mounted - M - 29" Quantity="10" CycleTime="80" Cost="764,02" />
+	<Entry Period="6" OrderNumber="15" BatchNumber="2" Item="Frontwheel Mounted - M - 29" Quantity="10" CycleTime="80" Cost="732,98" />
+	<Entry Period="6" OrderNumber="15" BatchNumber="3" Item="Frontwheel Mounted - M - 29" Quantity="10" CycleTime="60" Cost="722,98" />
+	<Entry Period="6" OrderNumber="15" BatchNumber="4" Item="Frontwheel Mounted - M - 29" Quantity="10" CycleTime="60" Cost="722,98" />
+	<Entry Period="6" OrderNumber="18" BatchNumber="1" Item="Frame and Wheels - M - 30" Quantity="10" CycleTime="950" Cost="1.340,27" />
+	<Entry Period="6" OrderNumber="18" BatchNumber="2" Item="Frame and Wheels - M - 30" Quantity="10" CycleTime="50" Cost="1.321,27" />
+	<Entry Period="6" OrderNumber="18" BatchNumber="3" Item="Frame and Wheels - M - 30" Quantity="10" CycleTime="50" Cost="1.321,62" />
+	<Entry Period="6" OrderNumber="18" BatchNumber="4" Item="Frame and Wheels - M - 30" Quantity="10" CycleTime="50" Cost="1.320,24" />
+	<Entry Period="6" OrderNumber="18" BatchNumber="5" Item="Frame and Wheels - M - 30" Quantity="10" CycleTime="50" Cost="1.320,24" />
+	<Entry Period="6" OrderNumber="18" BatchNumber="6" Item="Frame and Wheels - M - 30" Quantity="10" CycleTime="50" Cost="1.318,87" />
+	<Entry Period="6" OrderNumber="21" BatchNumber="1" Item="Bicycle without Pedal - M - 31" Quantity="10" CycleTime="80" Cost="1.490,55" />
+	<Entry Period="6" OrderNumber="21" BatchNumber="2" Item="Bicycle without Pedal - M - 31" Quantity="10" CycleTime="80" Cost="1.489,65" />
+	<Entry Period="6" OrderNumber="21" BatchNumber="3" Item="Bicycle without Pedal - M - 31" Quantity="10" CycleTime="60" Cost="1.479,39" />
+	<Entry Period="6" OrderNumber="21" BatchNumber="4" Item="Bicycle without Pedal - M - 31" Quantity="10" CycleTime="60" Cost="1.506,38" />
+	<Entry Period="6" OrderNumber="21" BatchNumber="5" Item="Bicycle without Pedal - M - 31" Quantity="10" CycleTime="60" Cost="1.506,50" />
+	<Entry Period="6" OrderNumber="21" BatchNumber="6" Item="Bicycle without Pedal - M - 31" Quantity="10" CycleTime="60" Cost="1.506,50" />
+	<Entry Period="6" OrderNumber="21" BatchNumber="7" Item="Bicycle without Pedal - M - 31" Quantity="10" CycleTime="800" Cost="1.480,01" />
+	<Entry Period="6" OrderNumber="21" BatchNumber="8" Item="Bicycle without Pedal - M - 31" Quantity="10" CycleTime="80" Cost="1.512,48" />
+	<Entry Period="4" OrderNumber="34" BatchNumber="1" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="1040" Cost="711,73" />
+	<Entry Period="4" OrderNumber="34" BatchNumber="2" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="686,73" />
+	<Entry Period="4" OrderNumber="34" BatchNumber="3" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="684,23" />
+	<Entry Period="5" OrderNumber="20" BatchNumber="1" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="681,73" />
+	<Entry Period="5" OrderNumber="20" BatchNumber="2" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="681,10" />
+	<Entry Period="5" OrderNumber="20" BatchNumber="3" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="680,63" />
+	<Entry Period="5" OrderNumber="20" BatchNumber="4" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="680,13" />
+	<Entry Period="5" OrderNumber="20" BatchNumber="5" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="679,95" />
+	<Entry Period="5" OrderNumber="20" BatchNumber="6" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="706,95" />
+	<Entry Period="5" OrderNumber="42" BatchNumber="1" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="706,95" />
+	<Entry Period="5" OrderNumber="42" BatchNumber="2" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="706,95" />
+	<Entry Period="5" OrderNumber="42" BatchNumber="3" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="800" Cost="679,95" />
+	<Entry Period="5" OrderNumber="42" BatchNumber="4" Item="Frontwheel Complete - C - 49" Quantity="10" CycleTime="60" Cost="679,95" />
+	<Entry Period="5" OrderNumber="44" BatchNumber="1" Item="Frame and Wheels - C - 50" Quantity="10" CycleTime="80" Cost="1.286,05" />
+	<Entry Period="5" OrderNumber="44" BatchNumber="2" Item="Frame and Wheels - C - 50" Quantity="10" CycleTime="50" Cost="1.256,05" />
+	<Entry Period="5" OrderNumber="44" BatchNumber="3" Item="Frame and Wheels - C - 50" Quantity="10" CycleTime="50" Cost="1.253,55" />
+	<Entry Period="5" OrderNumber="44" BatchNumber="4" Item="Frame and Wheels - C - 50" Quantity="10" CycleTime="960" Cost="1.290,76" />
+	<Entry Period="5" OrderNumber="44" BatchNumber="5" Item="Frame and Wheels - C - 50" Quantity="10" CycleTime="50" Cost="1.272,40" />
+	<Entry Period="5" OrderNumber="44" BatchNumber="6" Item="Frame and Wheels - C - 50" Quantity="10" CycleTime="50" Cost="1.272,40" />
+	<Entry Period="5" OrderNumber="44" BatchNumber="7" Item="Frame and Wheels - C - 50" Quantity="10" CycleTime="50" Cost="1.272,40" />
+	<Entry Period="5" OrderNumber="44" BatchNumber="8" Item="Frame and Wheels - C - 50" Quantity="10" CycleTime="50" Cost="1.272,40" />
+	<Entry Period="6" OrderNumber="16" BatchNumber="1" Item="Frame and Wheels - C - 50" Quantity="10" CycleTime="50" Cost="1.272,40" />
+	<Entry Period="6" OrderNumber="16" BatchNumber="2" Item="Frame and Wheels - C - 50" Quantity="5" CycleTime="25" Cost="636,20" />
+	<Entry Period="5" OrderNumber="46" BatchNumber="1" Item="Bicycle without Pedal - C - 51" Quantity="10" CycleTime="70" Cost="1.444,75" />
+	<Entry Period="6" OrderNumber="19" BatchNumber="1" Item="Bicycle without Pedal - C - 51" Quantity="10" CycleTime="50" Cost="1.434,73" />
+	<Entry Period="6" OrderNumber="19" BatchNumber="2" Item="Bicycle without Pedal - C - 51" Quantity="10" CycleTime="50" Cost="1.434,71" />
+	<Entry Period="6" OrderNumber="19" BatchNumber="3" Item="Bicycle without Pedal - C - 51" Quantity="10" CycleTime="70" Cost="1.459,16" />
+	<Entry Period="6" OrderNumber="19" BatchNumber="4" Item="Bicycle without Pedal - C - 51" Quantity="10" CycleTime="50" Cost="1.446,54" />
+	<Entry Period="6" OrderNumber="19" BatchNumber="5" Item="Bicycle without Pedal - C - 51" Quantity="10" CycleTime="50" Cost="1.444,99" />
+	<Entry Period="6" OrderNumber="19" BatchNumber="6" Item="Bicycle without Pedal - C - 51" Quantity="5" CycleTime="25" Cost="722,18" />
+	<Entry Period="6" OrderNumber="14" BatchNumber="1" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="80" Cost="712,82" />
+	<Entry Period="6" OrderNumber="14" BatchNumber="2" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="703,98" />
+	<Entry Period="6" OrderNumber="14" BatchNumber="3" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="700,42" />
+	<Entry Period="6" OrderNumber="14" BatchNumber="4" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="719,68" />
+	<Entry Period="6" OrderNumber="14" BatchNumber="5" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="716,53" />
+	<Entry Period="6" OrderNumber="14" BatchNumber="6" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="716,53" />
+	<Entry Period="6" OrderNumber="14" BatchNumber="7" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="758,43" />
+	<Entry Period="6" OrderNumber="14" BatchNumber="8" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="80" Cost="766,90" />
+	<Entry Period="6" OrderNumber="14" BatchNumber="9" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="800" Cost="709,28" />
+	<Entry Period="6" OrderNumber="33" BatchNumber="1" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="80" Cost="719,71" />
+	<Entry Period="6" OrderNumber="33" BatchNumber="2" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="711,36" />
+	<Entry Period="6" OrderNumber="33" BatchNumber="3" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="708,47" />
+	<Entry Period="6" OrderNumber="33" BatchNumber="4" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="733,56" />
+	<Entry Period="6" OrderNumber="33" BatchNumber="5" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="737,16" />
+	<Entry Period="6" OrderNumber="33" BatchNumber="6" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="754,81" />
+	<Entry Period="6" OrderNumber="33" BatchNumber="7" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="745,44" />
+	<Entry Period="6" OrderNumber="33" BatchNumber="8" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="800" Cost="707,80" />
+	<Entry Period="6" OrderNumber="33" BatchNumber="9" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="706,64" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="1" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="702,76" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="2" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="702,85" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="3" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="705,79" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="4" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="714,27" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="5" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="706,44" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="6" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="702,53" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="7" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="727,72" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="8" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="766,60" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="9" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="762,06" />
+	<Entry Period="6" OrderNumber="45" BatchNumber="10" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="698,49" />
+	<Entry Period="6" OrderNumber="56" BatchNumber="1" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="698,49" />
+	<Entry Period="6" OrderNumber="56" BatchNumber="2" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="698,49" />
+	<Entry Period="6" OrderNumber="56" BatchNumber="3" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="698,49" />
+	<Entry Period="6" OrderNumber="56" BatchNumber="4" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="698,49" />
+	<Entry Period="6" OrderNumber="56" BatchNumber="5" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="710,79" />
+	<Entry Period="6" OrderNumber="56" BatchNumber="6" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="700,59" />
+	<Entry Period="6" OrderNumber="56" BatchNumber="7" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="724,11" />
+	<Entry Period="6" OrderNumber="56" BatchNumber="8" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="743,71" />
+	<Entry Period="6" OrderNumber="56" BatchNumber="9" Item="Frontwheel Complete - W - 54" Quantity="10" CycleTime="60" Cost="743,71" />
+	<Entry Period="6" OrderNumber="17" BatchNumber="1" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="80" Cost="1.281,72" />
+	<Entry Period="6" OrderNumber="17" BatchNumber="2" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="80" Cost="1.281,72" />
+	<Entry Period="6" OrderNumber="17" BatchNumber="3" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.266,72" />
+	<Entry Period="6" OrderNumber="17" BatchNumber="4" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.266,72" />
+	<Entry Period="6" OrderNumber="17" BatchNumber="5" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.289,22" />
+	<Entry Period="6" OrderNumber="17" BatchNumber="6" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.289,22" />
+	<Entry Period="6" OrderNumber="17" BatchNumber="7" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="80" Cost="1.308,12" />
+	<Entry Period="6" OrderNumber="17" BatchNumber="8" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.294,96" />
+	<Entry Period="6" OrderNumber="17" BatchNumber="9" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.327,32" />
+	<Entry Period="6" OrderNumber="34" BatchNumber="1" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="80" Cost="1.329,90" />
+	<Entry Period="6" OrderNumber="34" BatchNumber="2" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.311,79" />
+	<Entry Period="6" OrderNumber="34" BatchNumber="3" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.310,33" />
+	<Entry Period="6" OrderNumber="34" BatchNumber="4" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.335,19" />
+	<Entry Period="6" OrderNumber="34" BatchNumber="5" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.338,07" />
+	<Entry Period="6" OrderNumber="34" BatchNumber="6" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="930" Cost="1.320,67" />
+	<Entry Period="6" OrderNumber="34" BatchNumber="7" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.318,28" />
+	<Entry Period="6" OrderNumber="34" BatchNumber="8" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.318,28" />
+	<Entry Period="6" OrderNumber="34" BatchNumber="9" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.316,36" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="1" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.313,86" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="2" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.315,69" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="3" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.313,16" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="4" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.310,97" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="5" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.309,80" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="6" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.330,83" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="7" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.333,60" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="8" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="930" Cost="1.324,05" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="9" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.320,21" />
+	<Entry Period="6" OrderNumber="46" BatchNumber="10" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.316,94" />
+	<Entry Period="6" OrderNumber="57" BatchNumber="1" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.315,08" />
+	<Entry Period="6" OrderNumber="57" BatchNumber="2" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.309,23" />
+	<Entry Period="6" OrderNumber="57" BatchNumber="3" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.309,02" />
+	<Entry Period="6" OrderNumber="57" BatchNumber="4" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.302,24" />
+	<Entry Period="6" OrderNumber="57" BatchNumber="5" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.300,78" />
+	<Entry Period="6" OrderNumber="57" BatchNumber="6" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.298,65" />
+	<Entry Period="6" OrderNumber="57" BatchNumber="7" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.320,52" />
+	<Entry Period="6" OrderNumber="57" BatchNumber="8" Item="Frame and Wheels - W - 55" Quantity="10" CycleTime="50" Cost="1.325,31" />
+	<Entry Period="6" OrderNumber="20" BatchNumber="1" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="80" Cost="1.488,16" />
+	<Entry Period="6" OrderNumber="20" BatchNumber="2" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.478,08" />
+	<Entry Period="6" OrderNumber="20" BatchNumber="3" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.478,04" />
+	<Entry Period="6" OrderNumber="20" BatchNumber="4" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="80" Cost="1.476,65" />
+	<Entry Period="6" OrderNumber="20" BatchNumber="5" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.493,65" />
+	<Entry Period="6" OrderNumber="20" BatchNumber="6" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.493,64" />
+	<Entry Period="6" OrderNumber="20" BatchNumber="7" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.493,64" />
+	<Entry Period="6" OrderNumber="20" BatchNumber="8" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.493,64" />
+	<Entry Period="6" OrderNumber="20" BatchNumber="9" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="800" Cost="1.466,57" />
+	<Entry Period="6" OrderNumber="35" BatchNumber="1" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="80" Cost="1.484,25" />
+	<Entry Period="6" OrderNumber="35" BatchNumber="2" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="80" Cost="1.485,22" />
+	<Entry Period="6" OrderNumber="35" BatchNumber="3" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.474,96" />
+	<Entry Period="6" OrderNumber="35" BatchNumber="4" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.482,83" />
+	<Entry Period="6" OrderNumber="35" BatchNumber="5" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.483,92" />
+	<Entry Period="6" OrderNumber="35" BatchNumber="6" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.511,35" />
+	<Entry Period="6" OrderNumber="35" BatchNumber="7" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.518,17" />
+	<Entry Period="6" OrderNumber="35" BatchNumber="8" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.523,98" />
+	<Entry Period="6" OrderNumber="35" BatchNumber="9" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.524,33" />
+	<Entry Period="6" OrderNumber="47" BatchNumber="1" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="800" Cost="1.497,53" />
+	<Entry Period="6" OrderNumber="47" BatchNumber="2" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.497,40" />
+	<Entry Period="6" OrderNumber="47" BatchNumber="3" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.496,19" />
+	<Entry Period="6" OrderNumber="47" BatchNumber="4" Item="Bicycle without Pedal - W - 56" Quantity="10" CycleTime="60" Cost="1.494,95" />
+</ProcessedOrders>
+<CycleTimes>
+	<Entry Period="4" OrderNumber="27" Name="Frontwheel Group - C - 7" Quantity="130" MinimumTime="700" Time="950" Factor="0,74" />
+	<Entry Period="4" OrderNumber="34" Name="Frontwheel Complete - C - 49" Quantity="130" MinimumTime="1160" Time="800" Factor="1,45" />
+	<Entry Period="5" OrderNumber="3" Name="Rearwheel Group - C - 4" Quantity="70" MinimumTime="2950" Time="520" Factor="5,67" />
+	<Entry Period="5" OrderNumber="20" Name="Frontwheel Complete - C - 49" Quantity="60" MinimumTime="360" Time="380" Factor="0,95" />
+	<Entry Period="5" OrderNumber="36" Name="Frontshield - C - 13" Quantity="100" MinimumTime="8052" Time="1115" Factor="7,22" />
+	<Entry Period="5" OrderNumber="37" Name="Frontshield - W - 14" Quantity="60" MinimumTime="24486" Time="735" Factor="33,31" />
+	<Entry Period="5" OrderNumber="40" Name="Frame - W - 19" Quantity="60" MinimumTime="25941" Time="665" Factor="39,01" />
+	<Entry Period="5" OrderNumber="41" Name="Pedal Complete - CWM - 26" Quantity="150" MinimumTime="1414" Time="795" Factor="1,78" />
+	<Entry Period="5" OrderNumber="42" Name="Frontwheel Complete - C - 49" Quantity="60" MinimumTime="Unfinished" Time="380" Factor="N.A." />
+	<Entry Period="5" OrderNumber="44" Name="Frame and Wheels - C - 50" Quantity="80" MinimumTime="1340" Time="430" Factor="3,12" />
+	<Entry Period="5" OrderNumber="46" Name="Bicycle without Pedal - C - 51" Quantity="90" MinimumTime="70" Time="470" Factor="0,15" />
+	<Entry Period="5" OrderNumber="49" Name="Womens Bicycle - W - 2" Quantity="80" MinimumTime="280" Time="580" Factor="0,48" />
+	<Entry Period="5" OrderNumber="52" Name="Pedal Complete - CWM - 26" Quantity="150" MinimumTime="2760" Time="795" Factor="3,47" />
+	<Entry Period="6" OrderNumber="1" Name="Rearwheel Group - W - 5" Quantity="90" MinimumTime="6880" Time="660" Factor="10,42" />
+	<Entry Period="6" OrderNumber="2" Name="Rearwheel Group - M - 6" Quantity="40" MinimumTime="1280" Time="320" Factor="4,00" />
+	<Entry Period="6" OrderNumber="3" Name="Frontwheel Group - W - 8" Quantity="90" MinimumTime="7190" Time="670" Factor="10,73" />
+	<Entry Period="6" OrderNumber="4" Name="Frontwheel Group - M - 9" Quantity="20" MinimumTime="2050" Time="180" Factor="11,39" />
+	<Entry Period="6" OrderNumber="5" Name="Rearshield - W - 11" Quantity="90" MinimumTime="6039" Time="1130" Factor="5,34" />
+	<Entry Period="6" OrderNumber="6" Name="Rearshield - M - 12" Quantity="40" MinimumTime="3964" Time="530" Factor="7,48" />
+	<Entry Period="6" OrderNumber="7" Name="Frontshield - W - 14" Quantity="90" MinimumTime="11964" Time="1130" Factor="10,59" />
+	<Entry Period="6" OrderNumber="8" Name="Frontshield - M - 15" Quantity="20" MinimumTime="2872" Time="290" Factor="9,90" />
+	<Entry Period="6" OrderNumber="9" Name="Steering Wheel Complete - CWM - 16" Quantity="100" MinimumTime="950" Time="515" Factor="1,84" />
+	<Entry Period="6" OrderNumber="10" Name="Saddle Complete - CWM - 17" Quantity="100" MinimumTime="825" Time="315" Factor="2,62" />
+	<Entry Period="6" OrderNumber="11" Name="Frame - W - 19" Quantity="100" MinimumTime="15465" Time="1080" Factor="14,32" />
+	<Entry Period="6" OrderNumber="12" Name="Frame - M - 20" Quantity="20" MinimumTime="1297" Time="270" Factor="4,80" />
+	<Entry Period="6" OrderNumber="13" Name="Pedal Complete - CWM - 26" Quantity="100" MinimumTime="1420" Time="545" Factor="2,61" />
+	<Entry Period="6" OrderNumber="14" Name="Frontwheel Complete - W - 54" Quantity="90" MinimumTime="1320" Time="560" Factor="2,36" />
+	<Entry Period="6" OrderNumber="15" Name="Frontwheel Mounted - M - 29" Quantity="40" MinimumTime="280" Time="260" Factor="1,08" />
+	<Entry Period="6" OrderNumber="16" Name="Frame and Wheels - C - 50" Quantity="15" MinimumTime="75" Time="80" Factor="0,94" />
+	<Entry Period="6" OrderNumber="17" Name="Frame and Wheels - W - 55" Quantity="90" MinimumTime="540" Time="480" Factor="1,13" />
+	<Entry Period="6" OrderNumber="18" Name="Frame and Wheels - M - 30" Quantity="60" MinimumTime="1200" Time="320" Factor="3,75" />
+	<Entry Period="6" OrderNumber="19" Name="Bicycle without Pedal - C - 51" Quantity="55" MinimumTime="295" Time="270" Factor="1,09" />
+	<Entry Period="6" OrderNumber="20" Name="Bicycle without Pedal - W - 56" Quantity="90" MinimumTime="1320" Time="560" Factor="2,36" />
+	<Entry Period="6" OrderNumber="21" Name="Bicycle without Pedal - M - 31" Quantity="80" MinimumTime="1280" Time="500" Factor="2,56" />
+	<Entry Period="6" OrderNumber="22" Name="Children Bicycle - C - 1" Quantity="100" MinimumTime="1110" Time="630" Factor="1,76" />
+	<Entry Period="6" OrderNumber="23" Name="Womens Bicycle - W - 2" Quantity="100" MinimumTime="720" Time="720" Factor="1,00" />
+	<Entry Period="6" OrderNumber="24" Name="Mans Bicycle - M - 3" Quantity="100" MinimumTime="1210" Time="730" Factor="1,66" />
+	<Entry Period="6" OrderNumber="25" Name="Rearwheel Group - W - 5" Quantity="90" MinimumTime="7710" Time="660" Factor="11,68" />
+	<Entry Period="6" OrderNumber="26" Name="Frontwheel Group - W - 8" Quantity="90" MinimumTime="9630" Time="670" Factor="14,37" />
+	<Entry Period="6" OrderNumber="27" Name="Rearshield - W - 11" Quantity="90" MinimumTime="8994" Time="1130" Factor="7,96" />
+	<Entry Period="6" OrderNumber="28" Name="Frontshield - W - 14" Quantity="90" MinimumTime="13749" Time="1130" Factor="12,17" />
+	<Entry Period="6" OrderNumber="29" Name="Steering Wheel Complete - CWM - 16" Quantity="100" MinimumTime="965" Time="515" Factor="1,87" />
+	<Entry Period="6" OrderNumber="30" Name="Saddle Complete - CWM - 17" Quantity="100" MinimumTime="300" Time="315" Factor="0,95" />
+	<Entry Period="6" OrderNumber="31" Name="Frame - W - 19" Quantity="100" MinimumTime="9440" Time="1080" Factor="8,74" />
+	<Entry Period="6" OrderNumber="32" Name="Pedal Complete - CWM - 26" Quantity="100" MinimumTime="1700" Time="545" Factor="3,12" />
+	<Entry Period="6" OrderNumber="33" Name="Frontwheel Complete - W - 54" Quantity="90" MinimumTime="1300" Time="560" Factor="2,32" />
+	<Entry Period="6" OrderNumber="34" Name="Frame and Wheels - W - 55" Quantity="90" MinimumTime="1360" Time="480" Factor="2,83" />
+	<Entry Period="6" OrderNumber="35" Name="Bicycle without Pedal - W - 56" Quantity="90" MinimumTime="580" Time="560" Factor="1,04" />
+	<Entry Period="6" OrderNumber="36" Name="Womens Bicycle - W - 2" Quantity="100" MinimumTime="Unfinished" Time="720" Factor="N.A." />
+	<Entry Period="6" OrderNumber="37" Name="Rearwheel Group - W - 5" Quantity="100" MinimumTime="11470" Time="730" Factor="15,71" />
+	<Entry Period="6" OrderNumber="38" Name="Frontwheel Group - W - 8" Quantity="100" MinimumTime="14020" Time="740" Factor="18,95" />
+	<Entry Period="6" OrderNumber="39" Name="Rearshield - W - 11" Quantity="100" MinimumTime="18300" Time="1250" Factor="14,64" />
+	<Entry Period="6" OrderNumber="40" Name="Frontshield - W - 14" Quantity="100" MinimumTime="17110" Time="1250" Factor="13,69" />
+	<Entry Period="6" OrderNumber="41" Name="Steering Wheel Complete - CWM - 16" Quantity="100" MinimumTime="1925" Time="515" Factor="3,74" />
+	<Entry Period="6" OrderNumber="42" Name="Saddle Complete - CWM - 17" Quantity="100" MinimumTime="795" Time="315" Factor="2,52" />
+	<Entry Period="6" OrderNumber="43" Name="Frame - W - 19" Quantity="100" MinimumTime="7575" Time="1080" Factor="7,01" />
+	<Entry Period="6" OrderNumber="44" Name="Pedal Complete - CWM - 26" Quantity="100" MinimumTime="1337" Time="545" Factor="2,45" />
+	<Entry Period="6" OrderNumber="45" Name="Frontwheel Complete - W - 54" Quantity="100" MinimumTime="600" Time="620" Factor="0,97" />
+	<Entry Period="6" OrderNumber="46" Name="Frame and Wheels - W - 55" Quantity="100" MinimumTime="1380" Time="530" Factor="2,60" />
+	<Entry Period="6" OrderNumber="47" Name="Bicycle without Pedal - W - 56" Quantity="100" MinimumTime="Unfinished" Time="620" Factor="N.A." />
+	<Entry Period="6" OrderNumber="48" Name="Womens Bicycle - W - 2" Quantity="110" MinimumTime="Unfinished" Time="790" Factor="N.A." />
+	<Entry Period="6" OrderNumber="49" Name="Rearwheel Group - W - 5" Quantity="100" MinimumTime="13270" Time="730" Factor="18,18" />
+	<Entry Period="6" OrderNumber="50" Name="Frontwheel Group - W - 8" Quantity="100" MinimumTime="Unfinished" Time="740" Factor="N.A." />
+	<Entry Period="6" OrderNumber="51" Name="Rearshield - W - 11" Quantity="100" MinimumTime="26010" Time="1250" Factor="20,81" />
+	<Entry Period="6" OrderNumber="52" Name="Frontshield - W - 14" Quantity="100" MinimumTime="18460" Time="1250" Factor="14,77" />
+	<Entry Period="6" OrderNumber="53" Name="Steering Wheel Complete - CWM - 16" Quantity="215" MinimumTime="9170" Time="1065" Factor="8,61" />
+	<Entry Period="6" OrderNumber="54" Name="Saddle Complete - CWM - 17" Quantity="215" MinimumTime="1215" Time="645" Factor="1,88" />
+	<Entry Period="6" OrderNumber="55" Name="Pedal Complete - CWM - 26" Quantity="100" MinimumTime="1190" Time="545" Factor="2,18" />
+	<Entry Period="6" OrderNumber="56" Name="Frontwheel Complete - W - 54" Quantity="100" MinimumTime="Unfinished" Time="620" Factor="N.A." />
+	<Entry Period="6" OrderNumber="57" Name="Frame and Wheels - W - 55" Quantity="100" MinimumTime="Unfinished" Time="530" Factor="N.A." />
+	<Entry Period="6" OrderNumber="58" Name="Bicycle without Pedal - W - 56" Quantity="100" MinimumTime="Unfinished" Time="620" Factor="N.A." />
+</CycleTimes>
+<DailySales>
+	<Entry name="Children Bicycle - C - 1" CurrentPeriodSaleQuantity="150" SaleQuantity="150" OpenQuantity="0" ItemsSold="150" ProductionCost="178,47" SalesReliability="100,00%" />
+	<Entry name="Womens Bicycle - W - 2" CurrentPeriodSaleQuantity="250" SaleQuantity="250" OpenQuantity="0" ItemsSold="250" ProductionCost="185,07" SalesReliability="100,00%" />
+	<Entry name="Mans Bicycle - M - 3" CurrentPeriodSaleQuantity="100" SaleQuantity="100" OpenQuantity="0" ItemsSold="100" ProductionCost="185,58" SalesReliability="100,00%" />
+</DailySales>
+<DirectSales>
+	<Entry name="Children Bicycle - C - 1" Quantity="0" OpenQuantity="0" ItemsSold="0" Price="0,00" Income="0,00" Penalty="0,00" ProductionCost="0,00" Profit="0,00" ProfitPerUnit="0,00" SalesReliability="0,00%" />
+	<Entry name="Womens Bicycle - W - 2" Quantity="0" OpenQuantity="0" ItemsSold="0" Price="0,00" Income="0,00" Penalty="0,00" ProductionCost="0,00" Profit="0,00" ProfitPerUnit="0,00" SalesReliability="0,00%" />
+	<Entry name="Mans Bicycle - M - 3" Quantity="0" OpenQuantity="0" ItemsSold="0" Price="0,00" Income="0,00" Penalty="0,00" ProductionCost="0,00" Profit="0,00" ProfitPerUnit="0,00" SalesReliability="0,00%" />
+</DirectSales>
+<KeyData>
+	<NormalCapacity Current="33.600" Average="33.600" Sum="N.A." />
+	<PossibleCapacity Current="51.800" Average="39.383" Sum="N.A." />
+	<CapacityRatio Current="154,17%" Average="117,21%" Sum="N.A." />
+	<ProductionTime Current="41.480" Average="29.716" Sum="178.297" />
+	<ManufacturingCost Current="31.595,75" Average="22.095,12" Sum="132.570,70" />
+	<IdleTime Current="10.320" Average="9.667" Sum="58.003" />
+	<IdleTimeCost Current="6.024,70" Average="5.328,60" Sum="31.971,62" />
+	<Effectivity Current="80,08%" Average="75,45%" Sum="N.A." />
+	<StockValue Current="220.837,28" Average="257.001,13" Sum="N.A." />
+	<AverageStockValue Current="233.016,27" Average="259.485,49" Sum="N.A." />
+	<StorageCost Current="1.398,10" Average="4.890,25" Sum="29.341,48" />
+	<OrderCost Current="16.106,00" Average="31.801,25" Sum="190.807,50" />
+	<SalesTargetCurrentPeriod Current="500" Average="383" Sum="2300" />
+	<SalesTarget Current="500" Average="383" Sum="2300" />
+	<ActualSales Current="500" Average="383" Sum="2300" />
+	<AverageSalesPrice Current="200,00" Average="200,00" Sum="N.A." />
+	<Income Current="100.000,00" Average="76.666,67" Sum="460.000,00" />
+	<Profit Current="8.479,15" Average="3.292,19" Sum="19.753,16" />
+	<ProfitPerUnit Current="16,96" Average="7,57" Sum="N.A." />
+	<SalesTarget Current="0" Average="0" Sum="0" />
+	<ActualSales Current="0" Average="0" Sum="0" />
+	<Penalty Current="0,00" Average="N.A." Sum="0,00" />
+	<AverageSalesPrice Current="0,00" Average="N.A." Sum="N.A." />
+	<Income Current="0,00" Average="0,00" Sum="0,00" />
+	<Profit Current="0,00" Average="0,00" Sum="0,00" />
+	<ProfitPerUnit Current="0,00" Average="0,00" Sum="N.A." />
+	<SalesTarget Current="500" Average="383" Sum="2300" />
+	<ActualSales Current="500" Average="383" Sum="2300" />
+	<SalesReliability Current="100,00%" Average="100,00%" Sum="N.A." />
+	<Summary Current="8.479,15" Average="3.292,19" Sum="19.753,16" />
+</KeyData>
+</PeriodResults>

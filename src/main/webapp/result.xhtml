@@ -1,0 +1,42 @@
+<ui:decorate template="/layout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<ui:define name="menu">
+		<p:breadCrumb>
+			<p:menuitem value="#{msg['start.produktionsprogramm']}"
+				url="produktionsprogramm.xhtml" />
+			<p:menuitem value="#{msg['start.produktionsprogramm']}"
+				url="produktionsprogramm.xhtml" />
+			<p:menuitem value="#{msg['start.eigenfertigung']} P1"
+				url="prodverwaltungP1.xhtml" />
+			<p:menuitem
+				value="#{msg['start.eigenfertigung']} P1 #{msg['start.uebersicht']}"
+				url="prodverwaltungP1E.xhtml" />
+			<p:menuitem value="#{msg['start.eigenfertigung']} P2"
+				url="prodverwaltungP2.xhtml" />
+			<p:menuitem
+				value="#{msg['start.eigenfertigung']} P2 #{msg['start.uebersicht']}"
+				url="prodverwaltungP2E.xhtml" />
+			<p:menuitem value="#{msg['start.eigenfertigung']} P3"
+				url="prodverwaltungP3.xhtml" />
+			<p:menuitem
+				value="#{msg['start.eigenfertigung']} P3 #{msg['start.uebersicht']}"
+				url="prodverwaltungP3E.xhtml" />
+			<p:menuitem value="#{msg['menu.prodverwaltungSortierung']}"
+				url="prodverwaltung_sortieren.xhtml" />
+			<p:menuitem value="#{msg['menu.arbeitsplatz']}"
+				url="arbeitsplatz.xhtml" />
+
+		</p:breadCrumb>
+		<h:head>
+		<h:outputText>
+		value="#{result.result}" />
+		</h:outputText>
+		</h:head>
+
+		</ui:define>
+		</ui:decorate>
+	

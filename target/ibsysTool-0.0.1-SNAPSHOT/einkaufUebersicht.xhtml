@@ -1,0 +1,97 @@
+<ui:decorate template="/layout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<ui:define name="head">
+		<style>
+#content2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+}
+
+.red {
+	color: white;
+	background-color: red;
+	width: 100%;
+	background-color: red;
+}
+
+.green {
+	color: white;
+	background-color: green;
+	width: 100%;
+}
+</style>
+	</ui:define>
+
+	<ui:define name="menu">
+	#{schauNach.ueberpruefen()}
+		<p:breadCrumb>
+			<p:menuitem value="#{msg['start.produktionsprogramm']}"
+				url="produktionsprogramm.xhtml" />
+			<p:menuitem value="#{msg['start.produktionsprogramm']}"
+				url="produktionsprogramm.xhtml" />
+			<p:menuitem value="#{msg['start.eigenfertigung']} P1" url="prodverwaltungP1.xhtml" />
+			<p:menuitem
+				value="#{msg['start.eigenfertigung']} P1 #{msg['start.uebersicht']}"
+				url="prodverwaltungP1E.xhtml" />
+			<p:menuitem value="#{msg['start.eigenfertigung']} P2" url="prodverwaltungP2.xhtml" />
+			<p:menuitem
+				value="#{msg['start.eigenfertigung']} P2 #{msg['start.uebersicht']}"
+				url="prodverwaltungP2E.xhtml" />
+			<p:menuitem value="#{msg['start.eigenfertigung']} P3" url="prodverwaltungP3.xhtml" />
+			<p:menuitem
+				value="#{msg['start.eigenfertigung']} P3 #{msg['start.uebersicht']}"
+				url="prodverwaltungP3E.xhtml" />
+			<p:menuitem value="#{msg['menu.prodverwaltungSortierung']}" url="prodverwaltung_sortieren.xhtml" />
+			<p:menuitem value="#{msg['menu.arbeitsplatz']}" url="arbeitsplatz.xhtml" />
+			<p:menuitem value="#{msg['menu.einkaufUebersicht']}" url="einkaufUebersicht.xhtml" />
+		</p:breadCrumb>
+	</ui:define>
+	<ui:define name="content">
+				<div align="center">
+			<H1>#{msg['menu.einkaufUebersicht']}</H1>
+		</div>
+		<p:commandButton style="margin-top:20px; margin-bottom:20px;"
+			action="#{dispositionBean.weiter()}" value="#{msg['button.continue']}">
+		</p:commandButton>
+		<h:form>
+			<p:dataTable id="result" value="#{ergebnisBean.kaufErgebnisse}"
+				var="ergebnis">
+
+				<p:column>
+					<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
+					#{ergebnis.teil != null ? ergebnis.teil.nummer : 'keine Nummer vorhanden'}					
+				</p:column>
+
+				<p:column>
+					<f:facet name="header">#{msg['teil.bezeichnung']}</f:facet>
+					#{ergebnis.teil != null ? ergebnis.teil.bezeichnung : 'keine Bezeichnung vorhanden'}
+				</p:column>
+
+
+				<p:column>
+					<f:facet name="header">#{msg['teil.lagermenge']}</f:facet>
+					#{ergebnis.lieferDaten.lagerMenge}
+				</p:column>
+
+				<p:column>
+					<f:facet name="header">#{msg['teil.bestelltyp']}</f:facet>
+					<h:outputText value="#{ergebnis.bestellTyp}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">#{msg['teil.bestellmenge']}</f:facet>
+					<h:outputText value="#{ergebnis.bestellmenge}" />
+				</p:column>
+			</p:dataTable>
+			<p:commandButton style="margin-top:20px; margin-bottom:20px;"
+				action="#{dispositionBean.weiter()}"
+				value="#{msg['button.continue']}">
+			</p:commandButton>
+		</h:form>
+
+	</ui:define>
+</ui:decorate>
