@@ -56,7 +56,7 @@
 			<H1>#{msg['menu.einkaufUebersicht']}</H1>
 		</div>
 		<p:commandButton style="margin-top:20px; margin-bottom:20px;"
-			action="#{dispositionBean.weiter()}" value="#{msg['button.continue']}">
+			action="#{dispositionBean.goToOutputXML}" value="#{msg['button.continue']}">
 		</p:commandButton>
 		<h:form>
 			<p:dataTable id="result" value="#{ergebnisBean.kaufErgebnisse}"
@@ -88,7 +88,7 @@
 				</p:column>
 			</p:dataTable>
 			<p:commandButton style="margin-top:20px; margin-bottom:20px;"
-				action="#{dispositionBean.weiter()}"
+				action="#{dispositionBean.goToOutputXML}"
 				value="#{msg['button.continue']}">
 			</p:commandButton>
 		</h:form>

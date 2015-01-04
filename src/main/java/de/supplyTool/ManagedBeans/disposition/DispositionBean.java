@@ -58,11 +58,22 @@ public class DispositionBean implements Serializable {
 
     public String weiter() {
         if (resultBerechnet) {
-            final ErgebnisBean managedBean = ContextHelper
-                    .getManagedBean(ErgebnisBean.class);
+            final ErgebnisBean managedBean = ContextHelper.getManagedBean(ErgebnisBean.class);
             managedBean.setKaufErgebnisse(result);
             System.out.println("ergebnisse gesetzt");
             return "einkaufUebersicht.xhtml?faces-redirect=true";
+        } else {
+            return null;
+        }
+    }
+    
+    public String goToOutputXML() {
+    	
+        if (resultBerechnet) {
+            
+            
+            System.out.println("Gehe zu XML Output Seite");
+            return "outXml.xhtml?faces-redirect=true";
         } else {
             return null;
         }
