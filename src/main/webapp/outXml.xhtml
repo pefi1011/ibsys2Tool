@@ -7,6 +7,33 @@
 	<ui:define name="head">
 		<!-- Alles was in das <head> tag rein muss. css oder so -->
 	</ui:define>
+	
+	<ui:define name="menu">
+	#{schauNach.ueberpruefen()}
+		<p:breadCrumb>
+			<p:menuitem value="#{msg['start.produktionsprogramm']}"
+				url="produktionsprogramm.xhtml" />
+			<p:menuitem value="#{msg['start.produktionsprogramm']}"
+				url="produktionsprogramm.xhtml" />
+			<p:menuitem value="#{msg['start.eigenfertigung']} P1" url="prodverwaltungP1.xhtml" />
+			<p:menuitem
+				value="#{msg['start.eigenfertigung']} P1 #{msg['start.uebersicht']}"
+				url="prodverwaltungP1E.xhtml" />
+			<p:menuitem value="#{msg['start.eigenfertigung']} P2" url="prodverwaltungP2.xhtml" />
+			<p:menuitem
+				value="#{msg['start.eigenfertigung']} P2 #{msg['start.uebersicht']}"
+				url="prodverwaltungP2E.xhtml" />
+			<p:menuitem value="#{msg['start.eigenfertigung']} P3" url="prodverwaltungP3.xhtml" />
+			<p:menuitem
+				value="#{msg['start.eigenfertigung']} P3 #{msg['start.uebersicht']}"
+				url="prodverwaltungP3E.xhtml" />
+			<p:menuitem value="#{msg['menu.prodverwaltungSortierung']}" url="prodverwaltung_sortieren.xhtml" />
+			<p:menuitem value="#{msg['menu.arbeitsplatz']}" url="arbeitsplatz.xhtml" />
+			<p:menuitem value="#{msg['menu.einkaufUebersicht']}" url="einkaufUebersicht.xhtml" />
+			<p:menuitem value="#{msg['menu.xmlDownload']}" url="outXml.xhtml" />
+		</p:breadCrumb>
+	</ui:define>
+	
 	<ui:define name="content">
 
 
