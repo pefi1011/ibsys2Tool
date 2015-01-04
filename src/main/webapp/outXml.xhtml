@@ -44,6 +44,9 @@
 				ajax="false" action="#{result.doLogic()}" />
 			<h:message for="exportXML" />
 			<h:messages />
+			
+			<h:commandButton value="Download" action="#{result.downloadFile}" />
+			
 		</h:form>
 	</ui:define>
 </ui:decorate>
