@@ -1,0 +1,24 @@
+<ui:decorate template="/layout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<ui:define name="head">
+		<!-- Alles was in das <head> tag rein muss. css oder so -->
+	</ui:define>
+	<ui:define name="content">
+
+
+		<h3>XML Export</h3>
+		<h:form enctype="multipart/form-data">
+		<!-- value="#{msg['button.upload']}" -->
+			<p:commandButton id="exportXML" value="Export XML" 
+				ajax="false" action="#{result.doLogic()}" />
+			<h:message for="exportXML" />
+			<h:messages />
+		</h:form>
+	</ui:define>
+</ui:decorate>
+
+
