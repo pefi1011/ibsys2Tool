@@ -59,8 +59,7 @@ public class ProdVerwaltungBean implements Serializable {
     public void upload() {
         try {
         	System.out.println("BEGINN upload: XML Datei hochladen");
-        	System.out.println("PRETTY WOMAN");
-
+        	
             delete();
             
             System.out.println("XML einlesen");
