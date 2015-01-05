@@ -41,11 +41,9 @@
 		<h:form enctype="multipart/form-data">
 		<!-- value="#{msg['button.upload']}" -->
 			<p:commandButton id="exportXML" value="Export XML" 
-				ajax="false" action="#{result.doLogic()}" />
+				ajax="false" action="#{result.downloadFile}" />
 			<h:message for="exportXML" />
 			<h:messages />
-			
-			<h:commandButton value="Download" action="#{result.downloadFile}" />
 			
 		</h:form>
 	</ui:define>

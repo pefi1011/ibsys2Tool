@@ -1,7 +1,9 @@
 package de.supplyTool.ManagedBeans;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -26,7 +28,108 @@ public class Result {
 
     private String result;
 
-    public void doLogic() {
+    
+    public String createXmlFileContent() {
+
+        StringBuilder sb = new StringBuilder();
+
+        Integer eins = ContextHelper.getManagedBean(Produktionsprogramm.class).getP1_1();
+        Integer zwei = ContextHelper.getManagedBean(Produktionsprogramm.class).getP2_1();
+        Integer drei = ContextHelper.getManagedBean(Produktionsprogramm.class).getP3_1();
+
+        sb.append("<input> \n");
+        sb.append("<qualitycontrol type=\"no\" losequantity=\"0\" delay=\"0\" /> \n");
+        
+        sb.append("<sellwish> \n");
+        
+        	sb.append("<item article=\"1\" quantity=\"" + eins + "\" />  \n");
+        	sb.append("<item article=\"2\" quantity=\"" + zwei + "\" />  \n");
+        	sb.append("<item article=\"3\" quantity=\"" + drei + "\" />  \n");
+        	
+    	sb.append("</sellwish> \n");
+    	
+    	
+    	sb.append("<selldirect> \n");
+    		sb.append("<item article=\"1\" quantity=\"0\" price=\"0.0\" penalty=\"0.0\" /> \n");
+    		sb.append("<item article=\"2\" quantity=\"0\" price=\"0.0\" penalty=\"0.0\" /> \n");
+    		sb.append("<item article=\"3\" quantity=\"0\" price=\"0.0\" penalty=\"0.0\" /> \n");
+		sb.append("</selldirect> \n");
+        	
+		
+		
+		
+		sb.append("<orderlist> \n");
+
+        Dao dao = new Dao();
+        ArrayList<APTeil> dispoHelpErgebnissGut = dao.getDispoHelpErgebnissGut();
+
+        ArrayList<KaufTeilDispositionErgebnis> kaufErgebnisse = ContextHelper.getManagedBean(ErgebnisBean.class).getKaufErgebnisse();
+
+        for (int n = 0; n < kaufErgebnisse.size(); n++) {
+            if (kaufErgebnisse.get(n).getBestellmenge() > 0) {
+                sb.append("<order article= \"");
+                sb.append(String.valueOf(kaufErgebnisse.get(n).getTeil().getNummer()) + "\" ");
+                sb.append("quantity=\""
+                        + kaufErgebnisse.get(n).getBestellmenge()
+                        + "\" ");
+
+                String typ = "";
+                if (kaufErgebnisse.get(n).getBestellTyp().equals(BestellTyp.F))
+
+                {
+                    typ = "modus = \"4\" /> \n";
+                } else {
+                	typ = "modus = \"5\" /> \n";
+                }
+                sb.append(typ);
+            }
+       }
+
+    	sb.append("</orderlist> \n");
+
+
+        sb.append("<productionlist> \n");
+        
+
+        for (int n1 = 0; n1 < dispoHelpErgebnissGut.size(); n1++) {
+            sb.append("<production article=\"" );
+            sb.append(dispoHelpErgebnissGut.get(n1).getNummer()
+                    + "\" quantity=\"" );
+            sb.append(dispoHelpErgebnissGut.get(n1).getAnzahl()
+                    + "\" />  \n");
+        }
+
+        sb.append("</productionlist> \n");
+        
+        
+        
+        sb.append("<workingtimelist> \n");
+
+        ArrayList<APArbeitsplatz> arbeitsplaetze = ContextHelper.getManagedBean(ErgebnisBean.class).getArbeitsplaetze();
+
+        for (int n1 = 0; n1 < arbeitsplaetze.size(); n1++) {
+            sb.append("<workingtime station=\"");
+            sb.append(arbeitsplaetze.get(n1).getNummer()
+                    + "\" shift=\"");
+            sb.append(arbeitsplaetze.get(n1).getSchicht()
+                    + "\" overtime=\"");
+            sb.append(arbeitsplaetze.get(n1).getUeberstundenGut() / 5
+                    + "\" /> \n");
+
+        }
+        sb.append("</workingtimelist> \n");
+        
+        sb.append("</input>");
+        
+        result = sb.toString();
+        System.out.println("result \n" + result);
+        
+        return result;
+
+    }
+
+    
+    public String doLogic() {
 
         StringBuilder sb = new StringBuilder();
 
@@ -135,26 +238,44 @@ public class Result {
 
         result = sb.toString();
         System.out.println("result " + result);
+        
+        return result;
 
     }
     
     public void downloadFile() {
     	
-    	final String path = ProdVerwaltungBean.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-
-        // Klassenspezifische sachen abschneiden
-        String destinationDir = path.replace("ManagedBeans/prodVerwaltung/ProdVerwaltungBean.class", "");
-        
-        destinationDir = destinationDir + "xmlFiles" + "/results.xsd";
-
-        File file = new File(destinationDir);
+    	String fileContent = createXmlFileContent();
+    	
+    	Integer periodNumber = ContextHelper.getManagedBean(ErgebnisBean.class).getXmlResult2().getPeriod() + 1;
+    	
+    	File xmlOutputFile = null;
+    	
+	    try {
+	    	//create a temp file
+			 xmlOutputFile = File.createTempFile("xmlOutput", "xml");
+			
+			//write it
+    	    BufferedWriter bw = new BufferedWriter(new FileWriter(xmlOutputFile));
+    	    bw.write(fileContent);
+    	    bw.close();
+ 
+    	    System.out.println("Done");
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    
         HttpServletResponse response = (HttpServletResponse) FacesContext.getCurrentInstance().getExternalContext().getResponse();  
 
-        response.setHeader("Content-Disposition", "attachment;filename=file.txt");  
-        response.setContentLength((int) file.length());  
+        String downloadFileName = "attachment;filename=PDP_xmlOutput_InputForPeriod_" + periodNumber + ".xml";
+        
+        response.setHeader("Content-Disposition", downloadFileName);  
+        response.setContentLength((int) xmlOutputFile.length());  
         ServletOutputStream out = null;  
         try {  
-            FileInputStream input = new FileInputStream(file);  
+            FileInputStream input = new FileInputStream(xmlOutputFile);  
             byte[] buffer = new byte[1024];  
             out = response.getOutputStream();  
             int i = 0;  
@@ -174,6 +295,7 @@ public class Result {
                 err.printStackTrace();  
             }  
         }  
+    	
     }
 
     public String getResult() {
