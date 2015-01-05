@@ -4,7 +4,8 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:pe="http://primefaces.org/ui/extensions"
-      xmlns:p="http://primefaces.org/ui"  >
+      xmlns:p="http://primefaces.org/ui"  
+      lang="#{localeManager.language}">
 <f:view contentType="text/html" locale="en">
     <pe:head title="PrimeFaces Extensions - ShowCase">
         <f:facet name="first">
@@ -21,23 +22,32 @@
         
                 <pe:layoutPane position="center" size="200">  
         
-                Hier sollen PDP - und HSKA Logo und Fahrreade bild - und sprache auswahl  
-            </pe:layoutPane>
-            
-              <pe:layoutPane position="east" size="200">  
+            		<DIV style="height: 86px; overflow: hidden;">
+						<p:graphicImage library="img" width="20%" height="86px" name="hska_Trans.gif" style="float:left;" />
+						<p:graphicImage library="img" name="Zahnraeder.jpg" width="70%" style="float:right;" />
+					</DIV> 
+        		</pe:layoutPane>
+        		
+        		  <pe:layoutPane position="east" size="200">  
         
-                
-          <!--   SPRACHE AUSWAHLEN -->
-                <p:themeSwitcher id="basic" style="width:165px">
-                    <f:selectItem itemLabel="Choose Theme" itemValue="" />
-                    <f:selectItems value="[afterdark, afternoon, afterwork, aristo, black-tie, blitzer, bluesky, bootstrap,   ui-darkness, ui-lightness]" var="theme" itemLabel="" itemValue=""/>
-              </p:themeSwitcher>
-              
-              
- 
-            </pe:layoutPane>
-            
-            
+            		
+					<!--   SPRACHE AUSWAHLEN -->
+            		<p:themeSwitcher id="basic" style="width:165px">
+				            <f:selectItem itemLabel="Choose Theme" itemValue="" />
+				            <f:selectItems value="[afterdark, afternoon, afterwork, aristo, black-tie, blitzer, bluesky, bootstrap,   ui-darkness, ui-lightness]" var="theme" itemLabel="" itemValue=""/>
+        			</p:themeSwitcher>
+        			
+        			<h:form>
+		    			<h:selectOneMenu value="#{localeManager.language}" onchange="submit()">
+		    				<f:selectItem itemValue="de" itemLabel="Deutsch" />
+		        			<f:selectItem itemValue="en" itemLabel="English" />
+		        			<f:selectItem itemValue="ru" itemLabel="Русский" />
+		    			</h:selectOneMenu>
+					</h:form>
+        			
+        		</pe:layoutPane>
+        		
+        		
         </pe:layoutPane>  
         <pe:layoutPane position="center">  
             <pe:layoutPane position="north" size="50%">  
