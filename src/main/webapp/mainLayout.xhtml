@@ -8,15 +8,23 @@
       lang="#{localeManager.language}">
 <f:view contentType="text/html" locale="en">
     <pe:head title="PrimeFaces Extensions - ShowCase">
+    	
+    	<ui:insert name="head">
+		</ui:insert>
+    
+    
         <f:facet name="first">
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
             <meta http-equiv="pragma" content="no-cache"/>
             <meta http-equiv="cache-control" content="no-cache"/>
             <meta http-equiv="expires" content="0"/>
         </f:facet>
+        
+        <f:view locale="#{localeManager.locale}"></f:view>
     </pe:head>
     <h:body>
-        <h:form>  
+  
+  <h:form>  
     <pe:layout resizerTip="Resize Me" togglerTipClosed="Open Me" togglerTipOpen="Close Me">  
         <pe:layoutPane position="north" size="80" closable="false">  
         
@@ -49,20 +57,48 @@
         		
         		
         </pe:layoutPane>  
+        
+        
         <pe:layoutPane position="center">  
             <pe:layoutPane position="north" size="50%">  
+                
                 <f:facet name="header">  
-                    <h:outputText position="center" value="Prognose"/>  
+                    <h:outputText position="center" value="Prognose"/> 
+                    <div id="content">
+                    
+							<!--  HIER KOMMT DIE PROGNOSSE TABELLE -->
+								<ui:insert name="prognoseTabelle">
+					
+								</ui:insert>
+							</div>
+                     
                 </f:facet>  
             </pe:layoutPane>  
+            
+            
+            
             <pe:layoutPane position="center" minHeight="60">  
                 <f:facet name="header">  
                     <h:outputText value="Center-Center"/>  
+                    
+                    	<!--  HIER KOMMT DER EIGENTLICHER INHALT -->
+                    	<div id="content">
+								<ui:insert name="content">
+					
+								</ui:insert>
+							</div>
+                    
                 </f:facet>  
             </pe:layoutPane>  
         </pe:layoutPane>  
+       
+       
         <pe:layoutPane position="west" size="200">  
         
+        	<!--  HIER KOMMT DIE NAVIGATION -->
+        	<ui:insert name="menu">
+
+				</ui:insert>
         </pe:layoutPane>  
     </pe:layout>  
 </h:form>  
