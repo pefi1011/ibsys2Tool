@@ -3,7 +3,8 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:pe="http://primefaces.org/ui/extensions">
+      xmlns:pe="http://primefaces.org/ui/extensions"
+      xmlns:p="http://primefaces.org/ui"  >
 <f:view contentType="text/html" locale="en">
     <pe:head title="PrimeFaces Extensions - ShowCase">
         <f:facet name="first">
@@ -17,12 +18,31 @@
         <h:form>  
     <pe:layout resizerTip="Resize Me" togglerTipClosed="Open Me" togglerTipOpen="Close Me">  
         <pe:layoutPane position="north" size="80" closable="false">  
-            North  
+        
+                <pe:layoutPane position="center" size="200">  
+        
+                Hier sollen PDP - und HSKA Logo und Fahrreade bild - und sprache auswahl  
+            </pe:layoutPane>
+            
+              <pe:layoutPane position="east" size="200">  
+        
+                
+          <!--   SPRACHE AUSWAHLEN -->
+                <p:themeSwitcher id="basic" style="width:165px">
+                    <f:selectItem itemLabel="Choose Theme" itemValue="" />
+                    <f:selectItems value="[afterdark, afternoon, afterwork, aristo, black-tie, blitzer, bluesky, bootstrap,   ui-darkness, ui-lightness]" var="theme" itemLabel="" itemValue=""/>
+              </p:themeSwitcher>
+              
+              
+ 
+            </pe:layoutPane>
+            
+            
         </pe:layoutPane>  
         <pe:layoutPane position="center">  
             <pe:layoutPane position="north" size="50%">  
                 <f:facet name="header">  
-                    <h:outputText value="Center-North"/>  
+                    <h:outputText position="center" value="Prognose"/>  
                 </f:facet>  
             </pe:layoutPane>  
             <pe:layoutPane position="center" minHeight="60">  
@@ -32,18 +52,7 @@
             </pe:layoutPane>  
         </pe:layoutPane>  
         <pe:layoutPane position="west" size="200">  
-            <pe:layoutPane position="north" size="33%">  
-                West-North  
-            </pe:layoutPane>  
-            <pe:layoutPane position="center" minHeight="60">  
-                West-Center  
-            </pe:layoutPane>  
-            <pe:layoutPane position="south" size="33%" initClosed="true">  
-                West-South  
-            </pe:layoutPane>  
-        </pe:layoutPane>  
-        <pe:layoutPane position="south" size="80">  
-            South  
+        
         </pe:layoutPane>  
     </pe:layout>  
 </h:form>  
