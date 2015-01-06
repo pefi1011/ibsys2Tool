@@ -40,9 +40,11 @@ public class KaufTeilDispositionErgebnis implements Serializable,
     private int                   maxLieferdauerTage       = -1;
 
     private BestellTyp            bestellTyp               = BestellTyp.N;
-    private double                materialGehtAusAmTag     = -999.0;
-    private int                   materialGehtAusInPeriode = -999;
+    private double                materialGehtAusAmTag     = -999.0; //19.9;
+    private int                   materialGehtAusInPeriode = -999;// 4;
     private int                   bestellPeriode;
+    
+    private boolean 			  gehtNIEAus			   = false;
 
     DecimalFormat                 df                       = new DecimalFormat(
                                                                    "#.##");
@@ -81,8 +83,12 @@ public class KaufTeilDispositionErgebnis implements Serializable,
         /**
          * Reihenfolge wichtig
          */
+        System.out.println();
+        System.out.println("RUFE MaterialGehtAusBerechnen();");
         MaterialGehtAusBerechnen();
         // bestellPeriodeBerechnen();
+        
+        System.out.println("RUFE bestellVorschlagBerechnen();");
         bestellVorschlagBerechnen();
     }
 
@@ -142,51 +148,67 @@ public class KaufTeilDispositionErgebnis implements Serializable,
         System.out.print("materialGehtAusInPeriode: "+ materialGehtAusInPeriode);
         System.out.print("\n");
         
-        
-        double restBedarfVomTag = (bruttoBedarfe[materialGehtAusInPeriode - 1] / 5) * nachkommastellenMaterialGehtAusAmTag;
-        restBedarfVomTag = Math.ceil(restBedarfVomTag);
-        bestellmenge += restBedarfVomTag;
-
-        if ((materialGehtAusAmTag / dauerAVG) < 2d) {
-            int aktuellerTag = (int) Math.ceil(materialGehtAusAmTag);
-            final double aktuellePeriode = materialGehtAusInPeriode;
-            for (int i = 1; i <= dauerAVG; i++) {
-                aktuellerTag += 1;
-
-                if ((aktuellerTag / 5) <= 1) {
-                    bestellmenge += bruttoBedarfe[0] / 5;
-                } else if ((aktuellerTag / 5) <= 2) {
-                    bestellmenge += bruttoBedarfe[1] / 5;
-                } else if ((aktuellerTag / 5) <= 3) {
-                    bestellmenge += bruttoBedarfe[2] / 5;
-                } else if ((aktuellerTag / 5) <= 4) {
-                    bestellmenge += bruttoBedarfe[3] / 5;
-                } else if ((aktuellerTag / 5) > 4) {
-                    bestellmenge += (bruttoBedarfe[0] + bruttoBedarfe[1]
-                            + bruttoBedarfe[2] + bruttoBedarfe[3]) / 20;
-                }
-            }
-
-            /**
-             * diskontmenge berechnen
-             */
-            final int diskontMenge = lieferDaten.getDiskontMenge();
-            final double wert = 1d - (bestellmenge / Double
-                    .valueOf(diskontMenge));
-
-            final double sicherheitsbestandProzent = (Double
-                    .valueOf(sicherheitsbestand) / 100d) + 1d;
-            bestellmenge *= sicherheitsbestandProzent;
-
-            if (bestellmenge < diskontMenge
-                    && wert <= (diskontmengeAbweichung / 100d)) {
-                bestellmenge = diskontMenge;
-                System.out.println("diskontmenge genommen");
-            }
-
-        } else {
-            bestellmenge = -1;
-        }
+        	
+    	// Material muss gleich bestellet werden
+    	if (materialGehtAusInPeriode == 0){
+    		
+    		// TODO Bestellen vom Market
+    		bestellTyp = BestellTyp.F;
+    		bestellmenge = lieferDaten.getDiskontMenge();
+    		System.out.println("GEHT GLEICH AUS!!!!");
+    		System.out.println("diskontmenge genommen");
+    		
+    	} else {
+    		
+    		double restBedarfVomTag = (bruttoBedarfe[materialGehtAusInPeriode - 1] / 5) * nachkommastellenMaterialGehtAusAmTag;
+        	restBedarfVomTag = Math.ceil(restBedarfVomTag);
+        	bestellmenge += restBedarfVomTag;
+        	
+        	if ((materialGehtAusAmTag / dauerAVG) < 2d) {
+        		int aktuellerTag = (int) Math.ceil(materialGehtAusAmTag);
+        		final double aktuellePeriode = materialGehtAusInPeriode;
+        		for (int i = 1; i <= dauerAVG; i++) {
+        			aktuellerTag += 1;
+        			
+        			if ((aktuellerTag / 5) <= 1) {
+        				bestellmenge += bruttoBedarfe[0] / 5;
+        			} else if ((aktuellerTag / 5) <= 2) {
+        				bestellmenge += bruttoBedarfe[1] / 5;
+        			} else if ((aktuellerTag / 5) <= 3) {
+        				bestellmenge += bruttoBedarfe[2] / 5;
+        			} else if ((aktuellerTag / 5) <= 4) {
+        				bestellmenge += bruttoBedarfe[3] / 5;
+        			} else if ((aktuellerTag / 5) > 4) {
+        				bestellmenge += (bruttoBedarfe[0] + bruttoBedarfe[1]
+        						+ bruttoBedarfe[2] + bruttoBedarfe[3]) / 20;
+        			}
+        		}
+        		
+        		/**
+        		 * diskontmenge berechnen
+        		 */
+        		final int diskontMenge = lieferDaten.getDiskontMenge();
+        		final double wert = 1d - (bestellmenge / Double
+        				.valueOf(diskontMenge));
+        		
+        		final double sicherheitsbestandProzent = (Double
+        				.valueOf(sicherheitsbestand) / 100d) + 1d;
+        		bestellmenge *= sicherheitsbestandProzent;
+        		
+        		if (bestellmenge < diskontMenge
+        				&& wert <= (diskontmengeAbweichung / 100d)) {
+        			bestellmenge = diskontMenge;
+        			System.out.println("diskontmenge genommen");
+        		}
+        		
+        	} else {
+        		
+        		// Man braucht nicht bestellen
+        		bestellmenge = -1;
+        	}
+        	
+    	}
+    	
     }
 
     public BestellTyp getBestellTyp() {
@@ -215,6 +237,8 @@ public class KaufTeilDispositionErgebnis implements Serializable,
         bruttoeBedarfe[1] = bruttoBedarfPeriode2;
         bruttoeBedarfe[2] = bruttoBedarfPeriode3;
         bruttoeBedarfe[3] = bruttoBedarfPeriode4;
+        
+        System.out.println("EINS bedarfe" + bruttoeBedarfe[0] + " " + bruttoeBedarfe[1] + " " + bruttoeBedarfe[2] + " " + bruttoeBedarfe[3]);
 
         /**
          * Der gesamtBedarf in der akutellen periode (i in der schleife. i = 0
@@ -223,8 +247,13 @@ public class KaufTeilDispositionErgebnis implements Serializable,
         int gesamtBedarf = 0;
         for (int i = 0; i < 4; i++) {
             gesamtBedarf += bruttoeBedarfe[i];
+            System.out.println("ZWEI gesamt bedarf " + gesamtBedarf);
+
 
             if (gesamtBedarf >= lieferDaten.getLagerMenge()) {
+                System.out.println("DREI in if" + gesamtBedarf);
+
+            	
                 final int differenzGesamtBedarf__LagerMenge = gesamtBedarf
                         - lieferDaten.getLagerMenge();
 
@@ -233,16 +262,27 @@ public class KaufTeilDispositionErgebnis implements Serializable,
                                 .valueOf(bruttoeBedarfe[i]));
 
                 double materialGehtAusAmTag = prozent * 5;
+                
+                System.out.println("BEVOR SET MAT: " + String.valueOf(materialGehtAusAmTag));
+                
 
                 if (i > 0)
+                    System.out.println("VIEW in secondIF if" + gesamtBedarf);
+
                     materialGehtAusAmTag += i * 5;
-                setMaterialGehtAusAmTag(materialGehtAusAmTag);
+                    setMaterialGehtAusAmTag(materialGehtAusAmTag);
                 
-                System.out.println("Mat geht aus: " + String.valueOf(materialGehtAusAmTag));
+                    System.out.println("Mat geht aus: " + String.valueOf(materialGehtAusAmTag));
                 break;
             }
-
+            
+            System.out.println("Material geht NICHT aus!!!");
+            gehtNIEAus = true;
+            materialGehtAusAmTag = 25; 
+            materialGehtAusInPeriode = 4;
         }
+
+        
     }
 
     public Teil getTeil() {
