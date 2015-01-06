@@ -74,10 +74,10 @@ public class Result {
                         + "\" ");
 
                 String typ = "";
-                if (kaufErgebnisse.get(n).getBestellTyp().equals(BestellTyp.F))
-
-                {
+                if (kaufErgebnisse.get(n).getBestellTyp().equals(BestellTyp.F)) {
                     typ = "modus = \"4\" /> \n";
+                } else if (false) { // add buy from market
+                	
                 } else {
                 	typ = "modus = \"5\" /> \n";
                 }
