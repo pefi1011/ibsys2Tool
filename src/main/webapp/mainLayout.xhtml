@@ -63,32 +63,37 @@
                 
                 <f:facet name="header">  
                     <h:outputText position="center" value="Prognose"/> 
-                    <div id="content">
+    	                <div id="content">
                     
-							<!--  HIER KOMMT DIE PROGNOSSE TABELLE -->
-								<ui:insert name="prognoseTabelle">
+<!-- 							 HIER KOMMT DIE PROGNOSSE TABELLE -->
+							<ui:insert name="prognoseTabelle">
 					
-								</ui:insert>
-							</div>
-                     
-                </f:facet>  
+							</ui:insert>
+						</div>
+                </f:facet>                              
+                
             </pe:layoutPane>  
             
             
             
-            <pe:layoutPane position="center" minHeight="60">  
+			<pe:layoutPane position="center" minHeight="60">  
                 <f:facet name="header">  
-                    <h:outputText value="Center-Center"/>  
-                    
-                    	<!--  HIER KOMMT DER EIGENTLICHER INHALT -->
-                    	<div id="content">
-								<ui:insert name="content">
-					
-								</ui:insert>
-							</div>
-                    
+                    <h:outputText value="Dieses hier soll sich dynamisch anpassen"/>  
                 </f:facet>  
-            </pe:layoutPane>  
+                
+                <div class="ui-layout-content">  
+               		 
+                    	<div id="content">
+                    	
+						<!--  HIER KOMMT DER EIGENTLICHER INHALT -->
+							<ui:insert name="content">
+				
+							</ui:insert>
+						</div>
+            	</div> 
+            	    
+            </pe:layoutPane>
+        
         </pe:layoutPane>  
        
        
