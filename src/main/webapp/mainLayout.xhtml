@@ -7,24 +7,23 @@
       xmlns:p="http://primefaces.org/ui"  
       lang="#{localeManager.language}">
 <f:view contentType="text/html" locale="en">
-    <pe:head title="PrimeFaces Extensions - ShowCase">
+    <pe:head title="Production Disposition Planing">
     	
     	<ui:insert name="head">
 		</ui:insert>
     
     
-        <f:facet name="first">
-            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-            <meta http-equiv="pragma" content="no-cache"/>
-            <meta http-equiv="cache-control" content="no-cache"/>
-            <meta http-equiv="expires" content="0"/>
-        </f:facet>
+<!--         <f:facet name="first"> -->
+<!--             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> -->
+<!--             <meta http-equiv="pragma" content="no-cache"/> -->
+<!--             <meta http-equiv="cache-control" content="no-cache"/> -->
+<!--             <meta http-equiv="expires" content="0"/> -->
+<!--         </f:facet> -->
         
         <f:view locale="#{localeManager.locale}"></f:view>
     </pe:head>
-    <h:body>
+    <h:body>  
   
-  <h:form>  
     <pe:layout resizerTip="Resize Me" togglerTipClosed="Open Me" togglerTipOpen="Close Me">  
         <pe:layoutPane position="north" size="80" closable="false">  
         
@@ -101,7 +100,6 @@
 				</ui:insert>
         </pe:layoutPane>  
     </pe:layout>  
-</h:form>  
   
 <h:outputStylesheet library="css" name="global.css"/>  
      
