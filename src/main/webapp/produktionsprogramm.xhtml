@@ -53,7 +53,50 @@
 	</ui:define>
 	
 	<ui:define name="prognoseTabelle">
-		<h:form>
+	<center>	
+		<h:form enctype="multipart/form-data">
+		<table class="tg">
+  			<tr>
+				<th class="tg-031e">
+					
+					
+				
+				<table class="tg">
+				  <tr>
+				    <th class="tg-031e">
+				    	<h:inputFile id="file" value="#{prodVerwaltungBean.file}"></h:inputFile>
+				    </th>
+				  </tr>
+				  
+				  
+				  <tr>
+				    <td class="tg-031e">
+				    	<p:commandButton id="insertBtn" value="#{msg['button.upload']}"
+							ajax="false" action="#{prodVerwaltungBean.upload()}" />
+						<h:message for="insertBtn" />
+						<h:messages />
+				    </td>
+				  </tr>
+				  
+				  <tr>
+					  <td class="tg-031e">
+							<h:message for="insertBtn" />
+							<h:messages />
+					  </td>
+				  </tr>
+				</table>
+				
+				
+				
+				</th>
+				
+
+				
+				
+				<th class="tg-031e">
+				
+				
+					
 
 			<div id="content">
 				<table class="order-table">
@@ -90,23 +133,27 @@
 					</tr>
 
 				</table>
-				<h3>n = #{msg.aktuellePeriode}</h3>
-				<p:commandButton style="margin-top:10px;" ajax="false"
-					action="#{produktionsprogramm.weiter()}" value="#{msg['button.calculate']}">
-				</p:commandButton>
+				
 				
 			</div>
 			<h:messages />
+		
+				
+				
+				
+				</th>
+				<th class="tg-031e">
+					<p:commandButton style="margin-top:10px;" ajax="false"
+						action="#{produktionsprogramm.weiter()}" value="#{msg['button.calculate']}">
+					</p:commandButton>
+				</th>
+			</tr>
+		</table>
+		
 		</h:form>
+		</center>
 
-		<h3>XML Import</h3>
-		<h:form enctype="multipart/form-data">
-			<h:inputFile id="file" value="#{prodVerwaltungBean.file}"></h:inputFile>
-			<p:commandButton id="insertBtn" value="#{msg['button.upload']}"
-				ajax="false" action="#{prodVerwaltungBean.upload()}" />
-			<h:message for="insertBtn" />
-			<h:messages />
-		</h:form>
+
 	</ui:define>
 	
 	<ui:define name="content">
