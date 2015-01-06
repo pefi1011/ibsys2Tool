@@ -1,34 +1,136 @@
-<ui:decorate template="/layout.xhtml"
+<ui:decorate template="/mainLayout.xhtml"
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
+	
 	<ui:define name="head">
+		<!-- Alles was in das <head> tag rein muss. css oder so -->
 		<style>
-#content2 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 1024px;
-}
-
-.red {
-	color: white;
-	background-color: red;
-	width: 100%;
-	background-color: red;
-}
-
-.green {
-	color: white;
-	background-color: green;
-	width: 100%;
-}
-</style>
+			#content2 {
+				margin-left: auto;
+				margin-right: auto;
+				width: 1024px;
+			}
+			
+			.red {
+				color: white;
+				background-color: red;
+				width: 100%;
+				background-color: red;
+			}
+			
+			.green {
+				color: white;
+				background-color: green;
+				width: 100%;
+			}
+		</style>
 	</ui:define>
-
+	
 	<ui:define name="menu">
-	#{schauNach.ueberpruefen()}
+			  
+	    <p:growl id="messages" showDetail="false"/>
+	 
+	    <h3 style="margin-top:0">#{msg['menu.navigation']}</h3>
+	    <p:menu>
+			<p:submenu label="#{msg['menu.prognose']}">
+				<p:menuitem value="#{msg['menu.marktbedarf']}"
+					url="produktionsprogramm.xhtml" icon="ui-icon-home" />
+			</p:submenu>
+			
+			<p:submenu label="#{msg['menu.produktionsprogramm']}">
+				<p:menuitem value="P1 #{msg['start.eigenfertigung']}" url="prodverwaltungP1.xhtml" icon="ui-icon-wrench"/>
+				<p:menuitem	value="P1 #{msg['start.uebersicht']}" url="prodverwaltungP1E.xhtml"  icon="ui-icon-document" />
+				
+				<p:menuitem value="P2 #{msg['start.eigenfertigung']}" url="prodverwaltungP2.xhtml" icon="ui-icon-wrench" />
+				<p:menuitem	value="P2 #{msg['start.uebersicht']}" url="prodverwaltungP2E.xhtml"  icon="ui-icon-document" />
+				
+				<p:menuitem value="P3 #{msg['start.eigenfertigung']}" url="prodverwaltungP3.xhtml" icon="ui-icon-wrench" />
+				<p:menuitem	value="P3 #{msg['start.uebersicht']}" url="prodverwaltungP3E.xhtml"  icon="ui-icon-document"/>
+				
+			</p:submenu>
+			
+			<p:submenu label="#{msg['menu.produktionsauftraege']}">
+				<p:menuitem value="#{msg['menu.prodverwaltungSortierung']}" url="prodverwaltung_sortieren.xhtml" icon="ui-icon-disk"/>
+			</p:submenu>	
+			
+			<p:submenu label="#{msg['menu.kapaplanung']}">
+				<p:menuitem value="#{msg['menu.arbeitsplatz']}" url="arbeitsplatz.xhtml" icon="ui-icon-clock"/>
+			</p:submenu>
+
+			<p:submenu label="#{msg['menu.bestellungen']}">
+				<p:menuitem value="#{msg['menu.einkauf']}" url="einkauf.xhtml" icon="ui-icon-zoomin"/>
+				<p:menuitem value="#{msg['menu.einkaufUebersicht']}" url="einkaufUebersicht.xhtml" icon="ui-icon-suitcase"/>
+	        </p:submenu>
+	
+		    <p:submenu label="#{msg['menu.export']}"> 
+					<p:menuitem value="#{msg['menu.xmlDownload']}" url="outXml.xhtml" icon="ui-icon-disk"/> 
+		    </p:submenu>
+		    
+		</p:menu>
+	</ui:define>
+	
+	<ui:define name="prognoseTabelle">
+		<h:form>
+
+			<div id="content">
+				<table class="order-table">
+					<tr>
+						<td class="order-table-header"><h3>#{msg.periode}</h3></td>
+						<td class="order-table-header"><h3>n</h3></td>
+						<td class="order-table-header"><h3>n+1</h3></td>
+						<td class="order-table-header"><h3>n+2</h3></td>
+						<td class="order-table-header"><h3>n+3</h3></td>
+					</tr>
+					<tr>
+						<td class="order-table-header"><h3>p1</h3></td>
+						<td><h:inputText id="p11" value="#{produktionsprogramm.p1_1}">
+								<f:convertNumber for="p11" integerOnly="true" />
+								<h:message for="p11"></h:message>
+							</h:inputText></td>
+						<td><h:inputText value="#{produktionsprogramm.p1_2}" /></td>
+						<td><h:inputText value="#{produktionsprogramm.p1_3}" /></td>
+						<td><h:inputText value="#{produktionsprogramm.p1_4}" /></td>
+					</tr>
+					<tr>
+						<td class="order-table-header"><h3>p2</h3></td>
+						<td><h:inputText value="#{produktionsprogramm.p2_1}" /></td>
+						<td><h:inputText value="#{produktionsprogramm.p2_2}" /></td>
+						<td><h:inputText value="#{produktionsprogramm.p2_3}" /></td>
+						<td><h:inputText value="#{produktionsprogramm.p2_4}" /></td>
+					</tr>
+					<tr>
+						<td class="order-table-header"><h3>p3</h3></td>
+						<td><h:inputText value="#{produktionsprogramm.p3_1}" /></td>
+						<td><h:inputText value="#{produktionsprogramm.p3_2}" /></td>
+						<td><h:inputText value="#{produktionsprogramm.p3_3}" /></td>
+						<td><h:inputText value="#{produktionsprogramm.p3_4}" /></td>
+					</tr>
+
+				</table>
+				<h3>n = #{msg.aktuellePeriode}</h3>
+				<p:commandButton style="margin-top:10px;" ajax="false"
+					action="#{produktionsprogramm.weiter()}" value="#{msg['button.calculate']}">
+				</p:commandButton>
+				
+			</div>
+			<h:messages />
+		</h:form>
+
+		<h3>XML Import</h3>
+		<h:form enctype="multipart/form-data">
+			<h:inputFile id="file" value="#{prodVerwaltungBean.file}"></h:inputFile>
+			<p:commandButton id="insertBtn" value="#{msg['button.upload']}"
+				ajax="false" action="#{prodVerwaltungBean.upload()}" />
+			<h:message for="insertBtn" />
+			<h:messages />
+		</h:form>
+	</ui:define>
+	
+	<ui:define name="content">
+		#{schauNach.ueberpruefen()}
 		<p:breadCrumb>
 			<p:menuitem value="#{msg['start.produktionsprogramm']}"
 				url="produktionsprogramm.xhtml" />
@@ -92,6 +194,7 @@
 				value="#{msg['button.continue']}">
 			</p:commandButton>
 		</h:form>
-
+		
 	</ui:define>
+	
 </ui:decorate>
