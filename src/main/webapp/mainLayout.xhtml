@@ -90,13 +90,49 @@
 	     </pe:layout>
        
     
-	        <h:outputStylesheet name="css/default.css" />
-			<h:outputStylesheet library="css" name="global.css"/>  
 			<h:outputStylesheet id="layoutCSS">  
-			    body {  
-			        margin: 4px !important;  
-			    }  
+			      body {  
+        margin: 4px !important;  
+    }  
+      
+    body > form > .ui-layout-north {  
+        background: none;  
+        border: none;  
+        color: #000000;  
+        padding: 4px;  
+        overflow: hidden;  
+    }  
+      
+    body > form > .ui-layout-south {  
+        background: none;  
+        border: none;  
+        color: #000000;  
+        overflow: hidden;  
+        vertical-align: middle;  
+    }  
+      
+    .ui-datatable thead th,  
+    .ui-datatable tbody td,  
+    .ui-datatable tfoot td {  
+        white-space: nowrap;  
+    }  
+      
+    .ui-messages-info,  
+    .ui-messages-warn,  
+    .ui-messages-error,  
+    .ui-messages-fatal {  
+        margin: 0;  
+    }  
+      
+    #messages > div {  
+        border-bottom-left-radius: 0;  
+        border-bottom-right-radius: 0;  
+        -moz-border-radius-bottomleft: 0;  
+        -moz-border-radius-bottomright: 0;  
+    } 
 			</h:outputStylesheet>  
+			<h:outputStylesheet library="css" name="global.css"/>  
+        	<h:outputStylesheet library="css" name="default.css" />
         
     </h:body>
 
