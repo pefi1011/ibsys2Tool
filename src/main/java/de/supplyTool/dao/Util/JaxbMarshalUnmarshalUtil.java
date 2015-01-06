@@ -11,12 +11,13 @@ import org.xml.sax.SAXException;
 public class JaxbMarshalUnmarshalUtil
 {
    static final DecimalFormat DF_2 = new DecimalFormat( "#,##0.00" );
+   private static final String W3C_XML_SCHEMA_NS_URI = "http://www.w3.org/2001/XMLSchema";
 
    public static <T> T unmarshal( String xsdSchema, String xmlDatei, Class<T> clss )
    throws JAXBException, SAXException
    {
       // Schema und JAXBContext sind multithreadingsicher ("thread safe"):
-      SchemaFactory schemaFactory = SchemaFactory.newInstance( XMLConstants.W3C_XML_SCHEMA_NS_URI );
+      SchemaFactory schemaFactory = SchemaFactory.newInstance(W3C_XML_SCHEMA_NS_URI );
       Schema        schema        = ( xsdSchema == null || xsdSchema.trim().length() == 0 )
                                     ? null : schemaFactory.newSchema( new File( xsdSchema ) );
       JAXBContext   jaxbContext   = JAXBContext.newInstance( clss.getPackage().getName() );
@@ -35,7 +36,7 @@ public class JaxbMarshalUnmarshalUtil
    public static void marshal( String xsdSchema, String xmlDatei, Object jaxbElement )
    throws JAXBException, SAXException
    {
-      SchemaFactory schemaFactory = SchemaFactory.newInstance( XMLConstants.W3C_XML_SCHEMA_NS_URI );
+      SchemaFactory schemaFactory = SchemaFactory.newInstance( W3C_XML_SCHEMA_NS_URI );
       Schema        schema        = ( xsdSchema == null || xsdSchema.trim().length() == 0 )
                                     ? null : schemaFactory.newSchema( new File( xsdSchema ) );
       JAXBContext   jaxbContext   = JAXBContext.newInstance( jaxbElement.getClass().getPackage().getName() );
