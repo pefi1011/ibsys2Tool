@@ -6,12 +6,11 @@
       xmlns:pe="http://primefaces.org/ui/extensions"
       xmlns:p="http://primefaces.org/ui"  
       lang="#{localeManager.language}">
-<f:view contentType="text/html" locale="en">
+      
     <pe:head title="Production Disposition Planing">
     	
     	<ui:insert name="head">
 		</ui:insert>
-    
     
         <f:facet name="first">
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -22,102 +21,86 @@
         
         <f:view locale="#{localeManager.locale}"></f:view>
     </pe:head>
+  
     <h:body>  
-  
-    <pe:layout resizerTip="Resize Me" togglerTipClosed="Open Me" togglerTipOpen="Close Me">  
-        <pe:layoutPane position="north" size="80" closable="false">  
-        
-                <pe:layoutPane position="center" size="200">  
-        
-            		<DIV style="height: 86px; overflow: hidden;">
-<!-- 						<p:graphicImage library="img" width="20%" height="86px" name="hska_Trans.gif" style="float:left;" /> -->
-						<p:graphicImage library="img" name="fahrraeder.png" width="100%" style="float:left;" />
-					</DIV> 
-        		</pe:layoutPane>
-        		
-        		  <pe:layoutPane position="east" size="200">  
-        
-            		
-					<!--   SPRACHE AUSWAHLEN -->
-            		<p:themeSwitcher id="basic" style="width:165px">
-				            <f:selectItem itemLabel="Choose Theme" itemValue="" />
-				            <f:selectItems value="[afterdark, afternoon, afterwork, aristo, black-tie, blitzer, bluesky, bootstrap,   ui-darkness, ui-lightness]" var="theme" itemLabel="" itemValue=""/>
-        			</p:themeSwitcher>
-        			
-        			<h:form>
-		    			<h:selectOneMenu value="#{localeManager.language}" onchange="submit()">
-		    				<f:selectItem itemValue="de" itemLabel="Deutsch" />
-		        			<f:selectItem itemValue="en" itemLabel="English" />
-		        			<f:selectItem itemValue="ru" itemLabel="Русский" />
-		    			</h:selectOneMenu>
-					</h:form>
-        			
-        		</pe:layoutPane>
-        		
-        		
-        </pe:layoutPane>  
-        
-        
-        <pe:layoutPane position="center">  
-            <pe:layoutPane position="north" size="50%">  
-                
-                <f:facet name="header">  
-                    <h:outputText position="center" value="Prognose"/> 
-    	                <div id="content">
-                    
-<!-- 							 HIER KOMMT DIE PROGNOSSE TABELLE -->
-							<ui:insert name="prognoseTabelle">
-					
-							</ui:insert>
-						</div>
-                </f:facet>                              
-                
-            </pe:layoutPane>  
-            
-            
-            
-			<pe:layoutPane position="center" minHeight="60">  
-                <f:facet name="header">  
-                    <h:outputText value="Dieses hier soll sich dynamisch anpassen"/>  
-                </f:facet>  
-                
-                <div class="ui-layout-content">  
-               		 
-                    	<div id="content">
-                    	
-						<!--  HIER KOMMT DER EIGENTLICHER INHALT -->
-							<ui:insert name="content">
-				
-							</ui:insert>
-						</div>
-            	</div> 
-            	    
-            </pe:layoutPane>
-        
-        </pe:layoutPane>  
+   
+	    <pe:layout resizerTip="Resize Me" togglerTipClosed="Open Me" togglerTipOpen="Close Me">  
+	       
+			<!--   HINTEGRUNDFOTO, SPRACHE UND THEMA  -->
+	        <pe:layoutPane position="north" size="80" closable="false">  
+	        
+					<!--   FOTO IM HINTERGRUND -->
+	                <pe:layoutPane position="center" size="200">  
+	            		<DIV style="height: 86px; overflow: hidden;">
+	<!-- 						<p:graphicImage library="img" width="20%" height="86px" name="hska_Trans.gif" style="float:left;" /> -->
+							<p:graphicImage library="img" name="fahrraeder.png" width="100%" style="float:left;" />
+						</DIV> 
+	        		</pe:layoutPane>
+	        		
+	        		<!--   SPRACHE UND THEMA AUSWAHLEN -->
+	        		<pe:layoutPane position="east" size="200">  
+	        
+	            		<!--   THEMA AUSWAHLEN -->
+	            		<p:themeSwitcher id="basic" style="width:165px">
+					            <f:selectItem itemLabel="Choose Theme" itemValue="" />
+					            <f:selectItems value="[afterdark, afternoon, afterwork, aristo, black-tie, blitzer, bluesky, bootstrap,   ui-darkness, ui-lightness]" var="theme" itemLabel="" itemValue=""/>
+	        			</p:themeSwitcher>
+			
+						<!--   SPRACHE AUSWAHLEN -->
+	        			<h:form>
+			    			<h:selectOneMenu value="#{localeManager.language}" onchange="submit()">
+			    				<f:selectItem itemValue="de" itemLabel="Deutsch" />
+			        			<f:selectItem itemValue="en" itemLabel="English" />
+			        			<f:selectItem itemValue="ru" itemLabel="Русский" />
+			    			</h:selectOneMenu>
+						</h:form>
+	        		</pe:layoutPane>
+	        </pe:layoutPane>  
+	        
+	        
+	        <!--  HIER KOMMT DIE NAVIGATION -->
+	        <pe:layoutPane position="west" size="250">  
+	        	<ui:insert name="menu"></ui:insert>
+	        </pe:layoutPane>  
+	  
+	        <!--  EIGENTLICHER INAHLT -->
+	        <pe:layoutPane position="center">  
+	        
+		        	<!--   HIER KOMMT DIE PROGNOSSE TABELLE -->
+		            <pe:layoutPane position="north" size="50%">  
+		                
+		                <f:facet name="header">  
+		                    <h:outputText position="center" value="Prognose"/> 
+		                </f:facet>                              
+						
+						<ui:insert name="prognoseTabelle"> </ui:insert>
+		                
+		            </pe:layoutPane>  
+		            
+		            <!--  HIER KOMMEN TATSAECHLICHE DATEN -->
+					<pe:layoutPane position="center" minHeight="60">  
+		                <f:facet name="header">  
+		                    <h:outputText id="datenTitel" value="Dieses hier soll sich dynamisch anpassen"/>  
+		                </f:facet>  
+						<ui:insert name="content"> </ui:insert>
+		            </pe:layoutPane>
+		            
+	        </pe:layoutPane>  
+	  
+	     </pe:layout>
        
-       
-        <pe:layoutPane position="west" size="250">  
-        
-        	<!--  HIER KOMMT DIE NAVIGATION -->
-        	<ui:insert name="menu">
-
-			</ui:insert>
-        </pe:layoutPane>  
-    </pe:layout>  
-  
-<h:outputStylesheet library="css" name="global.css"/>  
-     
-<h:outputStylesheet id="layoutCSS">  
-    body {  
-        margin: 4px !important;  
-    }  
-</h:outputStylesheet>  
-        
-        
-        
+    
+	        <h:outputStylesheet name="css/default.css" />
+			<h:outputStylesheet library="css" name="global.css"/>  
+			<h:outputStylesheet id="layoutCSS">  
+			    body {  
+			        margin: 4px !important;  
+			    }  
+			</h:outputStylesheet>  
         
     </h:body>
-</f:view>
+
+
+
 </html>
     
