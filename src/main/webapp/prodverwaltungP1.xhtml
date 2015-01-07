@@ -6,8 +6,16 @@
     xmlns:pe="http://primefaces.org/ui/extensions"
 	xmlns:p="http://primefaces.org/ui">
 	
+	
+	
 	<ui:define name="head">
 		<!-- Alles was in das <head> tag rein muss. css oder so -->
+				<script>
+				$(document).ready(function(){
+					var panelTitle= "#{msg['start.eigenfertigung']} P1";
+					$('#datenTitel').text(panelTitle);
+				});
+				</script>
 	</ui:define>
 	
 	<ui:define name="menu">

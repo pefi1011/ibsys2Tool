@@ -6,6 +6,12 @@
 	xmlns:p="http://primefaces.org/ui">
 	
 	<ui:define name="head">
+		<script>
+				$(document).ready(function(){
+					var panelTitle= "#{msg['menu.einkauf']}";
+					$('#datenTitel').text(panelTitle);
+				});
+				</script>
 		<style>
 
 			#content2 {

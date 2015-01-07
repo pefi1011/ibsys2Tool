@@ -7,6 +7,12 @@
 	
 	<ui:define name="head">
 		<!-- Alles was in das <head> tag rein muss. css oder so -->
+				<script>
+				$(document).ready(function(){
+					var panelTitle= "#{msg['menu.arbeitsplatz']}";
+					$('#datenTitel').text(panelTitle);
+				});
+				</script>
 	</ui:define>
 	
 	<ui:define name="menu">
@@ -111,13 +117,6 @@
 	
 	<ui:define name="content">
 		<h:form>
-
-
-
-
-
-
-
 
 				<p:dataTable id="result" binding="#{table}"
 					value="#{aPBean.arbeitsplaetze}" var="ergebnis"
@@ -238,5 +237,6 @@
 			</h:form>
 		
 	</ui:define>
+	
 	
 </ui:decorate>

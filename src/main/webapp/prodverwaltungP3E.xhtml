@@ -7,6 +7,12 @@
 	
 	<ui:define name="head">
 		<!-- Alles was in das <head> tag rein muss. css oder so -->
+				<script>
+				$(document).ready(function(){
+					var panelTitle= "#{msg['start.eigenfertigung']} P3 #{msg['start.uebersicht']}";
+					$('#datenTitel').text(panelTitle);
+				});
+				</script>
 	</ui:define>
 	
 	<ui:define name="menu">
