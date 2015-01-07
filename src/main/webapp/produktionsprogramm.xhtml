@@ -8,10 +8,26 @@
 	<ui:define name="head">
 		<!-- Alles was in das <head> tag rein muss. css oder so -->
 			<script>
+			
+				function togglePrognosePanel(){
+					
+						setTimeout(function (){
+							
+							$(".ui-layout-toggler.ui-layout-toggler-north.ui-layout-toggler-closed.ui-layout-toggler-north-closed" ).trigger( "click" );
+			
+			        	 }, 100);
+				};
+			
 				$(document).ready(function(){
 					var panelTitle= "";
 					$('#datenTitel').text(panelTitle);
+					
+					// workaround um progrnosse teil aufzuklappen 
+					// bzw. programmatisch click zu simulieren
+					// notweindig da progrnose auf initClosed="true" gesetzt ist
+					togglePrognosePanel();
 				});
+				
 				</script>
 	
 	</ui:define>
