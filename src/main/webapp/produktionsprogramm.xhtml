@@ -16,49 +16,6 @@
 	
 	</ui:define>
 	
-	<ui:define name="menu">
-			  
-	    <p:growl id="messages" showDetail="false"/>
-	 
-	    <h3 style="margin-top:0">#{msg['menu.navigation']}</h3>
-	    <p:menu>
-			<p:submenu label="#{msg['menu.prognose']}">
-				<p:menuitem value="#{msg['menu.marktbedarf']}"
-					url="produktionsprogramm.xhtml" icon="ui-icon-home" />
-			</p:submenu>
-			
-			<p:submenu label="#{msg['menu.produktionsprogramm']}">
-				<p:menuitem value="P1 #{msg['start.eigenfertigung']}" url="prodverwaltungP1.xhtml" icon="ui-icon-wrench" onclick="setPanelTitle('test')"/>
-				<p:menuitem	value="P1 #{msg['start.uebersicht']}" url="prodverwaltungP1E.xhtml"  icon="ui-icon-document" />
-				
-				<p:menuitem value="P2 #{msg['start.eigenfertigung']}" url="prodverwaltungP2.xhtml" icon="ui-icon-wrench" />
-				<p:menuitem	value="P2 #{msg['start.uebersicht']}" url="prodverwaltungP2E.xhtml"  icon="ui-icon-document" />
-				
-				<p:menuitem value="P3 #{msg['start.eigenfertigung']}" url="prodverwaltungP3.xhtml" icon="ui-icon-wrench" />
-				<p:menuitem	value="P3 #{msg['start.uebersicht']}" url="prodverwaltungP3E.xhtml"  icon="ui-icon-document"/>
-				
-			</p:submenu>
-			
-			<p:submenu label="#{msg['menu.produktionsauftraege']}">
-				<p:menuitem value="#{msg['menu.prodverwaltungSortierung']}" url="prodverwaltung_sortieren.xhtml" icon="ui-icon-disk"/>
-			</p:submenu>	
-			
-			<p:submenu label="#{msg['menu.kapaplanung']}">
-				<p:menuitem value="#{msg['menu.arbeitsplatz']}" url="arbeitsplatz.xhtml" icon="ui-icon-clock"/>
-			</p:submenu>
-
-			<p:submenu label="#{msg['menu.bestellungen']}">
-				<p:menuitem value="#{msg['menu.einkauf']}" url="einkauf.xhtml" icon="ui-icon-zoomin"/>
-				<p:menuitem value="#{msg['menu.einkaufUebersicht']}" url="einkaufUebersicht.xhtml" icon="ui-icon-suitcase"/>
-	        </p:submenu>
-	
-		    <p:submenu label="#{msg['menu.export']}"> 
-					<p:menuitem value="#{msg['menu.xmlDownload']}" url="outXml.xhtml" icon="ui-icon-disk"/> 
-		    </p:submenu>
-		    
-		</p:menu>
-	</ui:define>
-	
 	<ui:define name="prognoseTabelle">
 			<center>	
 				<h:form enctype="multipart/form-data">
