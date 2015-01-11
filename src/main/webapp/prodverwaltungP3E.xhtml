@@ -89,41 +89,41 @@
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.abnahme']}</f:facet>
-					<h:outputText value="#{ergebnis.vertriebswunsch}" />
+					<div align="right"><h:outputText value="#{ergebnis.vertriebswunsch}" /></div>	
 				</p:column>
 
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.geplanteLagermenge']}</f:facet>
-					<h:outputText value="#{ergebnis.geplante_lagermenge}" />
+					<div align="right"><h:outputText value="#{ergebnis.geplante_lagermenge}" /></div>	
 				</p:column>
 
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
-					#{ergebnis.nummer}
+					<div align="right">#{ergebnis.nummer}</div>	
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.lagerbestandEndeVorperiode']}</f:facet>
-					#{ergebnis.lagerbestand_ende_vorperiode}		
+					<div align="right">#{ergebnis.lagerbestand_ende_vorperiode}	</div>		
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.auftraegeWarteschlange']}</f:facet>
-					#{ergebnis.auftraege_warteschlange}	
+					<div align="right">#{ergebnis.auftraege_warteschlange}	</div>	
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.auftraegeInBearbeitung']}</f:facet>
-					#{ergebnis.auftrage_bearbeitung}
+					<div align="right">#{ergebnis.auftrage_bearbeitung}</div>	
 				</p:column>
 
 
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.produktionsauftrag']}</f:facet>
-					#{ergebnis.produktionsauftrag_naechste_periode}
+					<div align="right">#{ergebnis.produktionsauftrag_naechste_periode}</div>	
 				</p:column>
 
 
