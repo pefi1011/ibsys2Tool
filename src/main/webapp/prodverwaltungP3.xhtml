@@ -53,14 +53,19 @@
 	</ui:define>
 	
 	<ui:define name="content">
+		
 		<h:form>
-	#{schauNach.ueberpruefen()}
+			#{schauNach.ueberpruefen()}
 			<div align="center">
-		</div>
-			<p:commandButton style="margin-top:20px;margin-bottom:20px;" 
-				action="#{prodVerwaltungBean.berechnenDrei()}" value="#{msg['button.calculate']}" ajax="false">
-				
-			</p:commandButton>
+			</div>
+			
+			<center>
+				<p:commandButton style="margin-top:20px;margin-bottom:20px;" 
+					action="#{prodVerwaltungBean.berechnenDrei()}" value="#{msg['button.calculate']}" ajax="false">
+					
+				</p:commandButton>
+			</center>
+
 		<p:dataTable id="result" binding="#{table}"
 			value="#{prodVerwaltungBean.dispositionsErgebnisseDrei}" var="ergebnis"
 			styleClass="order-table" headerClass="order-table-header"
@@ -115,16 +120,7 @@
 		</p:dataTable>
 
 
-
 		<br></br>
-
-		<p:column>
-			<p:commandButton style="margin-top:20px;" 
-			action="#{prodVerwaltungBean.berechnenDrei()}" value="#{msg['button.calculate']}" ajax="false">
-				
-			</p:commandButton>
-		</p:column>
-
 	
 	</h:form>
 	</ui:define>

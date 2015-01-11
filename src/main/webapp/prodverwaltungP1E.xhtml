@@ -58,11 +58,13 @@
 
 			<div align="center">
 			</div>
-			<p:commandButton style="margin-top:20px;margin-bottom:20px" id="asd3"
-				action="prodverwaltungP2.xhtml?faces-redirect=true" value="#{msg['button.continue']}"
-				ajax="false">
+				<center>
+					<p:commandButton style="margin-top:20px;margin-bottom:20px" id="asd3"
+						action="prodverwaltungP2.xhtml?faces-redirect=true" value="#{msg['button.continue']}"
+						ajax="false">
+					</p:commandButton>
+				</center>
 
-			</p:commandButton>
 			<p:dataTable id="result" binding="#{table}"
 				value="#{prodVerwaltungBean.dispositionsErgebnisseViewEins}"
 				var="ergebnis" styleClass="order-table"
@@ -118,14 +120,6 @@
 
 
 			<br></br>
-
-			<p:column>
-				<p:commandButton style="margin-top:20px;" id="asd4"
-					action="prodverwaltungP2.xhtml?faces-redirect=true" value="#{msg['button.continue']}"
-					ajax="false">
-
-				</p:commandButton>
-			</p:column>
 
 		</h:form>
 	</ui:define>

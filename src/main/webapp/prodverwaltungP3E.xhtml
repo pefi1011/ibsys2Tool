@@ -53,12 +53,18 @@
 	</ui:define>
 	
 	<ui:define name="content">
-		#{schauNach.ueberpruefen()}
+				#{schauNach.ueberpruefen()}
 		<h:form>
 			<div align="center">
-		</div>
-			<p:commandButton value="#{msg['button.continue']}"
-				action="prodverwaltung_sortieren.xhtml?faces-redirect=true" ajax="false" style="margin-bottom:20px;"></p:commandButton>
+			</div>
+		
+			<center>
+				<p:commandButton style="margin-top:20px;margin-bottom:20px;"
+				value="#{msg['button.continue']}" 
+				action="prodverwaltung_sortieren.xhtml?faces-redirect=true" ajax="false"></p:commandButton>
+			
+			</center>
+			
 			<p:dataTable id="result" binding="#{table}"
 				value="#{prodVerwaltungBean.dispositionsErgebnisseViewDrei}"
 				var="ergebnis" styleClass="order-table"
@@ -114,9 +120,7 @@
 
 
 			<br></br>
-			<p:commandButton value="#{msg['button.continue']}"
-				action="prodverwaltung_sortieren.xhtml?faces-redirect=true" ajax="false"></p:commandButton>
-
+			
 		</h:form>
 	</ui:define>
 	

@@ -57,11 +57,14 @@
 		<h:form>
 			<div align="center">
 			</div>
-			<p:commandButton style="margin-top:20px;margin-bottom:20px;"
-				action="#{prodVerwaltungBean.berechnenZwei()}"
-				value="#{msg['button.calculate']}" ajax="false">
-
-			</p:commandButton>
+			<center>
+				<p:commandButton style="margin-top:20px;margin-bottom:20px;"
+					action="#{prodVerwaltungBean.berechnenZwei()}"
+					value="#{msg['button.calculate']}" ajax="false">
+	
+				</p:commandButton>
+			</center>
+			
 			<p:dataTable id="result" binding="#{table}"
 				value="#{prodVerwaltungBean.dispositionsErgebnisseZwei}"
 				var="ergebnis" styleClass="order-table"
@@ -121,14 +124,6 @@
 
 
 			<br></br>
-
-			<p:column>
-				<p:commandButton style="margin-top:20px;"
-					action="#{prodVerwaltungBean.berechnenZwei()}"
-					value="#{msg['button.calculate']}" ajax="false">
-
-				</p:commandButton>
-			</p:column>
 
 		</h:form>
 	</ui:define>
