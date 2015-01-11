@@ -85,44 +85,44 @@
 
 					<p:column>
 						<f:facet name="header">#{msg['prodverwaltung.nummer']}</f:facet>
-					#{ergebnis.nummer}
+					<div align="right">#{ergebnis.nummer}</div>	
 				</p:column>
 
 
 
 					<p:column>
 						<f:facet name="header">#{msg['ap.stunden']}</f:facet>
-					#{ergebnis.ueberstunden}
+					<div align="right">#{ergebnis.ueberstunden}</div>	
 				</p:column>
 
 
 					<p:column>
 						<f:facet name="header">#{msg['ap.schicht']}</f:facet>
-					#{ergebnis.schicht}
+					<div align="right">#{ergebnis.schicht}</div>	
 				</p:column>
 
 					<p:column>
 						<f:facet name="header">#{msg['ap.ueberstunden']}</f:facet>
-					#{ergebnis.ueberstundenGut}
+					<div align="right">#{ergebnis.ueberstundenGut}</div>	
 				</p:column>
 
 					<p:column>
 
 						<f:facet name="header">#{msg['ap.bearbeitung']}</f:facet>
-					#{ergebnis.inBearbeitung}
+					<div align="right">#{ergebnis.inBearbeitung}</div>	
 				</p:column>
 
 					<p:column>
 
 						<f:facet name="header">#{msg['ap.wartschlange']}</f:facet>
-					#{ergebnis.warteschlange}
+					<div align="right">#{ergebnis.warteschlange}</div>	
 				</p:column>
 
 
 
 					<p:column>
 						<f:facet name="header">#{msg['ap.sicherheitsaufschlag']}</f:facet>
-						<h:inputText value="#{ergebnis.aufschlag}" />
+						<p:inputMask styleClass="text-input" value="#{ergebnis.aufschlag}" />
 
 					</p:column>
 
