@@ -93,34 +93,8 @@
 		</h:form>
 	</ui:define>
 	
+
 	<ui:define name="content">
-		#{schauNach.ueberpruefen()}
-		<p:breadCrumb>
-			<p:menuitem value="#{msg['start.produktionsprogramm']}"
-				url="produktionsprogramm.xhtml" />
-			<p:menuitem value="#{msg['start.produktionsprogramm']}"
-				url="produktionsprogramm.xhtml" />
-			<p:menuitem value="#{msg['start.eigenfertigung']} P1" url="prodverwaltungP1.xhtml" />
-			<p:menuitem
-				value="#{msg['start.eigenfertigung']} P1 #{msg['start.uebersicht']}"
-				url="prodverwaltungP1E.xhtml" />
-			<p:menuitem value="#{msg['start.eigenfertigung']} P2" url="prodverwaltungP2.xhtml" />
-			<p:menuitem
-				value="#{msg['start.eigenfertigung']} P2 #{msg['start.uebersicht']}"
-				url="prodverwaltungP2E.xhtml" />
-			<p:menuitem value="#{msg['start.eigenfertigung']} P3" url="prodverwaltungP3.xhtml" />
-			<p:menuitem
-				value="#{msg['start.eigenfertigung']} P3 #{msg['start.uebersicht']}"
-				url="prodverwaltungP3E.xhtml" />
-			<p:menuitem value="#{msg['menu.prodverwaltungSortierung']}" url="prodverwaltung_sortieren.xhtml" />
-			<p:menuitem value="#{msg['menu.arbeitsplatz']}" url="arbeitsplatz.xhtml" />
-			<p:menuitem value="#{msg['menu.einkaufUebersicht']}" url="einkaufUebersicht.xhtml" />
-		</p:breadCrumb>
-	</ui:define>
-	<ui:define name="content">
-				<div align="center">
-			<H1>#{msg['menu.einkaufUebersicht']}</H1>
-		</div>
 		<p:commandButton style="margin-top:20px; margin-bottom:20px;"
 			action="#{dispositionBean.goToOutputXML}" value="#{msg['button.continue']}">
 		</p:commandButton>
@@ -130,27 +104,27 @@
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
-					#{ergebnis.teil != null ? ergebnis.teil.nummer : 'keine Nummer vorhanden'}					
+					<div align="right">#{ergebnis.teil != null ? ergebnis.teil.nummer : 'keine Nummer vorhanden'}			</div>		
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.bezeichnung']}</f:facet>
-					#{ergebnis.teil != null ? ergebnis.teil.bezeichnung : 'keine Bezeichnung vorhanden'}
+					<div align="center">#{ergebnis.teil != null ? ergebnis.teil.bezeichnung : 'keine Bezeichnung vorhanden'} </div>
 				</p:column>
 
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.lagermenge']}</f:facet>
-					#{ergebnis.lieferDaten.lagerMenge}
+					<div align="right">#{ergebnis.lieferDaten.lagerMenge} </div>
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.bestelltyp']}</f:facet>
-					<h:outputText value="#{ergebnis.bestellTyp}" />
+					<div align="center"><h:outputText value="#{ergebnis.bestellTyp}" /> </div>
 				</p:column>
 				<p:column>
 					<f:facet name="header">#{msg['teil.bestellmenge']}</f:facet>
-					<h:outputText value="#{ergebnis.bestellmenge}" />
+					<div align="right"><h:outputText value="#{ergebnis.bestellmenge}" /> </div>
 				</p:column>
 			</p:dataTable>
 			<p:commandButton style="margin-top:20px; margin-bottom:20px;"
