@@ -115,7 +115,11 @@ public class APArbeitsplatz implements Serializable {
         return ueberstundenGut;
     }
 
+    // Wir implementieren Logik in Setter sodass man nicht überall das ändern soll #spagethicode
     public void setUeberstundenGut(final Integer ueberstundenGut) {
-        this.ueberstundenGut = ueberstundenGut;
+    	// bissle logik (Überstunden dürfen nicht mehr als 2400 sein) 
+    	Integer newUeberstunden = ( ueberstundenGut >= 2400 ) ? 2400 : ueberstundenGut;
+    	
+        this.ueberstundenGut = newUeberstunden;
     }
 }

@@ -92,11 +92,13 @@ public class Result {
         
 
         for (int n1 = 0; n1 < dispoHelpErgebnissGut.size(); n1++) {
-            sb.append("<production article=\"" );
-            sb.append(dispoHelpErgebnissGut.get(n1).getNummer()
-                    + "\" quantity=\"" );
-            sb.append(dispoHelpErgebnissGut.get(n1).getAnzahl()
-                    + "\" />  \n");
+        	if (dispoHelpErgebnissGut.get(n1).getAnzahl() != 0){        		
+        		sb.append("<production article=\"" );
+        		sb.append(dispoHelpErgebnissGut.get(n1).getNummer()
+        				+ "\" quantity=\"" );
+        		sb.append(dispoHelpErgebnissGut.get(n1).getAnzahl()
+        				+ "\" />  \n");
+        	}
         }
 
         sb.append("</productionlist> \n");
