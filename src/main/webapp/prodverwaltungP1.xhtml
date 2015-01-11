@@ -69,14 +69,14 @@
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.abnahme']}</f:facet>
-					<h:inputText rendered="#{table.rowIndex==0}" value="#{prodVerwaltungBean.teileHelpDispoList.get(table.rowIndex).vertriebswunsch}" />
+					<p:inputMask styleClass="text-input" rendered="#{table.rowIndex==0}" value="#{prodVerwaltungBean.teileHelpDispoList.get(table.rowIndex).vertriebswunsch}" />
 					<h:outputText rendered="#{table.rowIndex!=0}" value="#{prodVerwaltungBean.teileHelpDispoList.get(table.rowIndex).vertriebswunsch}" />
 				</p:column>
 
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.geplanteLagermenge']}</f:facet>
-					<h:inputText value="#{ergebnis.geplante_lagermenge}" /> 
+					<p:inputMask styleClass="text-input" value="#{ergebnis.geplante_lagermenge}" /> 
 				</p:column>
 
 
