@@ -78,17 +78,29 @@
 		<h:form>
 
 			<div align="center">
-				<h1>#{msg['start.sortierung']}</h1>
+			
+				<table class="tg">
+				  <tr>
+				    <th class="tg-s6z2">
+				    	#{msg['start.sortierung']}
+				    </th>
+				    
+				    <th class="tg-031e">
+				    	<p:inputMask styleClass="text-input"  value="#{prodVerwaltungErgebnissBean.split}" id="aaeins" />
+				    </th>
+				    
+				    <th class="tg-031e">
+				    	<p:commandButton style="margin-left:5px;margin-bottom:20px;" id="yoyoeins" action="#{prodVerwaltungErgebnissBean.reload()}" value="#{msg['button.reload']}" ajax="false">
+						</p:commandButton>
+				    </th>
+				  </tr>
+				</table>
 
-
-
-				<p:inputMask styleClass="text-input"  value="#{prodVerwaltungErgebnissBean.split}"
-					id="aaeins" />
-				<p:commandButton style="margin-left:5px;margin-bottom:20px;"
-					id="yoyoeins" action="#{prodVerwaltungErgebnissBean.reload()}"
-					value="#{msg['button.reload']}" ajax="false">
-				</p:commandButton>
 			</div>
+			
+			<p:separator style="width:100%;height:3px" />
+			
+			
 			<div align="center">
 				<p:commandButton style="margin-left:5px;margin-bottom:20px;"
 					action="arbeitsplatz.xhtml?faces-redirect=true"

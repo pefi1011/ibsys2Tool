@@ -95,9 +95,11 @@
 	
 
 	<ui:define name="content">
-		<p:commandButton style="margin-top:20px; margin-bottom:20px;"
-			action="#{dispositionBean.goToOutputXML}" value="#{msg['button.continue']}">
-		</p:commandButton>
+		<center>
+			<p:commandButton style="margin-top:20px; margin-bottom:20px;"
+				action="#{dispositionBean.goToOutputXML}" value="#{msg['button.continue']}">
+			</p:commandButton>
+		</center>
 		<h:form>
 			<p:dataTable id="result" value="#{ergebnisBean.kaufErgebnisse}"
 				var="ergebnis">
@@ -127,10 +129,7 @@
 					<div align="right"><h:outputText value="#{ergebnis.bestellmenge}" /> </div>
 				</p:column>
 			</p:dataTable>
-			<p:commandButton style="margin-top:20px; margin-bottom:20px;"
-				action="#{dispositionBean.goToOutputXML}"
-				value="#{msg['button.continue']}">
-			</p:commandButton>
+		
 		</h:form>
 		
 	</ui:define>
