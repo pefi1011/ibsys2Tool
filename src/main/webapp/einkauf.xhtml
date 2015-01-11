@@ -95,39 +95,56 @@
 	</ui:define>
 	
 	<ui:define name="content">
+	
+	
 		<div align="center">
-		<h2>#{msg['einkauf.konfigurationsdetails']}</h2>
-		<h:form>
-			<div id="content2">
-				<table class="order-table">
-					<tr>
-						<td class="order-table-header">#{msg['einkauf.sicherheitsbestand']}</td>
-						<td class="order-table-header"><h:outputText id="output"
-								style="margin-bottom:3px;"
-								value="#{msg['einkauf.sicherheitsbestand']} %#{einkaufKonfiguration.sicherheitsbestand}" />
-							<h:inputHidden id="txt2"
-								value="#{einkaufKonfiguration.sicherheitsbestand}" /> <p:slider styleClass="mt"
-								for="txt2" display="output" style="width: 200px" displayTemplate="#{msg['einkauf.neuerSicherheitsbestand']} %{value}" /></td>
-					</tr>
-					<tr>
-						<td class="order-table-header">#{msg['einkauf.diskontmengeAbweichung']}</td>
-						<td class="order-table-header">
-						<h:outputText id="output2"
-								style="margin-bottom:3px;"
-								value="#{msg['einkauf.neueDiskontmengeAbw']} %#{einkaufKonfiguration.diskontmengeAbweichung}" />
-							<h:inputHidden id="txt3"
-								value="#{einkaufKonfiguration.diskontmengeAbweichung}" /> <p:slider styleClass="mt"
+			
+			<h:form>
+				<table class="tg">				  
+				  
+				  <tr>
+				  
+				    <th class="tg-031e">
+						#{msg['einkauf.diskontmengeAbweichung']}
+				    </th>
+				    
+				    <td class="tg-031e">
+<!-- 						&nbsp; -->
+				    </td>
+				    
+				    <td class="order-table-header"><h:outputText id="output" style="margin-bottom:3px;"	value="#{msg['einkauf.sicherheitsbestand']} %#{einkaufKonfiguration.sicherheitsbestand}" />
+							<h:inputHidden id="txt2" value="#{einkaufKonfiguration.sicherheitsbestand}" /> 
+							<p:slider styleClass="mt" for="txt2" display="output" style="width: 200px" displayTemplate="#{msg['einkauf.neuerSicherheitsbestand']} %{value}" />
+					</td>
+				    
+				    <td class="tg-031e">
+<!-- 						&nbsp; -->
+				    </td>
+				    
+				    <td class="tg-031e">
+						<h:outputText id="output2"	style="margin-bottom:3px;" value="#{msg['einkauf.neueDiskontmengeAbw']} %#{einkaufKonfiguration.diskontmengeAbweichung}" />
+						<h:inputHidden id="txt3" value="#{einkaufKonfiguration.diskontmengeAbweichung}" /> <p:slider styleClass="mt" 
 								for="txt3" display="output2" style="width: 200px" displayTemplate="#{msg['einkauf.neueDiskontmengeAbw']} %{value}" />
-						</td>
-					</tr>
+				    </td>
+				    
+				    <td class="tg-031e">
+<!-- 						&nbsp; -->
+				    </td>
+				    
+				    <td class="tg-031e">
+						<p:commandButton style="margin-top:20px;"
+							action="#{dispositionBean.einkaufProgrammBerechnen()}"
+							value="#{msg['button.calculate']}" ajax="false">
+						</p:commandButton>
+					</td>
+				  
+				  </tr>
+				  
 				</table>
-				<p:commandButton style="margin-top:20px;"
-					action="#{dispositionBean.einkaufProgrammBerechnen()}"
-					value="#{msg['button.calculate']}" ajax="false">
-				</p:commandButton>
-			</div>
-		</h:form>
-	</div>
+			</h:form>		
+		</div>
+
+
 		<p:separator style="width:100%;height:3px" />
 		<h2>#{msg['einkauf.berechneteEinkaeufe']}</h2>
 		<h:form id="daten">
