@@ -92,7 +92,7 @@
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.abnahme']}</f:facet>
-					<h:inputText rendered="#{table.rowIndex==0}"
+					<p:inputMask styleClass="text-input" rendered="#{table.rowIndex==0}"
 						value="#{prodVerwaltungBean.teileHelpDispoListZwei.get(table.rowIndex).vertriebswunsch}" />
 					<h:outputText rendered="#{table.rowIndex!=0}"
 						value="#{prodVerwaltungBean.teileHelpDispoList.get(table.rowIndex).vertriebswunsch}" />
@@ -101,35 +101,35 @@
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.geplanteLagermenge']}</f:facet>
-					<h:inputText value="#{ergebnis.geplante_lagermenge}" />
+					<p:inputMask styleClass="text-input" value="#{ergebnis.geplante_lagermenge}" />
 				</p:column>
 
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
-					#{ergebnis.nummer}
+					<div align="right">#{ergebnis.nummer}</div>
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.lagerbestandEndeVorperiode']}</f:facet>
-					#{ergebnis.lagerbestand_ende_vorperiode}		
+					<div align="right">#{ergebnis.lagerbestand_ende_vorperiode}		</div>
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.auftraegeWarteschlange']}</f:facet>
-					#{ergebnis.auftraege_warteschlange}	
+					<div align="right">#{ergebnis.auftraege_warteschlange}	</div>
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.auftraegeInBearbeitung']}</f:facet>
-					#{ergebnis.auftrage_bearbeitung}
+					<div align="right">#{ergebnis.auftrage_bearbeitung}</div>
 				</p:column>
 
 
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.produktionsauftrag']}</f:facet>
-					#{ergebnis.produktionsauftrag_naechste_periode}
+					<div align="right">#{ergebnis.produktionsauftrag_naechste_periode}</div>
 				</p:column>
 
 
