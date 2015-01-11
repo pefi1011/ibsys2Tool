@@ -41,10 +41,12 @@
 	        		<pe:layoutPane position="east" size="200" initClosed="true">  
 	        
 	            		<!--   THEMA AUSWAHLEN -->
-	            		<p:themeSwitcher id="basic" style="width:165px">
-					            <f:selectItem itemLabel="Choose Theme" itemValue="" />
-					            <f:selectItems value="[afterdark, afternoon, afterwork, aristo, black-tie, blitzer, bluesky, bootstrap,   ui-darkness, ui-lightness]" var="theme" itemLabel="" itemValue=""/>
-	        			</p:themeSwitcher>
+	            		<h:form>
+	            			<p:themeSwitcher style="width:165px">
+								<f:selectItem itemLabel="--Choose Theme--" itemValue="" />
+								<f:selectItems value="#{themeSwitcherView.themes}" />
+							</p:themeSwitcher>
+						</h:form>
 			
 						<!--   SPRACHE AUSWAHLEN -->
 	        			<h:form>
@@ -170,7 +172,7 @@
 			        -moz-border-radius-bottomright: 0;  
 			    } 
 			</h:outputStylesheet>  
-		<h:outputStylesheet library="css" name="global.css"/>  
+<!-- 		<h:outputStylesheet library="css" name="global.css"/>   -->
        	<h:outputStylesheet library="css" name="default.css" />
     </h:body>
 
