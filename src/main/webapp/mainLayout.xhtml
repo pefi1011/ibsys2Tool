@@ -20,8 +20,22 @@
         </f:facet>
         
         <f:view locale="#{localeManager.locale}"></f:view>
+        
+        	<script>
+        	// markiere in navigationsleiste die gerade anzuzeigende seite
+        	  $(document).ready(function() {
+
+        		   $('.ui-menuitem-link').each(function(){
+        		       if(window.location.pathname.indexOf($(this).attr('href')) != -1) {
+        		           $(this).css('background', 'gray');
+        		           $(this).css('color', 'white');//textfarbe setzen
+        		       }
+        		   });  
+
+        		})
+				</script>
     </pe:head>
-  
+
     <h:body>  
    
 	    <pe:layout togglerTipClosed="#{msg['layout.tipClosed']}" togglerTipOpen="#{msg['layout.tipOpen']}">  
@@ -177,6 +191,11 @@
 			    	display:block;
 			    	width:100px
 			    }
+			    
+			    .orders-menuitem-selected .ui-menuitem-text {
+				    font-size: 95% !important;
+				    font-weight: bolder !important;
+				}
 			    
 			</h:outputStylesheet>  
 <!-- 		<h:outputStylesheet library="css" name="global.css"/>   -->

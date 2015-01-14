@@ -37,92 +37,75 @@
 				<h:form enctype="multipart/form-data">
 					<table class="tg">
 			  			<tr>
-							<th class="tg-031e">
-								
-								
+							<th >
+											
+											<table class="tg">
+											  <tr>
+											    <th class="tg-031e">
+											    	<h:inputFile id="file" value="#{prodVerwaltungBean.file}"></h:inputFile>
+											    </th>
+											  </tr>
+											  
+											  <tr>
+											    <td class="tg-031e">
+											    	<p:commandButton id="insertBtn" value="#{msg['button.upload']}"
+														ajax="false" action="#{prodVerwaltungBean.upload()}" />
+													<h:message for="insertBtn" />
+													<h:messages />
+													<p:fileUpload fileUploadListener="#{fileUploadView.handleFileUpload}" mode="advanced" dragDropSupport="false"
+           update="messages" auto="true" sizeLimit="100000" allowTypes="/(\.|\/)(xml)$/" />
+ 
+    <p:growl id="messages" showDetail="true" />
+											    </td>
+											    
+											    
+											  </tr>
+											  
+											  <tr>
+												  <td class="tg-031e">
+														<h:message for="insertBtn" />
+														<h:messages />
+												  </td>
+											  </tr>
+											</table>
 							
-							<table class="tg">
-							  <tr>
-							    <th class="tg-031e">
-							    	<h:inputFile id="file" value="#{prodVerwaltungBean.file}"></h:inputFile>
-							    </th>
-							  </tr>
-							  
-							  
-							  <tr>
-							    <td class="tg-031e">
-							    	<p:commandButton id="insertBtn" value="#{msg['button.upload']}"
-										ajax="false" action="#{prodVerwaltungBean.upload()}" />
-									<h:message for="insertBtn" />
-									<h:messages />
-							    </td>
-							  </tr>
-							  
-							  <tr>
-								  <td class="tg-031e">
-										<h:message for="insertBtn" />
-										<h:messages />
-								  </td>
-							  </tr>
-							</table>
+								</th>
 							
+							<th >
 							
-							
+								  <h:panelGrid columns="5" cellpadding="4">
+						            
+						                <h:outputText value="#{msg.periode}" /> 
+						              <h:outputText value="n" /> 
+						              <h:outputText value="n+1" /> 
+						                 <h:outputText value="n+2" /> 
+						                 <h:outputText value="n+3" /> 
+						                 
+						              <h:outputText value="P1" /> 
+						              <p:inputMask  value="#{produktionsprogramm.p1_1}" />
+						              <p:inputMask value="#{produktionsprogramm.p1_2}" />
+						                   <p:inputMask  value="#{produktionsprogramm.p1_3}" />
+						                  <p:inputMask  value="#{produktionsprogramm.p1_4}" />
+						            
+						              
+						              <h:outputText value="P2" /> 
+						              <p:inputMask  value="#{produktionsprogramm.p2_1}" />
+						              <p:inputMask value="#{produktionsprogramm.p2_2}" />
+						                   <p:inputMask value="#{produktionsprogramm.p2_3}" />
+						                  <p:inputMask  value="#{produktionsprogramm.p2_4}" />
+						                  
+						                  <h:outputText value="P3" /> 
+						              <p:inputMask value="#{produktionsprogramm.p3_1}" />
+						              <p:inputMask  value="#{produktionsprogramm.p3_2}" />
+						                   <p:inputMask  value="#{produktionsprogramm.p3_3}" />
+						                  <p:inputMask value="#{produktionsprogramm.p3_4}" />
+						            
+						            </h:panelGrid>
+						            
 							</th>
-							
-			
-							
-							
-							<th class="tg-031e">
-							
-							
-								
-			
-						<div id="content">
-							<table class="order-table">
-								<tr>
-									<td class="order-table-header"><h3>#{msg.periode}</h3></td>
-									<td class="order-table-header"><h3>n</h3></td>
-									<td class="order-table-header"><h3>n+1</h3></td>
-									<td class="order-table-header"><h3>n+2</h3></td>
-									<td class="order-table-header"><h3>n+3</h3></td>
-								</tr>
-								<tr>
-									<td class="order-table-header"><h3>p1</h3></td>
-									<td><h:inputText id="p11" value="#{produktionsprogramm.p1_1}">
-											<f:convertNumber for="p11" integerOnly="true" />
-											<h:message for="p11"></h:message>
-										</h:inputText></td>
-									<td><h:inputText value="#{produktionsprogramm.p1_2}" /></td>
-									<td><h:inputText value="#{produktionsprogramm.p1_3}" /></td>
-									<td><h:inputText value="#{produktionsprogramm.p1_4}" /></td>
-								</tr>
-								<tr>
-									<td class="order-table-header"><h3>p2</h3></td>
-									<td><h:inputText value="#{produktionsprogramm.p2_1}" /></td>
-									<td><h:inputText value="#{produktionsprogramm.p2_2}" /></td>
-									<td><h:inputText value="#{produktionsprogramm.p2_3}" /></td>
-									<td><h:inputText value="#{produktionsprogramm.p2_4}" /></td>
-								</tr>
-								<tr>
-									<td class="order-table-header"><h3>p3</h3></td>
-									<td><h:inputText value="#{produktionsprogramm.p3_1}" /></td>
-									<td><h:inputText value="#{produktionsprogramm.p3_2}" /></td>
-									<td><h:inputText value="#{produktionsprogramm.p3_3}" /></td>
-									<td><h:inputText value="#{produktionsprogramm.p3_4}" /></td>
-								</tr>
-			
-							</table>
-							
-							
-						</div>
-						<h:messages />
-					
-							
-							
-							
-							</th>
-							<th class="tg-031e">
+						
+						
+							<th >
 								<p:commandButton style="margin-top:10px;" ajax="false"
 									action="#{produktionsprogramm.weiter()}" value="#{msg['button.calculate']}">
 								</p:commandButton>
