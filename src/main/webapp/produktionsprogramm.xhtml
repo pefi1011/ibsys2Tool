@@ -41,32 +41,22 @@
 
 							<table class="tg">
 								<tr>
-									<th class="tg-031e"><h:inputFile id="file"
-											value="#{prodVerwaltungBean.file}"></h:inputFile></th>
 								</tr>
 
 								<tr>
 									<td class="tg-031e">
 									
-											<p:commandButton id="insertBtn" value="#{msg['button.upload']}" ajax="false"
-											action="#{prodVerwaltungBean.upload()}" /> 
-											<h:message for="insertBtn" /> <h:messages /> 
-											
 											
 											<p:fileUpload fileUploadListener="#{prodVerwaltungBean.handleFileUpload}"
 											mode="advanced" dragDropSupport="false" update="messages" value="#{prodVerwaltungBean.file}"
 											auto="true" sizeLimit="100000" allowTypes="/(\.|\/)(xml)$/" />
 
-										<p:growl id="messages" showDetail="true" />
+										<p:growl id="messages" class="uploadXmlMsg" showDetail="true" life="4000" />
 										</td>
 
 
 								</tr>
 
-								<tr>
-									<td class="tg-031e"><h:message for="insertBtn" /> <h:messages />
-									</td>
-								</tr>
 							</table>
 
 						</th>
