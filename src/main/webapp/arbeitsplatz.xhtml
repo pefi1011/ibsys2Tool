@@ -59,9 +59,7 @@
 		<h:form>
 
 				<p:dataTable id="result" binding="#{table}"
-					value="#{aPBean.arbeitsplaetze}" var="ergebnis"
-					styleClass="order-table" headerClass="order-table-header"
-					rowClasses="order-table-odd-row,order-table-even-row">
+					value="#{aPBean.arbeitsplaetze}" var="ergebnis" styleClass="order-table" headerClass="order-table-header" owClasses="order-table-odd-row,order-table-even-row">
 
 
 					<p:column>

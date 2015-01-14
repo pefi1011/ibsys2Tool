@@ -17,6 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import javax.xml.bind.JAXBException;
 
+import org.primefaces.event.FileUploadEvent;
+import org.primefaces.model.UploadedFile;
 import org.xml.sax.SAXException;
 
 import de.supplyTool.ManagedBeans.ErgebnisBean;
@@ -55,6 +57,329 @@ public class ProdVerwaltungBean implements Serializable {
     public void setFile(final Part file) {
         this.file = file;
     }
+    
+    private UploadedFile uploadedFile;
+    
+    public UploadedFile UploadedFile() {
+        return uploadedFile;
+    }
+ 
+    public void setFile(UploadedFile uploadedFile) {
+        this.uploadedFile = uploadedFile;
+    }
+     
+    
+    
+    public void handleFileUpload(FileUploadEvent event) {
+        FacesMessage message = new FacesMessage("Succesful", event.getFile().getFileName() + " is uploaded.");
+        
+        
+        upload2(event.getFile());
+        
+        FacesContext.getCurrentInstance().addMessage(null, message);
+    }
+    
+    public void upload2(UploadedFile uploadFileParam) {
+        try {
+        	System.out.println("BEGINN upload: XML Datei hochladen");
+        	
+            delete();
+            
+            System.out.println("XML einlesen");
+            System.out.println("\n");
+            
+            
+            final InputStream inputStream = uploadFileParam.getInputstream();
+            
+            final Scanner scanner = new Scanner(inputStream);
+
+            fileContent = scanner.useDelimiter("\\A").next();
+
+            inputStream.close();
+            scanner.close();
+
+            System.out.println("Folgende XML wurde eingelesen");
+            System.out.println(fileContent);
+            System.out.println("\n");
+
+
+            System.out.println("FilePath fuer den Speicherort der XML auf dem Server aufbauen");
+            System.out.println("\n");
+            
+            // Pfad zur Klasse (ClassPath)
+            final String path = ProdVerwaltungBean.class.getProtectionDomain()
+                    .getCodeSource().getLocation().getPath();
+
+            // Klassenspezifische sachen abschneiden
+            String destinationDir = path.replace(
+                    "ManagedBeans/prodVerwaltung/ProdVerwaltungBean.class", "");
+            // xmlFiles Ordner anw�hlen
+            destinationDir = destinationDir + "xmlFiles";
+
+            // Name der Datei hinzuf�gen
+            final String filePath = destinationDir + "/"
+                    + uploadFileParam.getFileName();
+
+            System.out.println("FilePath FERTIG: " + filePath);
+            System.out.println("\n");
+
+
+            System.out.println("BEGINN eingelesene Datei als XML auf dem Server speichern");
+            System.out.println("\n");
+
+            // Datei wegschreiben
+            final File uploadedXmlFile = new File(filePath);
+            uploadedXmlFile.createNewFile();
+            final FileWriter fileWriter = new FileWriter(uploadedXmlFile);
+            fileWriter.append(fileContent);
+            fileWriter.close();
+            currentFile = uploadedXmlFile;
+            
+            System.out.println("ENDE eingelesene Datei wurde als XML auf dem Server gespeichert");
+            System.out.println("\n");
+            
+            System.out.println("BEGINN insert");
+            System.out.println("\n");
+            
+            insert2();
+            
+            System.out.println("ENDE alle Daten aus XML wurde in der DB gespeichert");
+            System.out.println("\n");
+            
+            System.out.println("ENDE upload: XML Datei hochladen");
+            
+            
+        } catch (final Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void insert2() {
+        
+        System.out.println("Baue Pfad zu results.xsd");
+        System.out.println("\n");
+
+        
+        // Pfad zur Klasse (ClassPath)
+        final String path = ProdVerwaltungBean.class.getProtectionDomain()
+                .getCodeSource().getLocation().getPath();
+
+        // Klassenspezifische sachen abschneiden
+        String destinationDir = path.replace(
+                "ManagedBeans/prodVerwaltung/ProdVerwaltungBean.class", "");
+        destinationDir = destinationDir + "xmlFiles" + "/results.xsd";
+        
+        System.out.println("Pfad gebaut: "+ destinationDir);
+
+        final Dao dao = new Dao();
+
+        //PeriodResults e = null; // Periodenergebnisse aus ausgelesener XML Datei
+        
+        Results e2 = null; 
+        try {
+        	System.out.println(currentFile.getAbsolutePath());
+            
+            
+            System.out.println("BEGINN Unmarshalling anhand von results.xsd");
+            System.out.println("\n");
+            
+            //e = JaxbMarshalUnmarshalUtil.unmarshal(destinationDir,currentFile.getAbsolutePath(), PeriodResults.class);
+            
+            e2 = JaxbMarshalUnmarshalUtil.unmarshal(destinationDir,currentFile.getAbsolutePath(), Results.class);
+            
+            final ErgebnisBean managedBean = ContextHelper.getManagedBean(ErgebnisBean.class);
+            //managedBean.setXmlResult(e);
+            managedBean.setXmlResult2(e2);
+            
+            
+            System.out.println("ENDE Unmarshalling anhand von results.xsd erfolgreich");
+            System.out.println("\n");
+            
+        } catch (final JAXBException e1) {
+            // TODO Auto-generated catch block
+            System.out.println("1");
+            e1.printStackTrace();
+        } catch (final SAXException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+        
+        System.out.println("BEGINN Schreibe in die DB, welche Bestellungen angekommen sind und welche noch ausstehen ");
+        System.out.println("\n");
+
+        
+        //dao.updateBestellungen(e.getFutureInwardStockMovements(),Integer.valueOf(e.getPeriod().toString()));
+        
+        
+        dao.updateBestellungen2(e2.getFutureinwardstockmovement(),e2.getPeriod());
+
+        
+        System.out.println("ENDE ausstehende Bestellungen wurden in der DB aktualisert. ");
+        System.out.println("\n");
+        
+        
+//        List<de.supplyTool.generated.Entry> feld = new ArrayList<Entry>();
+        List<Article> feld2 = new ArrayList<Article>();
+
+        
+        final ArrayList<Teil_dispohelp> ergebnisse = new ArrayList<Teil_dispohelp>();
+
+        
+        System.out.println("BEGINN bereite Daten fuer Teil und Lagerbestand vor ");
+        System.out.println("\n");
+        
+//        feld = e.getWarehouseStock().getEntry();
+          feld2 = e2.getWarehousestock().getArticle();
+
+
+        // teil setzen
+        // lagerbvestand setzzen
+
+          for (int n = 0; n < feld2.size(); ++n) {
+
+//            String a = feld2.get(n).getItem().substring(feld2.get(n).getItem().length() - 2,feld2.get(n).getItem().length());
+//            a = nameToId(a);
+
+            ergebnisse.add(new Teil_dispohelp());
+//            ergebnisse.get(n).setNummer(Integer.valueOf(a));
+            ergebnisse.get(n).setNummer(feld2.get(n).getId());
+
+            
+            ergebnisse.get(n).setLagerbestand_ende_vorperiode(feld2.get(n).getAmount());
+
+        }
+        
+        System.out.println("ENDE  Teil und Lagerbestand erfolgreich vorbereitet");
+        System.out.println("\n");
+        
+        System.out.println("BEGINN  Auftraege in Bearbeitung vorbereiten");
+        System.out.println("\n");
+
+        
+        
+//      feld = e.getOrdersBeeingProcessed().getEntry();
+       List<Workplace> feld3 = e2.getOrdersinwork().getWorkplace();
+      
+      // auftrage in bearbeitung setzen
+      Integer tmp = -1;
+      for (int n = 0; n < feld3.size(); ++n) {
+          for (int i = 0; i < ergebnisse.size(); i++) {
+              // System.out.println("1 "+dispofeld.get(i).getNummer());
+              // System.out.println("2 "+name_to_id(feld.get(n).getItem()));
+              if (ergebnisse.get(i).getNummer().equals(feld3.get(n).getItem())) {
+                  tmp = i;
+
+              }
+          }
+
+          ergebnisse.get(tmp).setAuftrage_bearbeitung(feld3.get(n).getAmount());
+      }
+      
+      
+      System.out.println("ENDE  Auftraege in Bearbeitung  wurden vorbereitet");
+      System.out.println("\n");
+
+      
+      
+      System.out.println("BEGINN  Auftraege in der Warteschlange vorbereiten");
+      System.out.println("\n");
+
+      // auftraege in der warteschlange setzen
+
+     //   feld = e.getWorkplaceWaitinglist().getEntry();
+    
+    // die daten fuer unsere xml schema anpassen
+    List<de.supplyTool.generated2.Results.Waitinglistworkstations.Workplace> feld4 = e2.getWaitinglistworkstations().getWorkplace();
+     ArrayList<Waitinglist> feld4b = new ArrayList<Waitinglist>();
+     
+     for(de.supplyTool.generated2.Results.Waitinglistworkstations.Workplace x : feld4){
+
+    	 feld4b.addAll(x.getWaitinglist());
+    }
+    		 
+    
+    for (int n = 0; n < feld4b.size(); n++) {
+    	
+        for (int i = 0; i < ergebnisse.size(); i++) {
+        	
+            // System.out.println("1 "+dispofeld.get(i).getNummer());
+            // System.out.println("2 "+name_to_id(feld.get(n).getItem()));
+            if (ergebnisse.get(i).getNummer().equals(feld4b.get(n).getItem())) {
+                tmp = i;
+
+            }
+        }
+        
+        ergebnisse.get(tmp).setAuftraege_warteschlange(feld4b.get(n).getAmount());
+
+    }
+    
+    System.out.println("ENDE  Auftraege in der Warteschlange wurden vorbereitet");
+    System.out.println("\n");
+
+    // Produkt 1 und seine Eigenfertigungsteile
+    final ArrayList<Integer> eins = new ArrayList<Integer>();
+    eins.add(1);
+    eins.add(26);
+    eins.add(51);
+    eins.add(16);
+    eins.add(17);
+    eins.add(50);
+    eins.add(4);
+    eins.add(10);
+    eins.add(49);
+    eins.add(7);
+    eins.add(13);
+    eins.add(18);
+
+    // Produkt 2 und seine Eigenfertigungsteile
+    final ArrayList<Integer> zwei = new ArrayList<Integer>();
+    zwei.add(2);
+    zwei.add(26);
+    zwei.add(56);
+    zwei.add(16);
+    zwei.add(17);
+    zwei.add(55);
+    zwei.add(5);
+    zwei.add(11);
+    zwei.add(54);
+    zwei.add(8);
+    zwei.add(14);
+    zwei.add(19);
+
+    // Produkt 3 und seine Eigenfertigungsteile
+    final ArrayList<Integer> drei = new ArrayList<Integer>();
+    drei.add(3);
+    drei.add(26);
+    drei.add(31);
+    drei.add(16);
+    drei.add(17);
+    drei.add(30);
+    drei.add(6);
+    drei.add(12);
+    drei.add(29);
+    drei.add(9);
+    drei.add(15);
+    drei.add(20);
+
+    System.out.println("BEGINN Dispo_n in  DB aktualisieren");
+    System.out.println("\n");
+    
+    dao.setDispoHelp(ergebnisse, eins, zwei, drei);
+
+    System.out.println("ENDE  Dispo_n wurde in der DB aktualisiert");
+    System.out.println("\n");
+    
+    System.out.println("BEGINN Lagerbestand in der DB aktualisieren");
+    System.out.println("\n");
+    
+    dao.updateLagermenge(ergebnisse);
+    
+    System.out.println("ENDE Lagerbestand in der DB erfolgreich aktualisiert");
+    System.out.println("\n");
+    
+    }
+    
 
     public void upload() {
         try {
@@ -67,6 +392,7 @@ public class ProdVerwaltungBean implements Serializable {
             
             
             final InputStream inputStream = file.getInputStream();
+            
             final Scanner scanner = new Scanner(inputStream);
 
             fileContent = scanner.useDelimiter("\\A").next();
