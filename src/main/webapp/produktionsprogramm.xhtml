@@ -49,7 +49,8 @@
 											
 											<p:fileUpload fileUploadListener="#{prodVerwaltungBean.handleFileUpload}"
 											mode="advanced" dragDropSupport="false" update="messages" value="#{prodVerwaltungBean.file}"
-											auto="true" sizeLimit="100000" allowTypes="/(\.|\/)(xml)$/" />
+											auto="true" sizeLimit="100000" allowTypes="/(\.|\/)(xml)$/" 
+											label="#{msg['button.upload']}" />
 
 										<p:growl id="messages" class="uploadXmlMsg" showDetail="true" life="4000" />
 										</td>
