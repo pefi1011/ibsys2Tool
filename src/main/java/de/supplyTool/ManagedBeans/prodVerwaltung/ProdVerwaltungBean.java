@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 import java.util.Scanner;
 
 import javax.faces.application.FacesMessage;
@@ -20,6 +21,8 @@ import javax.xml.bind.JAXBException;
 import org.primefaces.event.FileUploadEvent;
 import org.primefaces.model.UploadedFile;
 import org.xml.sax.SAXException;
+
+import com.sun.faces.application.resource.Resource;
 
 import de.supplyTool.ManagedBeans.ErgebnisBean;
 import de.supplyTool.ManagedBeans.disposition.Produktionsprogramm;
@@ -71,12 +74,24 @@ public class ProdVerwaltungBean implements Serializable {
     
     
     public void handleFileUpload(FileUploadEvent event) {
-        FacesMessage message = new FacesMessage("Succesful", event.getFile().getFileName() + " is uploaded.");
+    	
+        	
+        	FacesContext context = FacesContext.getCurrentInstance();
+        	ResourceBundle bundle = context.getApplication().getResourceBundle(context, "msg");
+        	
+        	String msgTitle = bundle.getString("growl.xml.upload.succesful");
+        	String msg = bundle.getString("growl.xml.upload.succesful.message");
+
+        	
+        	
+        	 msg = "\"" + event.getFile().getFileName() + msg;
+        	
+        	FacesMessage message = new FacesMessage(msgTitle, msg);
+        	
+        	upload2(event.getFile());
         
-        
-        upload2(event.getFile());
-        
-        FacesContext.getCurrentInstance().addMessage(null, message);
+        	FacesContext.getCurrentInstance().addMessage(null, message);
+
     }
     
     public void upload2(UploadedFile uploadFileParam) {
