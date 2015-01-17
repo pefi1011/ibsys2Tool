@@ -20,8 +20,7 @@
 	<ui:define name="prognoseTabelle">
 	
 			<div align="center" >
-		
-	
+
 		  <h:panelGrid columns="5" cellpadding="4">
             
                 <h:outputText value="#{msg.periode}" /> 
@@ -53,10 +52,74 @@
             
            		</div>
 	</ui:define>
-	
-	
+		
 	<ui:define name="content">
+	
+	<div id="divCheckbox" style="display: none;">#{aPBean.arbeitsplaetze}</div>
+		
+
 		<h:form>
+		
+
+									<center>
+			<table class="tg">				  
+				  
+				  <tr>
+				  
+				    <th class="tg-031e">
+						#{msg['ap.steuerung']}
+				    </th>
+				    
+				    <td class="tg-031e">
+<!-- 						&nbsp; -->
+				    </td>
+				    
+				    <td class="order-table-header"><h:outputText id="output" style="margin-bottom:3px;"	value="#{msg['ap.zweiteschichtab']} #{aPBean.optionTwo.optionOne}" />
+							<h:inputHidden id="txt2" value="#{aPBean.optionTwo.optionOne}" />
+							<p:slider styleClass="mt" minValue="3550" maxValue="3800" for="txt2" display="output" style="width: 200px" displayTemplate="#{msg['ap.zweiteschichtab']} {value}" />
+					</td>
+				    
+				    <td class="tg-031e">
+<!-- 						&nbsp; -->
+				    </td>
+				    
+				    <td class="tg-031e">
+						<h:outputText id="output2"	style="margin-bottom:3px;" value="#{msg['ap.dritteschichtab']} #{aPBean.optionThree.optionOne}" />
+						<h:inputHidden id="txt3" value="#{aPBean.optionThree.optionOne}" />
+						<p:slider styleClass="mt" minValue="6500" maxValue="6750" for="txt3" display="output2" style="width: 200px" displayTemplate="#{msg['ap.dritteschichtab']} {value} " />
+				    </td>
+				    
+				    <td class="tg-031e">
+<!-- 						&nbsp; -->
+				    </td>
+				    
+				    <td class="tg-031e">
+						<p:commandButton style="margin-top:20px;"
+						action="#{aPBean.doLogic()}" value="#{msg['button.reload']}" ajax="false">
+
+						</p:commandButton>
+					</td>
+				  
+				  </tr>
+				  
+				</table>
+				</center>
+				
+		
+	
+		<p:separator style="width:100%;height:3px" />
+				
+				<center>	
+					<p:commandButton style="margin-top:10px;"
+						action="einkauf.xhtml?faces-redirect=true" value="#{msg['button.continue']}"
+						ajax="false">
+		
+					</p:commandButton>
+				</center>
+							
+				<br></br>
+	
+
 
 				<p:dataTable id="result" binding="#{table}"
 					value="#{aPBean.arbeitsplaetze}" var="ergebnis" styleClass="order-table" headerClass="order-table-header" owClasses="order-table-odd-row,order-table-even-row">
@@ -108,69 +171,58 @@
 
 				</p:dataTable>
 
+<!-- <p:column> -->
+<!-- 					<p:commandButton style="margin-top:20px;" -->
+<!-- 						action="#{aPBean.doLogic()}" value="#{msg['button.reload']}" ajax="false"> -->
 
-				<p:column>
-					<p:commandButton style="margin-top:20px;"
-						action="#{aPBean.doLogic()}" value="#{msg['button.reload']}" ajax="false">
+<!-- 					</p:commandButton> -->
+<!-- 				</p:column> -->
 
-					</p:commandButton>
-				</p:column>
+<!-- 				<p:column> -->
+<!-- 					<p:commandButton style="margin-top:20px;" -->
+<!-- 						action="einkauf.xhtml?faces-redirect=true" value="#{msg['button.continue']}" -->
+<!-- 						ajax="false"> -->
 
-				<p:column>
-					<p:commandButton style="margin-top:20px;"
-						action="einkauf.xhtml?faces-redirect=true" value="#{msg['button.continue']}"
-						ajax="false">
+<!-- 					</p:commandButton> -->
+<!-- 				</p:column> -->
 
-					</p:commandButton>
-				</p:column>
+<!-- 				<br></br> -->
 
-
-
-
-				<br></br>
-				<!--
-<p:column>
-	<h:outputLabel value="Schicht 1  &#160;&#160;&#160; "/>
-			<h:outputLabel  value="#{aPBean.optionOne.optionTwo}" />
-					<h:outputLabel value="&#160;&#160;&#160; Erste Schicht ab (sinnlos)     "/>
-				<h:inputText  value="#{aPBean.optionOne.optionOne}" />
-			
-			</p:column>
-		-->
-
-				<br></br>
-
-				<p:column>
-					<h:outputLabel
-						value="#{msg['ap.ersteschicht']} &#160;&#160;&#160;  " />
-					<h:outputLabel value="#{aPBean.optionOne.optionTwo}" />
+<!-- 				<p:column> -->
+<!-- 					<h:outputLabel -->
+<!-- 						value="#{msg['ap.ersteschicht']} &#160;&#160;&#160;  " /> -->
+<!-- 					<h:outputLabel value="#{aPBean.optionOne.optionTwo}" /> -->
 
 
 
-				</p:column>
+<!-- 				</p:column> -->
 
-				<br></br>
-				<p:column>
-					<h:outputLabel
-						value="#{msg['ap.zweiteschicht']}   &#160;&#160;&#160;" />
-					<h:outputLabel value="#{aPBean.optionTwo.optionTwo}" />
-					<h:outputLabel
-						value="&#160;&#160;&#160; #{msg['ap.zweiteschichtab']}     " />
-					<h:inputText value="#{aPBean.optionTwo.optionOne}" />
+<!-- 				<br></br> -->
+<!-- 				<p:column> -->
+<!-- 					<h:outputLabel -->
+<!-- 						value="#{msg['ap.zweiteschicht']}   &#160;&#160;&#160;" /> -->
+<!-- 					<h:outputLabel value="#{aPBean.optionTwo.optionTwo}" /> -->
+<!-- 					<h:outputLabel -->
+<!-- 						value="&#160;&#160;&#160; #{msg['ap.zweiteschichtab']}     " /> -->
+<!-- 					<h:inputText value="#{aPBean.optionTwo.optionOne}" /> -->
 
-				</p:column>
+<!-- 				</p:column> -->
 
-				<br></br>
+<!-- 				<br></br> -->
 
-				<p:column>
-					<h:outputLabel
-						value="#{msg['ap.dritteschicht']}   &#160;&#160;&#160;  " />
-					<h:outputLabel value="#{aPBean.optionThree.optionTwo}" />
-					<h:outputLabel
-						value="&#160;&#160;&#160; #{msg['ap.dritteschichtab']}     " />
-					<h:inputText value="#{aPBean.optionThree.optionOne}" />
+<!-- 				<p:column> -->
+<!-- 					<h:outputLabel -->
+<!-- 						value="#{msg['ap.dritteschicht']}   &#160;&#160;&#160;  " /> -->
+<!-- 					<h:outputLabel value="#{aPBean.optionThree.optionTwo}" /> -->
+<!-- 					<h:outputLabel -->
+<!-- 						value="&#160;&#160;&#160; #{msg['ap.dritteschichtab']}     " /> -->
+<!-- 					<h:inputText value="#{aPBean.optionThree.optionOne}" /> -->
 
-				</p:column>
+<!-- 				</p:column> -->
+				
+				
+
+				
 
 			</h:form>
 		
