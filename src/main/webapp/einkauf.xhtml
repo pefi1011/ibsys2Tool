@@ -90,7 +90,7 @@
 <!-- 						&nbsp; -->
 				    </td>
 				    
-				    <td class="order-table-header"><h:outputText id="output" style="margin-bottom:3px;"	value="#{msg['einkauf.sicherheitsbestand']} #{einkaufKonfiguration.sicherheitsbestand} %" />
+				    <td class="order-table-header"><h:outputText id="output" style="margin-bottom:3px;"	value="#{msg['einkauf.sicherheitsbestand']} #{einkaufKonfiguration.sicherheitsbestand}%" />
 							<h:inputHidden id="txt2" value="#{einkaufKonfiguration.sicherheitsbestand}" /> 
 							<p:slider styleClass="mt" for="txt2" display="output" style="width: 200px" displayTemplate="#{msg['einkauf.neuerSicherheitsbestand']} {value}%" />
 					</td>
@@ -100,7 +100,7 @@
 				    </td>
 				    
 				    <td class="tg-031e">
-						<h:outputText id="output2"	style="margin-bottom:3px;" value="#{msg['einkauf.neueDiskontmengeAbw']} #{einkaufKonfiguration.diskontmengeAbweichung} %" />
+						<h:outputText id="output2"	style="margin-bottom:3px;" value="#{msg['einkauf.neueDiskontmengeAbw']} #{einkaufKonfiguration.diskontmengeAbweichung}%" />
 						<h:inputHidden id="txt3" value="#{einkaufKonfiguration.diskontmengeAbweichung}" /> <p:slider styleClass="mt" 
 								for="txt3" display="output2" style="width: 200px" displayTemplate="#{msg['einkauf.neueDiskontmengeAbw']} {value}% " />
 				    </td>
@@ -130,144 +130,148 @@
 					action="#{dispositionBean.weiter()}" value="#{msg['button.continue']}">
 				</p:commandButton>
 			</center>
+		
+		<center>	
+		
+			<h:form id="daten">
 			
-		<h:form id="daten">
+				<p:dataTable id="result"
+					value="#{dispositionBean.getDispositionsErgebnisse()}" var="ergebnis" styleClass="order-table"
+					headerClass="order-table-header" rowClasses="order-table-odd-row,order-table-even-row" resizableColumns="true">
+	
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
+						#{ergebnis.teil != null ? ergebnis.teil.nummer : 'keine Nummer vorhanden'}					
+					</p:column>
+	
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.bezeichnung']}</f:facet>
+						#{ergebnis.teil != null ? ergebnis.teil.bezeichnung : 'keine Bezeichnung vorhanden'}
+					</p:column>
+					
+					<!-- 
+					
+				<h:column>
+					<f:facet name="header">Beschaffungszeit Periode</f:facet>
+						#{ergebnis.lieferDaten.wiederbeschaffungszeitPeriode}
+					</h:column>
+	
+				<h:column>
+					<f:facet name="header">Abweichung Periode</f:facet>
+						#{ergebnis.lieferDaten.abweichungPeriode}
+					</h:column>
+	
+				<h:column>
+					<f:facet name="header">MaxLieferdauer Periode</f:facet>
+						#{ergebnis.maxLieferdauerPeriode}
+					</h:column>
+	
+	
+	
+				<h:column>
+					<f:facet name="header">Anzahl in P1</f:facet>
+						#{ergebnis.mengenStuecklisteitemP1 != null ? ergebnis.mengenStuecklisteitemP1.menge : 'keins'}
+					</h:column>
+	
+				<h:column>
+					<f:facet name="header">Anzahl in P2</f:facet>
+						#{ergebnis.mengenStuecklisteitemP2 != null ? ergebnis.mengenStuecklisteitemP2.menge : 'keins'}
+					</h:column>
+	
+				<h:column>
+					<f:facet name="header">Anzahl in P3</f:facet>
+						#{ergebnis.mengenStuecklisteitemP3 != null ? ergebnis.mengenStuecklisteitemP3.menge : 'keins'}
+					</h:column>
+	 -->
+	
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.lagermenge']}</f:facet>
+						<div align="right">#{ergebnis.lieferDaten.lagerMenge}</div>	
+					</p:column>
+	
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.bedarfP1']}</f:facet>
+						<div align="right">#{ergebnis.bruttoBedarfPeriode1}	</div>	
+					</p:column>
+	
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.bedarfP2']}</f:facet>
+						<div align="right">#{ergebnis.bruttoBedarfPeriode2}	</div>	
+					</p:column>
+	
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.bedarfP3']}</f:facet>
+						<div align="right">#{ergebnis.bruttoBedarfPeriode3}	</div>	
+					</p:column>
+	
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.bedarfP4']}</f:facet>
+						<div align="right">#{ergebnis.bruttoBedarfPeriode4}	</div>	
+						
+					</p:column>
+					
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.materialGehtAusAmTag']}</f:facet>
+						
+						<div align="right">
+							<h:outputText value="#{ergebnis.materialGehtAusAmTag lt 0 ? '-' : ergebnis.materialGehtAusAmTag}" />
+						</div>	
+					</p:column>
+					
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.maxLieferdauerTage']}</f:facet>
+						<h:panelGroup layout="block" styleClass="#{(ergebnis.lieferDaten.abweichungTage + ergebnis.lieferDaten.wiederbeschaffungszeitTage) gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
+							<div align="right">
+							<h:outputText value="#{ergebnis.lieferDaten.abweichungTage + ergebnis.lieferDaten.wiederbeschaffungszeitTage}" />
+							</div>
+						</h:panelGroup>
+					</p:column>
+	
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.lieferdauerNormal']}</f:facet>
+						<h:panelGroup layout="block" styleClass="#{(ergebnis.lieferDaten.wiederbeschaffungszeitTage) gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
+							<div align="right">
+								<h:outputText 	value="#{ergebnis.lieferDaten.wiederbeschaffungszeitTage}" />
+							</div>
+						</h:panelGroup>
+					</p:column>
+					
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.lieferdauerEil']}</f:facet>
+						<h:panelGroup layout="block" styleClass="#{(ergebnis.lieferDaten.wiederbeschaffungszeitTage)/2 gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
+							<div align="right">
+							<h:outputText 	value="#{ergebnis.lieferDaten.wiederbeschaffungszeitTage/2}" />
+							</div>
+						</h:panelGroup>
+					</p:column>
+	
+					<p:column width="10" >
+						<f:facet name="header">#{msg['teil.vorgeschlagenerBestelltyp']}</f:facet>
+	
+						<p:selectOneMenu style="width:85px" value="#{ergebnis.bestellTyp}"
+							rendered="#{!(ergebnis.bestellmenge lt 0)}">
+							<f:selectItems value="#{ergebnis.selectItems}" />
+						</p:selectOneMenu>
+					</p:column>
+					
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.vorgeschlagenerBestellmenge']}</f:facet>
+						<p:inputText styleClass="text-input2" value="#{ergebnis.bestellmenge}"
+							rendered="#{!(ergebnis.bestellmenge lt 0)}" />
+						<!-- <h:outputText value="#{ergebnis.bestellmenge}"
+						rendered="#{!(ergebnis.bestellmenge lt 0)}" />-->
+					</p:column>
+					
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.diskontmenge']}</f:facet>
+						<div align="right">#{ergebnis.lieferDaten.diskontMenge}	</div>	
+						
+					</p:column>
+				</p:dataTable>
 			
-			<p:dataTable id="result"
-				value="#{dispositionBean.getDispositionsErgebnisse()}" var="ergebnis" styleClass="order-table"
-				headerClass="order-table-header" rowClasses="order-table-odd-row,order-table-even-row">
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
-					#{ergebnis.teil != null ? ergebnis.teil.nummer : 'keine Nummer vorhanden'}					
-				</p:column>
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.bezeichnung']}</f:facet>
-					#{ergebnis.teil != null ? ergebnis.teil.bezeichnung : 'keine Bezeichnung vorhanden'}
-				</p:column>
-				<!-- 
-			<h:column>
-				<f:facet name="header">Beschaffungszeit Periode</f:facet>
-					#{ergebnis.lieferDaten.wiederbeschaffungszeitPeriode}
-				</h:column>
-
-			<h:column>
-				<f:facet name="header">Abweichung Periode</f:facet>
-					#{ergebnis.lieferDaten.abweichungPeriode}
-				</h:column>
-
-			<h:column>
-				<f:facet name="header">MaxLieferdauer Periode</f:facet>
-					#{ergebnis.maxLieferdauerPeriode}
-				</h:column>
-
-
-
-			<h:column>
-				<f:facet name="header">Anzahl in P1</f:facet>
-					#{ergebnis.mengenStuecklisteitemP1 != null ? ergebnis.mengenStuecklisteitemP1.menge : 'keins'}
-				</h:column>
-
-			<h:column>
-				<f:facet name="header">Anzahl in P2</f:facet>
-					#{ergebnis.mengenStuecklisteitemP2 != null ? ergebnis.mengenStuecklisteitemP2.menge : 'keins'}
-				</h:column>
-
-			<h:column>
-				<f:facet name="header">Anzahl in P3</f:facet>
-					#{ergebnis.mengenStuecklisteitemP3 != null ? ergebnis.mengenStuecklisteitemP3.menge : 'keins'}
-				</h:column>
- -->
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.lagermenge']}</f:facet>
-					<div align="right">#{ergebnis.lieferDaten.lagerMenge}</div>	
-				</p:column>
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.bedarfP1']}</f:facet>
-					<div align="right">#{ergebnis.bruttoBedarfPeriode1}	</div>	
-				</p:column>
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.bedarfP2']}</f:facet>
-					<div align="right">#{ergebnis.bruttoBedarfPeriode2}	</div>	
-				</p:column>
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.bedarfP3']}</f:facet>
-					<div align="right">#{ergebnis.bruttoBedarfPeriode3}	</div>	
-				</p:column>
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.bedarfP4']}</f:facet>
-					<div align="right">#{ergebnis.bruttoBedarfPeriode4}	</div>	
-					
-				</p:column>
-				<!-- -->
-				<p:column>
-					<f:facet name="header">#{msg['teil.materialGehtAusAmTag']}</f:facet>
-					
-					<div align="right">
-						<h:outputText value="#{ergebnis.materialGehtAusAmTag lt 0 ? '-' : ergebnis.materialGehtAusAmTag}" />
-					</div>	
-					
-				</p:column>
-				
-				
-				
-				<p:column>
-					<f:facet name="header">#{msg['teil.maxLieferdauerTage']}</f:facet>
-					<h:panelGroup layout="block" styleClass="#{(ergebnis.lieferDaten.abweichungTage + ergebnis.lieferDaten.wiederbeschaffungszeitTage) gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
-						<div align="right">
-						<h:outputText value="#{ergebnis.lieferDaten.abweichungTage + ergebnis.lieferDaten.wiederbeschaffungszeitTage}" />
-						</div>
-					</h:panelGroup>
-				</p:column>
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.lieferdauerNormal']}</f:facet>
-					<h:panelGroup layout="block" styleClass="#{(ergebnis.lieferDaten.wiederbeschaffungszeitTage) gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
-						<div align="right">
-						<h:outputText 	value="#{ergebnis.lieferDaten.wiederbeschaffungszeitTage}" />
-						</div>
-					</h:panelGroup>
-				</p:column>
-				
-				<p:column>
-					<f:facet name="header">#{msg['teil.lieferdauerEil']}</f:facet>
-					<h:panelGroup layout="block" styleClass="#{(ergebnis.lieferDaten.wiederbeschaffungszeitTage)/2 gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
-						<div align="right">
-						<h:outputText 	value="#{ergebnis.lieferDaten.wiederbeschaffungszeitTage/2}" />
-						</div>
-					</h:panelGroup>
-				</p:column>
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.vorgeschlagenerBestelltyp']}</f:facet>
-
-					<p:selectOneMenu style="width:85px" value="#{ergebnis.bestellTyp}"
-						rendered="#{!(ergebnis.bestellmenge lt 0)}">
-						<f:selectItems value="#{ergebnis.selectItems}" />
-					</p:selectOneMenu>
-				</p:column>
-				
-				<p:column>
-					<f:facet name="header">#{msg['teil.vorgeschlagenerBestellmenge']}</f:facet>
-					<p:inputText styleClass="text-input2" value="#{ergebnis.bestellmenge}"
-						rendered="#{!(ergebnis.bestellmenge lt 0)}" />
-					<!-- <h:outputText value="#{ergebnis.bestellmenge}"
-					rendered="#{!(ergebnis.bestellmenge lt 0)}" />-->
-				</p:column>
-				
-				<p:column>
-					<f:facet name="header">#{msg['teil.diskontmenge']}</f:facet>
-					<div align="right">#{ergebnis.lieferDaten.diskontMenge}	</div>	
-					
-				</p:column>
-			</p:dataTable>
-		</h:form>
+			</h:form>
+		
+		</center>
 	</ui:define>
 	
 </ui:decorate>
