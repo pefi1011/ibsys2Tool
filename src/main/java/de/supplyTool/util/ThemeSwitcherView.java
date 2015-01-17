@@ -17,7 +17,7 @@ public class ThemeSwitcherView {
  
     private List<Theme> themes;
     
-    private String theme= "bootstrap";
+    private String theme= "delta"; // default thema
     
     public String getTheme() {
         return theme;
