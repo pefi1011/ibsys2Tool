@@ -182,73 +182,83 @@
 					#{ergebnis.mengenStuecklisteitemP3 != null ? ergebnis.mengenStuecklisteitemP3.menge : 'keins'}
 				</h:column>
  -->
-				<p:column>
-					<f:facet name="header">#{msg['teil.diskontmenge']}</f:facet>
-					#{ergebnis.lieferDaten.diskontMenge}
-				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.lagermenge']}</f:facet>
-					#{ergebnis.lieferDaten.lagerMenge}
+					<div align="right">#{ergebnis.lieferDaten.lagerMenge}</div>	
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.bedarfP1']}</f:facet>
-					#{ergebnis.bruttoBedarfPeriode1}
+					<div align="right">#{ergebnis.bruttoBedarfPeriode1}	</div>	
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.bedarfP2']}</f:facet>
-					#{ergebnis.bruttoBedarfPeriode2}
+					<div align="right">#{ergebnis.bruttoBedarfPeriode2}	</div>	
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.bedarfP3']}</f:facet>
-					#{ergebnis.bruttoBedarfPeriode3}
+					<div align="right">#{ergebnis.bruttoBedarfPeriode3}	</div>	
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.bedarfP4']}</f:facet>
-					#{ergebnis.bruttoBedarfPeriode4}
+					<div align="right">#{ergebnis.bruttoBedarfPeriode4}	</div>	
+					
 				</p:column>
 				<!-- -->
 				<p:column>
 					<f:facet name="header">#{msg['teil.materialGehtAusAmTag']}</f:facet>
-					<h:outputText
-						value="#{ergebnis.materialGehtAusAmTag lt 0 ? '-' : ergebnis.materialGehtAusAmTag}" />
+					
+					<div align="right">
+						<h:outputText value="#{ergebnis.materialGehtAusAmTag lt 0 ? '-' : ergebnis.materialGehtAusAmTag}" />
+					</div>	
+					
 				</p:column>
+				
+				
+				
 				<p:column>
 					<f:facet name="header">#{msg['teil.maxLieferdauerTage']}</f:facet>
-					<h:panelGroup layout="block"
-						styleClass="#{(ergebnis.lieferDaten.abweichungTage + ergebnis.lieferDaten.wiederbeschaffungszeitTage) gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
-						<h:outputText
-							value="#{ergebnis.lieferDaten.abweichungTage + ergebnis.lieferDaten.wiederbeschaffungszeitTage}" />
+					<h:panelGroup layout="block" styleClass="#{(ergebnis.lieferDaten.abweichungTage + ergebnis.lieferDaten.wiederbeschaffungszeitTage) gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
+						<div align="right">
+						<h:outputText value="#{ergebnis.lieferDaten.abweichungTage + ergebnis.lieferDaten.wiederbeschaffungszeitTage}" />
+						</div>
 					</h:panelGroup>
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.lieferdauerNormal']}</f:facet>
-					<h:panelGroup layout="block"
-						styleClass="#{(ergebnis.lieferDaten.wiederbeschaffungszeitTage) gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
-						<h:outputText
-							value="#{ergebnis.lieferDaten.wiederbeschaffungszeitTage}" />
+					<h:panelGroup layout="block" styleClass="#{(ergebnis.lieferDaten.wiederbeschaffungszeitTage) gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
+						<div align="right">
+						<h:outputText 	value="#{ergebnis.lieferDaten.wiederbeschaffungszeitTage}" />
+						</div>
 					</h:panelGroup>
 				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.vorgeschlagenerBestelltyp']}</f:facet>
 
-					<p:selectOneMenu value="#{ergebnis.bestellTyp}"
+					<p:selectOneMenu style="width:85px" value="#{ergebnis.bestellTyp}"
 						rendered="#{!(ergebnis.bestellmenge lt 0)}">
 						<f:selectItems value="#{ergebnis.selectItems}" />
 					</p:selectOneMenu>
 				</p:column>
+				
 				<p:column>
 					<f:facet name="header">#{msg['teil.vorgeschlagenerBestellmenge']}</f:facet>
-					<p:inputText value="#{ergebnis.bestellmenge}"
+					<p:inputText styleClass="text-input" value="#{ergebnis.bestellmenge}"
 						rendered="#{!(ergebnis.bestellmenge lt 0)}" />
 					<!-- <h:outputText value="#{ergebnis.bestellmenge}"
 					rendered="#{!(ergebnis.bestellmenge lt 0)}" />-->
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">#{msg['teil.diskontmenge']}</f:facet>
+					<div align="right">#{ergebnis.lieferDaten.diskontMenge}	</div>	
+					
 				</p:column>
 			</p:dataTable>
 		</h:form>
