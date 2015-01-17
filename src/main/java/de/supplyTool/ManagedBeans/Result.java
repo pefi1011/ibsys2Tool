@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import de.supplyTool.ManagedBeans.disposition.KaufTeilDispositionErgebnis;
 import de.supplyTool.ManagedBeans.disposition.Produktionsprogramm;
 import de.supplyTool.ManagedBeans.prodVerwaltung.ProdVerwaltungBean;
+import de.supplyTool.ManagedBeans.prodVerwaltung.ProdVerwaltungErgebnissBean;
 import de.supplyTool.dao.Dao;
 import de.supplyTool.domain.APArbeitsplatz;
 import de.supplyTool.domain.APTeil;
@@ -90,16 +92,32 @@ public class Result {
 
         sb.append("<productionlist> \n");
         
-
-        for (int n1 = 0; n1 < dispoHelpErgebnissGut.size(); n1++) {
-        	if (dispoHelpErgebnissGut.get(n1).getAnzahl() != 0){        		
+//        ProdVerwaltungErgebnissBean bean = (ProdVerwaltungErgebnissBean) getServletContext().getAttribute("beanName");
+        
+//        ProdVerwaltungBean.getTeile();
+        
+        ProdVerwaltungErgebnissBean probVerwBean = ContextHelper.getManagedBean(ProdVerwaltungErgebnissBean.class);
+        List<APTeil> produktionsAuftraege = probVerwBean.getTeile();
+        
+        for (int n1 = 0; n1 < produktionsAuftraege.size(); n1++) {
+        	if (produktionsAuftraege.get(n1).getAnzahl() != 0){        		
         		sb.append("<production article=\"" );
-        		sb.append(dispoHelpErgebnissGut.get(n1).getNummer()
+        		sb.append(produktionsAuftraege.get(n1).getNummer()
         				+ "\" quantity=\"" );
-        		sb.append(dispoHelpErgebnissGut.get(n1).getAnzahl()
+        		sb.append(produktionsAuftraege.get(n1).getAnzahl()
         				+ "\" />  \n");
         	}
         }
+
+//        for (int n1 = 0; n1 < dispoHelpErgebnissGut.size(); n1++) {
+//        	if (dispoHelpErgebnissGut.get(n1).getAnzahl() != 0){        		
+//        		sb.append("<production article=\"" );
+//        		sb.append(dispoHelpErgebnissGut.get(n1).getNummer()
+//        				+ "\" quantity=\"" );
+//        		sb.append(dispoHelpErgebnissGut.get(n1).getAnzahl()
+//        				+ "\" />  \n");
+//        	}
+//        }
 
         sb.append("</productionlist> \n");
         
