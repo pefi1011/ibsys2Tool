@@ -67,12 +67,15 @@
 			
 						<!--   SPRACHE AUSWAHLEN -->
 	        			<h:form>
-			    			<h:selectOneMenu value="#{localeManager.language}" onchange="submit()">
+			    			<p:selectOneMenu style="width:85px" value="#{localeManager.language}" onchange="submit()">
 			    				<f:selectItem itemValue="de" itemLabel="Deutsch" />
 			        			<f:selectItem itemValue="en" itemLabel="English" />
 			        			<f:selectItem itemValue="ru" itemLabel="Русский" />
-			    			</h:selectOneMenu>
-						</h:form>
+			    			</p:selectOneMenu>
+
+
+
+				</h:form>
 	        		</pe:layoutPane>
 	        </pe:layoutPane>  
 	        
