@@ -237,6 +237,15 @@
 						</div>
 					</h:panelGroup>
 				</p:column>
+				
+				<p:column>
+					<f:facet name="header">#{msg['teil.lieferdauerEil']}</f:facet>
+					<h:panelGroup layout="block" styleClass="#{(ergebnis.lieferDaten.wiederbeschaffungszeitTage)/2 gt ergebnis.materialGehtAusAmTag ? 'red' : 'green'}">
+						<div align="right">
+						<h:outputText 	value="#{ergebnis.lieferDaten.wiederbeschaffungszeitTage/2}" />
+						</div>
+					</h:panelGroup>
+				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['teil.vorgeschlagenerBestelltyp']}</f:facet>
@@ -249,7 +258,7 @@
 				
 				<p:column>
 					<f:facet name="header">#{msg['teil.vorgeschlagenerBestellmenge']}</f:facet>
-					<p:inputText styleClass="text-input" value="#{ergebnis.bestellmenge}"
+					<p:inputText styleClass="text-input2" value="#{ergebnis.bestellmenge}"
 						rendered="#{!(ergebnis.bestellmenge lt 0)}" />
 					<!-- <h:outputText value="#{ergebnis.bestellmenge}"
 					rendered="#{!(ergebnis.bestellmenge lt 0)}" />-->
