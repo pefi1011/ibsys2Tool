@@ -39,7 +39,7 @@
     </pe:head>
 
     <h:body>  
-   
+     
 	    <pe:layout togglerTipClosed="#{msg['layout.tipClosed']}" togglerTipOpen="#{msg['layout.tipOpen']}">  
 	       
 			<!--   HINTEGRUNDFOTO, SPRACHE UND THEMA  -->
@@ -60,7 +60,8 @@
 	            		<h:form>
 	            			<p:themeSwitcher style="width:165px">
 								<f:selectItem itemLabel="#{msg['layout.chooseTheme']}" itemValue="" />
-								<f:selectItems value="#{themeSwitcherView.themes}" />
+								<f:selectItems value="#{themeSwitcherView.themes}" var="theme" itemLabel="#{theme.displayName}" itemValue="#{theme}"/>
+								 <p:ajax global="false" listener="#{themeSwitcherView.saveTheme}" />
 							</p:themeSwitcher>
 						</h:form>
 			

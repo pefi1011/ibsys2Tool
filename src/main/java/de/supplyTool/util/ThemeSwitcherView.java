@@ -2,16 +2,31 @@ package de.supplyTool.util;
 
 import java.util.List;
 
+import javax.faces.event.AjaxBehaviorEvent;
+
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
-import javax.faces.bean.RequestScoped;
+import org.primefaces.component.themeswitcher.ThemeSwitcher;
+
+import javax.faces.bean.SessionScoped;
  
 @ManagedBean
-@RequestScoped
+@SessionScoped
 public class ThemeSwitcherView {
  
     private List<Theme> themes;
+    
+    private String theme= "bootstrap";
+    
+    public String getTheme() {
+        return theme;
+     }
+
+     public void setTheme(String theme) {
+        this.theme = theme;
+     }
+
      
     @ManagedProperty("#{themeService}")
     private ThemeService service;
@@ -27,5 +42,10 @@ public class ThemeSwitcherView {
  
     public void setService(ThemeService service) {
         this.service = service;
+    }
+    
+    public void saveTheme(AjaxBehaviorEvent ajax)
+    {
+       setTheme((String) ((ThemeSwitcher)ajax.getSource()).getValue());
     }
 }
