@@ -73,7 +73,7 @@
 				    </th>
 				    
 				    <th class="tg-031e">
-				    	<p:commandButton style="margin-left:5px;margin-bottom:0px;" class="btnSplit" id="yoyoeins" action="#{prodVerwaltungErgebnissBean.reload()}" value="#{msg['button.reload']}" ajax="false">
+				    	<p:commandButton style="margin-left:5px;margin-bottom:0px;" class="btnSplit" action="#{prodVerwaltungErgebnissBean.reload()}" value="#{msg['button.reload']}" ajax="false">
 						</p:commandButton>
 				    </th>
 				  </tr>
@@ -113,27 +113,22 @@
 					
 			</p:column>
 
-
-
-
+			<p:column>
+				<f:facet name="header">	#{msg['start.aufsplieten']}</f:facet>
+				<p:inputMask styleClass="text-input" value="#{ergebnis.aktualisierencount}" placeholder="#{ergebnis.aktualisierencount}" id="aaeins" />
+			</p:column>
+		
+			<p:column>
+				<f:facet name="header">	#{msg['button.calculate']}</f:facet>
+				<p:commandButton style="margin-left:5px;margin-bottom:0px;" class="btnSplit" id="btn" action="#{prodVerwaltungErgebnissBean.splitSingleItem(ergebnis.index, ergebnis.aktualisierencount)}" value="#{msg['button.reload']}" ajax="false">
+				</p:commandButton>
+			</p:column>
 
 			</p:dataTable>
 			<div align="center">
 
-				<!--  
-				<h:inputText value="#{prodVerwaltungErgebnissBean.split}" id="aazwei"/>
-				<p:commandButton style="margin-left:5px;margin-bottom:20px;" id="yoyozwei"
-					action="#{prodVerwaltungErgebnissBean.reload()}" value="reload"
-					ajax="false">
-				</p:commandButton>
-				-->
 			</div>
-			<div align="center">
-				<p:commandButton style="margin-left:5px;margin-bottom:20px;"
-					action="arbeitsplatz.xhtml?faces-redirect=true"
-					value="#{msg['button.continue']}" ajax="false">
-				</p:commandButton>
-			</div>
+
 		</h:form>
 	</ui:define>
 	

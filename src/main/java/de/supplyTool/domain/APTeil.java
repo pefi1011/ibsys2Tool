@@ -21,11 +21,29 @@ public class APTeil implements Serializable {
         // TODO Auto-generated constructor stub
     }
 
-    Integer nummer;
+    public Integer getIndex() {
+		return index;
+	}
+
+	public void setIndex(Integer index) {
+		this.index = index;
+	}
+
+	Integer nummer;
     Integer anzahl;
     Integer zeitProTeil;
+    Integer index;
+    Integer aktualisierencount = 50;
 
-    public Integer getNummer() {
+    public Integer getAktualisierencount() {
+		return aktualisierencount;
+	}
+
+	public void setAktualisierencount(Integer aktualisierencount) {
+		this.aktualisierencount = aktualisierencount;
+	}
+
+	public Integer getNummer() {
         return nummer;
     }
 

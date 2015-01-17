@@ -1100,10 +1100,12 @@ public class Dao implements Serializable {
 
             rs = createStatement.executeQuery(query);
 
+            Integer index = 0; 
             while (rs.next()) {
                 final APTeil a = new APTeil();
                 a.setAnzahl(rs.getInt("menge"));
                 a.setNummer(rs.getInt("nummer"));
+                a.setIndex(++index);
                 feld.add(a);
 
             }

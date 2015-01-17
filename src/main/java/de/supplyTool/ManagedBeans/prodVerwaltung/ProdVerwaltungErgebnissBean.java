@@ -60,12 +60,42 @@ public class ProdVerwaltungErgebnissBean {
                 final APTeil tmp = new APTeil();
                 tmp.setNummer(teile.get(n).getNummer());
                 tmp.setAnzahl(teile.get(n).getAnzahl() - split);
+                tmp.setIndex(teile.size() + 1);
                 teile.get(n).setAnzahl(split);
+                
                 teile.add(tmp);
 
             }
         }
 
+        for (int n = 0; n < teile.size(); n++) {
+            System.out.println("teile " + teile.get(n));
+        }
+    }
+    
+    public void splitSingleItem(Integer index, Integer splitCount) {
+        System.out.println("split " + split);
+        final Integer altesize = teile.size();
+        for (int n = 0; n < altesize; n++) {
+            
+        	if (teile.get(n).getIndex() == index) {
+        		
+        		if (teile.get(n).getAnzahl() > splitCount + 1) {
+        			
+        			final APTeil tmp = new APTeil();
+        			tmp.setNummer(teile.get(n).getNummer());
+        			tmp.setAnzahl(teile.get(n).getAnzahl() - splitCount);
+                    tmp.setIndex(teile.size() + 1);
+        			teile.get(n).setAnzahl(splitCount);
+        			teile.add(tmp);
+        			System.out.println("WOW" + tmp.getIndex());
+        			//break;
+        		}
+
+
+            }
+        }
+		System.out.println("WOW2" + teile.size());
         for (int n = 0; n < teile.size(); n++) {
             System.out.println("teile " + teile.get(n));
         }
