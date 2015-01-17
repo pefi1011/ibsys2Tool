@@ -80,7 +80,10 @@
 				action="#{dispositionBean.goToOutputXML}" value="#{msg['button.continue']}">
 			</p:commandButton>
 		</center>
-		<h:form>
+		
+		
+				<center>
+		
 			<p:dataTable id="result" value="#{ergebnisBean.kaufErgebnisse}"
 				var="ergebnis">
 
@@ -110,7 +113,7 @@
 				</p:column>
 			</p:dataTable>
 		
-		</h:form>
+				</center>
 		
 	</ui:define>
 	
