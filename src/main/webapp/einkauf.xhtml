@@ -94,7 +94,7 @@
 				    
 				    <td class="order-table-header"><h:outputText id="output" style="margin-bottom:3px;"	value="#{msg['einkauf.sicherheitsbestand']} #{einkaufKonfiguration.sicherheitsbestand} %" />
 							<h:inputHidden id="txt2" value="#{einkaufKonfiguration.sicherheitsbestand}" /> 
-							<p:slider styleClass="mt" for="txt2" display="output" style="width: 200px" displayTemplate="#{msg['einkauf.neuerSicherheitsbestand']} %{value}" />
+							<p:slider styleClass="mt" for="txt2" display="output" style="width: 200px" displayTemplate="#{msg['einkauf.neuerSicherheitsbestand']} {value}%" />
 					</td>
 				    
 				    <td class="tg-031e">
@@ -104,7 +104,7 @@
 				    <td class="tg-031e">
 						<h:outputText id="output2"	style="margin-bottom:3px;" value="#{msg['einkauf.neueDiskontmengeAbw']} #{einkaufKonfiguration.diskontmengeAbweichung} %" />
 						<h:inputHidden id="txt3" value="#{einkaufKonfiguration.diskontmengeAbweichung}" /> <p:slider styleClass="mt" 
-								for="txt3" display="output2" style="width: 200px" displayTemplate="#{msg['einkauf.neueDiskontmengeAbw']} %{value} " />
+								for="txt3" display="output2" style="width: 200px" displayTemplate="#{msg['einkauf.neueDiskontmengeAbw']} {value}% " />
 				    </td>
 				    
 				    <td class="tg-031e">
