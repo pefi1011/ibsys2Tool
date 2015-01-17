@@ -65,7 +65,7 @@
 				<table class="tg">
 				  <tr>
 				    <th class="tg-s6z2">
-				    	#{msg['start.sortierung']}
+				    	#{msg['start.sortierungAll']}
 				    </th>
 				    
 				    <th class="tg-031e">
@@ -73,7 +73,7 @@
 				    </th>
 				    
 				    <th class="tg-031e">
-				    	<p:commandButton style="margin-left:5px;margin-bottom:0px;" class="btnSplit" action="#{prodVerwaltungErgebnissBean.reload()}" value="#{msg['button.reload']}" ajax="false">
+				    	<p:commandButton style="margin-left:5px;margin-bottom:0px;" class="btnSplit" action="#{prodVerwaltungErgebnissBean.reload()}" value="#{msg['button.splitReset']}" ajax="false">
 						</p:commandButton>
 				    </th>
 				  </tr>
@@ -90,6 +90,8 @@
 					value="#{msg['button.continue']}" ajax="false">
 				</p:commandButton>
 			</div>
+
+<center>
 
 			<p:dataTable id="result" binding="#{table}"
 				style="width:40%;margin-left:auto;margin-right:auto;"
@@ -114,20 +116,18 @@
 			</p:column>
 
 			<p:column>
-				<f:facet name="header">	#{msg['start.aufsplieten']}</f:facet>
+				<f:facet name="header">	#{msg['start.sortierung']}</f:facet>
 				<p:inputMask styleClass="text-input" value="#{ergebnis.aktualisierencount}" placeholder="#{ergebnis.aktualisierencount}" id="aaeins" />
 			</p:column>
 		
 			<p:column>
 				<f:facet name="header">	#{msg['button.calculate']}</f:facet>
-				<p:commandButton style="margin-left:5px;margin-bottom:0px;" class="btnSplit" id="btn" action="#{prodVerwaltungErgebnissBean.splitSingleItem(ergebnis.index, ergebnis.aktualisierencount)}" value="#{msg['button.reload']}" ajax="false">
+				<p:commandButton style="margin-left:5px;margin-bottom:0px;" class="btnSplit" id="btn" action="#{prodVerwaltungErgebnissBean.splitSingleItem(ergebnis.index, ergebnis.aktualisierencount)}" value="#{msg['button.split']}" ajax="false">
 				</p:commandButton>
 			</p:column>
 
 			</p:dataTable>
-			<div align="center">
-
-			</div>
+			</center>
 
 		</h:form>
 	</ui:define>
