@@ -56,8 +56,6 @@
 			#{schauNach.ueberpruefen()}
 		<h:form>
 
-			<div align="center">
-			</div>
 				<center>
 					<p:commandButton style="margin-top:20px;margin-bottom:20px" id="asd3"
 						action="prodverwaltungP2.xhtml?faces-redirect=true" value="#{msg['button.continue']}"
@@ -65,6 +63,7 @@
 					</p:commandButton>
 				</center>
 
+				<center>
 			<p:dataTable id="result" binding="#{table}"
 				value="#{prodVerwaltungBean.dispositionsErgebnisseViewEins}"
 				var="ergebnis" styleClass="order-table"
@@ -116,10 +115,9 @@
 				</p:column>
 
 			</p:dataTable>
+			
+				</center>
 
-
-
-			<br></br>
 
 		</h:form>
 	</ui:define>
