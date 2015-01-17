@@ -89,11 +89,6 @@
 
 
 				<p:column>
-					<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
-					<div align="right">#{ergebnis.nummer}</div>
-				</p:column>
-
-				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.lagerbestandEndeVorperiode']}</f:facet>
 					<div align="right">#{ergebnis.lagerbestand_ende_vorperiode}		</div>
 				</p:column>
@@ -116,6 +111,11 @@
 				</p:column>
 
 
+
+				<p:column>
+					<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
+					<div align="right">#{ergebnis.nummer}</div>
+				</p:column>
 
 
 			</p:dataTable>

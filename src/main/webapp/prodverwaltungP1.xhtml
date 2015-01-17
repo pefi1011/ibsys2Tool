@@ -20,6 +20,7 @@
 	
 	<ui:define name="prognoseTabelle">
 	
+	
 			<div align="center" >
 		
 	
@@ -57,6 +58,7 @@
 	
 	<ui:define name="content">
 			#{schauNach.ueberpruefen()}
+			
 		<h:form>
 		<div align="center">
 		</div>
@@ -89,12 +91,6 @@
 					<p:inputMask styleClass="text-input" value="#{ergebnis.geplante_lagermenge}" /> 
 				</p:column>
 
-
-				<p:column>
-					<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
-					<div align="right">#{ergebnis.nummer} </div>
-				</p:column>
-
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.lagerbestandEndeVorperiode']}</f:facet>
 					<div align="right">#{ergebnis.lagerbestand_ende_vorperiode}	</div>	
@@ -105,18 +101,21 @@
 					<div align="right">#{ergebnis.auftraege_warteschlange}	</div>
 				</p:column>
 
+				
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.auftraegeInBearbeitung']}</f:facet>
 					<div align="right"> #{ergebnis.auftrage_bearbeitung}</div>
 				</p:column>
-
-
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.produktionsauftrag']}</f:facet>
 					<div align="right">#{ergebnis.produktionsauftrag_naechste_periode}</div>
 				</p:column>
 
+				<p:column>
+					<f:facet name="header">#{msg['teil.teileNummer']}</f:facet>
+					<div align="right">#{ergebnis.nummer} </div>
+				</p:column>
 			</p:dataTable>
 
 			<br></br>
