@@ -14,6 +14,17 @@
 					$('#datenTitel').text(paneltitle);
 				});
 			</script>
+			<style>
+
+			
+			.red {
+				color: white;
+				background-color: Crimson  ;
+				width: 100%;
+				background-color: Crimson  ;
+			}
+			
+		</style>
 
 	</ui:define>
 	
@@ -134,24 +145,24 @@
 
 					<p:column>
 						<f:facet name="header">#{msg['ap.stunden']}</f:facet>
-					<div align="right">#{ergebnis.ueberstunden}</div>	
+					<div align="right" class="#{(ergebnis.ueberstunden) gt 9600 ? 'red' : ''}">#{ergebnis.ueberstunden}</div>	
 				</p:column>
 
 
 					<p:column>
 						<f:facet name="header">#{msg['ap.schicht']}</f:facet>
-					<div align="right">#{ergebnis.schicht}</div>	
+					<div align="right" class="#{(ergebnis.ueberstunden) gt 9600 ? 'red' : ''}">#{ergebnis.schicht}</div>	
 				</p:column>
 
 					<p:column>
 						<f:facet name="header">#{msg['ap.ueberstunden']}</f:facet>
-					<div align="right">#{ergebnis.ueberstundenGut}</div>	
+					<div align="right" class="#{(ergebnis.ueberstunden) gt 9600 ? 'red' : ''}">#{ergebnis.ueberstundenGut}</div>	
 				</p:column>
 
 					<p:column>
 
 						<f:facet name="header">#{msg['ap.bearbeitung']}</f:facet>
-					<div align="right">#{ergebnis.inBearbeitung}</div>	
+					<div align="right" >#{ergebnis.inBearbeitung}</div>	
 				</p:column>
 
 					<p:column>
@@ -229,6 +240,15 @@
 				
 
 			</h:form>
+			
+
+<DIV align="left">
+
+				<H5>#{msg['ap.hinweisArbeitszeit']}</H5>
+				<H5>#{msg['ap.hinweisUeberstunden']}</H5>
+				<H5>#{msg['ap.hinweisVorperiode']}</H5>
+</DIV>
+			
 		
 	</ui:define>
 	
