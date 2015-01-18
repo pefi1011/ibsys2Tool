@@ -100,6 +100,17 @@ public class APArbeitsplatz implements Serializable {
     public void setAufschlag(final Double aufschlag) {
         Aufschlag = aufschlag;
     }
+    
+    public Integer getAufschlagGut() {
+    	Double aufschl = (Aufschlag * 100.0) % 100.0;
+    	Double intAufschlag = StrictMath.ceil(aufschl);
+        return intAufschlag.intValue();
+    }
+
+    public void setAufschlagGut(final Integer aufschlag) {
+    	Double aufschl = (aufschlag + 100.0) / 100.0;
+        Aufschlag = aufschl;
+    }
 
     @Override
     public String toString() {

@@ -18,14 +18,14 @@ public class Main {
     public static void main(final String[] args) {
 
         final ArrayList<APArbeitsplatz> arbeit = new ArrayList<APArbeitsplatz>();
-        arbeit.add(new APArbeitsplatz(null, 1, null, null, 60, null, null, 1.0));
+        arbeit.add(new APArbeitsplatz(null, 1, null, null, 60, null, null, 1.1));
         final ArrayList<APTeil> a1 = new ArrayList<APTeil>();
         a1.add(new APTeil(49, null, 6));
         a1.add(new APTeil(54, null, 6));
         a1.add(new APTeil(29, null, 6));
         arbeit.get(0).setTeile(a1);
 
-        arbeit.add(new APArbeitsplatz(null, 2, null, null, 80, null, null, 1.0));
+        arbeit.add(new APArbeitsplatz(null, 2, null, null, 80, null, null, 1.1));
         final ArrayList<APTeil> a2 = new ArrayList<APTeil>();
         a2.add(new APTeil(50, null, 5));
         a2.add(new APTeil(55, null, 5));
@@ -46,7 +46,7 @@ public class Main {
         a4.add(new APTeil(3, null, 7));
         arbeit.get(3).setTeile(a4);
 
-        arbeit.add(new APArbeitsplatz(null, 6, null, null, 90, null, null, 1.0));
+        arbeit.add(new APArbeitsplatz(null, 6, null, null, 90, null, null, 1.1));
         final ArrayList<APTeil> a5 = new ArrayList<APTeil>();
         a5.add(new APTeil(16, null, 2));
         a5.add(new APTeil(18, null, 3));
@@ -54,7 +54,7 @@ public class Main {
         a5.add(new APTeil(20, null, 3));
         arbeit.get(4).setTeile(a5);
 
-        arbeit.add(new APArbeitsplatz(null, 7, null, null, 210, null, null, 1.3));
+        arbeit.add(new APArbeitsplatz(null, 7, null, null, 210, null, null, 1.1));
         final ArrayList<APTeil> a6 = new ArrayList<APTeil>();
         a6.add(new APTeil(10, null, 2));
         a6.add(new APTeil(11, null, 2));
@@ -68,7 +68,7 @@ public class Main {
         a6.add(new APTeil(26, null, 2));
         arbeit.get(5).setTeile(a6);
 
-        arbeit.add(new APArbeitsplatz(null, 8, null, null, 155, null, null, 1.3));
+        arbeit.add(new APArbeitsplatz(null, 8, null, null, 155, null, null, 1.1));
         final ArrayList<APTeil> a7 = new ArrayList<APTeil>();
         a7.add(new APTeil(10, null, 1));
         a7.add(new APTeil(11, null, 2));
@@ -82,8 +82,7 @@ public class Main {
 
         arbeit.get(6).setTeile(a7);
 
-        arbeit.add(new APArbeitsplatz(null, 9, null, null, 140, null, null,
-                1.25));
+        arbeit.add(new APArbeitsplatz(null, 9, null, null, 140, null, null, 1.1));
         final ArrayList<APTeil> a8 = new ArrayList<APTeil>();
         a8.add(new APTeil(10, null, 3));
         a8.add(new APTeil(11, null, 3));
@@ -97,8 +96,7 @@ public class Main {
 
         arbeit.get(7).setTeile(a8);
 
-        arbeit.add(new APArbeitsplatz(null, 10, null, null, 120, null, null,
-                1.3));
+        arbeit.add(new APArbeitsplatz(null, 10, null, null, 120, null, null, 1.1));
         final ArrayList<APTeil> a9 = new ArrayList<APTeil>();
         a9.add(new APTeil(4, null, 4));
         a9.add(new APTeil(5, null, 4));
@@ -109,8 +107,7 @@ public class Main {
 
         arbeit.get(8).setTeile(a9);
 
-        arbeit.add(new APArbeitsplatz(null, 11, null, null, 120, null, null,
-                1.0));
+        arbeit.add(new APArbeitsplatz(null, 11, null, null, 120, null, null, 1.1));
         final ArrayList<APTeil> a10 = new ArrayList<APTeil>();
         a10.add(new APTeil(4, null, 3));
         a10.add(new APTeil(5, null, 3));
@@ -121,7 +118,7 @@ public class Main {
 
         arbeit.get(9).setTeile(a10);
 
-        arbeit.add(new APArbeitsplatz(null, 12, null, null, 0, null, null, 1.0));
+        arbeit.add(new APArbeitsplatz(null, 12, null, null, 0, null, null, 1.1));
         final ArrayList<APTeil> a11 = new ArrayList<APTeil>();
         a11.add(new APTeil(10, null, 3));
         a11.add(new APTeil(11, null, 3));
@@ -132,7 +129,7 @@ public class Main {
 
         arbeit.get(10).setTeile(a11);
 
-        arbeit.add(new APArbeitsplatz(null, 13, null, null, 0, null, null, 1.0));
+        arbeit.add(new APArbeitsplatz(null, 13, null, null, 0, null, null, 1.1));
         final ArrayList<APTeil> a12 = new ArrayList<APTeil>();
         a12.add(new APTeil(10, null, 2));
         a12.add(new APTeil(11, null, 2));
@@ -143,7 +140,7 @@ public class Main {
 
         arbeit.get(11).setTeile(a12);
 
-        arbeit.add(new APArbeitsplatz(null, 14, null, null, 0, null, null, 1.0));
+        arbeit.add(new APArbeitsplatz(null, 14, null, null, 0, null, null, 1.1));
         final ArrayList<APTeil> a13 = new ArrayList<APTeil>();
         a13.add(new APTeil(16, null, 3));
 

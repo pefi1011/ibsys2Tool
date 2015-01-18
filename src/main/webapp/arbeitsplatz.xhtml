@@ -174,8 +174,16 @@
 
 
 					<p:column>
+					
+<!-- 						<f:facet name="header">#{msg['ap.sicherheitsaufschlag']}</f:facet> -->
+<!-- 						<p:inputMask styleClass="text-input" value="#{ergebnis.aufschlag}" /> -->
+						
 						<f:facet name="header">#{msg['ap.sicherheitsaufschlag']}</f:facet>
-						<p:inputMask styleClass="text-input" value="#{ergebnis.aufschlag}" />
+						
+						<h:outputText id="output2"	style="margin-bottom:3px;" value="#{ergebnis.aufschlagGut}%" />
+						<h:inputHidden id="txt3" value="#{ergebnis.aufschlagGut}" />
+						<p:slider styleClass="mt" minValue="0" maxValue="40" for="txt3" display="output2" style="width: 150px" displayTemplate="{value}% " />
+						
 
 					</p:column>
 

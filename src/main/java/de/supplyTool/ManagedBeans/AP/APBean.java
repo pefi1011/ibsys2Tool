@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import javax.faces.bean.SessionScoped;
 
 import de.supplyTool.ManagedBeans.ErgebnisBean;
 import de.supplyTool.dao.Dao;
@@ -21,7 +22,7 @@ import de.supplyTool.generated2.Results.Waitinglistworkstations.Workplace.Waitin
 import de.supplyTool.util.ContextHelper;
 
 @ManagedBean
-@RequestScoped
+@SessionScoped
 public class APBean {
 
 	/**
@@ -88,11 +89,11 @@ public class APBean {
         one.setOptionTwo("2400");
         two = new APOption();
         two.setId("2");
-        two.setOptionOne("3720");
+        two.setOptionOne("3700");
         two.setOptionTwo("4800");
         three = new APOption();
         three.setId("3");
-        three.setOptionOne("6666");
+        three.setOptionOne("6650");
         three.setOptionTwo("7200");
 
         arbeit.add(new APArbeitsplatz(null, 1, null, null, 60, null, null, 1.0));
@@ -109,14 +110,14 @@ public class APBean {
         a2.add(new APTeil(30, null, 5));
         arbeit.get(1).setTeile(a2);
 
-        arbeit.add(new APArbeitsplatz(null, 3, null, null, 60, null, null, 1.1));
+        arbeit.add(new APArbeitsplatz(null, 3, null, null, 60, null, null, 1.0));
         final ArrayList<APTeil> a3 = new ArrayList<APTeil>();
         a3.add(new APTeil(51, null, 5));
         a3.add(new APTeil(56, null, 6));
         a3.add(new APTeil(31, null, 6));
         arbeit.get(2).setTeile(a3);
 
-        arbeit.add(new APArbeitsplatz(null, 4, null, null, 80, null, null, 1.1));
+        arbeit.add(new APArbeitsplatz(null, 4, null, null, 80, null, null, 1.20));
         final ArrayList<APTeil> a4 = new ArrayList<APTeil>();
         a4.add(new APTeil(1, null, 6));
         a4.add(new APTeil(2, null, 7));
@@ -131,7 +132,7 @@ public class APBean {
         a5.add(new APTeil(20, null, 3));
         arbeit.get(4).setTeile(a5);
 
-        arbeit.add(new APArbeitsplatz(null, 7, null, null, 210, null, null, 1.3));
+        arbeit.add(new APArbeitsplatz(null, 7, null, null, 210, null, null, 1.0));
         final ArrayList<APTeil> a6 = new ArrayList<APTeil>();
         a6.add(new APTeil(10, null, 2));
         a6.add(new APTeil(11, null, 2));
@@ -145,7 +146,7 @@ public class APBean {
         a6.add(new APTeil(26, null, 2));
         arbeit.get(5).setTeile(a6);
 
-        arbeit.add(new APArbeitsplatz(null, 8, null, null, 155, null, null, 1.3));
+        arbeit.add(new APArbeitsplatz(null, 8, null, null, 155, null, null, 1.0));
         final ArrayList<APTeil> a7 = new ArrayList<APTeil>();
         a7.add(new APTeil(10, null, 1));
         a7.add(new APTeil(11, null, 2));
@@ -159,8 +160,7 @@ public class APBean {
 
         arbeit.get(6).setTeile(a7);
 
-        arbeit.add(new APArbeitsplatz(null, 9, null, null, 140, null, null,
-                1.25));
+        arbeit.add(new APArbeitsplatz(null, 9, null, null, 140, null, null, 1.0));
         final ArrayList<APTeil> a8 = new ArrayList<APTeil>();
         a8.add(new APTeil(10, null, 3));
         a8.add(new APTeil(11, null, 3));
@@ -174,8 +174,7 @@ public class APBean {
 
         arbeit.get(7).setTeile(a8);
 
-        arbeit.add(new APArbeitsplatz(null, 10, null, null, 120, null, null,
-                1.3));
+        arbeit.add(new APArbeitsplatz(null, 10, null, null, 120, null, null, 1.0));
         final ArrayList<APTeil> a9 = new ArrayList<APTeil>();
         a9.add(new APTeil(4, null, 4));
         a9.add(new APTeil(5, null, 4));
@@ -186,8 +185,7 @@ public class APBean {
 
         arbeit.get(8).setTeile(a9);
 
-        arbeit.add(new APArbeitsplatz(null, 11, null, null, 120, null, null,
-                1.0));
+        arbeit.add(new APArbeitsplatz(null, 11, null, null, 120, null, null, 1.0));
         final ArrayList<APTeil> a10 = new ArrayList<APTeil>();
         a10.add(new APTeil(4, null, 3));
         a10.add(new APTeil(5, null, 3));
@@ -226,7 +224,7 @@ public class APBean {
 
         arbeit.get(12).setTeile(a13);
 
-        arbeit.add(new APArbeitsplatz(null, 15, null, null, 30, null, null, 1.1));
+        arbeit.add(new APArbeitsplatz(null, 15, null, null, 30, null, null, 1.0));
         final ArrayList<APTeil> a14 = new ArrayList<APTeil>();
         a14.add(new APTeil(17, null, 3));
         a14.add(new APTeil(26, null, 3));
