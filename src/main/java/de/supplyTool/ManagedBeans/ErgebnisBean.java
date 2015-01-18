@@ -28,6 +28,18 @@ public class ErgebnisBean implements Serializable {
     public ArrayList<KaufTeilDispositionErgebnis> getKaufErgebnisse() {
         return kaufErgebnisse;
     }
+    
+    public ArrayList<KaufTeilDispositionErgebnis> getKaufErgebnisseGut() {
+    	ArrayList<KaufTeilDispositionErgebnis> kaufErgebnisseGut   = new ArrayList<KaufTeilDispositionErgebnis>();
+        
+    	for(KaufTeilDispositionErgebnis kauftErg : kaufErgebnisse){
+        	if (kauftErg.getBestellmenge() > 0){
+        		kaufErgebnisseGut.add(kauftErg);
+        	}
+        }
+    	
+    	return kaufErgebnisseGut;
+    }
 
     public void setKaufErgebnisse(
             final ArrayList<KaufTeilDispositionErgebnis> kaufErgebnisse) {
