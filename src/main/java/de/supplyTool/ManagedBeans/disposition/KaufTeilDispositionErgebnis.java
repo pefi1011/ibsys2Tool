@@ -8,7 +8,10 @@ import java.util.List;
 
 import javax.faces.model.SelectItem;
 
+import de.supplyTool.ManagedBeans.Bestellverwaltung;
+import de.supplyTool.ManagedBeans.ErgebnisBean;
 import de.supplyTool.domain.BestellTyp;
+import de.supplyTool.domain.Bestellung;
 import de.supplyTool.domain.MengenStuecklisteItem;
 import de.supplyTool.domain.Teil;
 import de.supplyTool.domain.TeilLieferdaten;
@@ -51,8 +54,38 @@ public class KaufTeilDispositionErgebnis implements Serializable,
 
     EinkaufKonfiguration          config;
 
-    int[]                         bruttoBedarfe            = new int[4];
+    // TODO Vassil Quickfix
+    public List<Bestellung> getOffeneBestellungen() {
+    	List<Bestellung> bestells = new ArrayList<Bestellung>();
+    	
+    	Bestellverwaltung bestVerw = ContextHelper.getManagedBean(Bestellverwaltung.class);
+    	ArrayList<Bestellung> bestellungen = bestVerw.getOffeneBestellungen();
+    	for (Bestellung best : bestellungen) {
+    		if(best.getTeil().getNummer() == teil.getNummer()){
+    			bestells.add(best);
+    		}
+    	}
+		return bestells;
+	}
+    
+    public String getBestellungenString(){
+    	String bestellungen = "";
+    	Boolean gibESBest = false;
+    	for (Bestellung x : getOffeneBestellungen()){
+    		bestellungen += " (Menge " + x.getMenge() + " Periode " + x.getPeriode() + " Typ " + x.getBestellTyp() + ") ; ";
+    		gibESBest = true;
+    	}
+    	if (gibESBest) {
+    		return bestellungen;    		
+    	} else {
+    		return "Keine Bestellungen";
+    	}
+    }
+
+	int[]                         bruttoBedarfe            = new int[4];
     int                           bestellmenge             = 0;
+    
+    ArrayList<Bestellung>		  offeneBestellungen       = new ArrayList<Bestellung>();
 
     public KaufTeilDispositionErgebnis(final Teil teil,
             final MengenStuecklisteItem mengenStuecklisteitemP1,
