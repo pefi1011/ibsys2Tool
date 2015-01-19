@@ -72,21 +72,6 @@
     <!--mode 1: special order-->
   </inwardstockmovement>
   <futureinwardstockmovement>
-    <order orderperiod="1" id="14" mode="5" article="46" amount="900" />
-    <order orderperiod="1" id="11" mode="5" article="41" amount="900" />
-    <order orderperiod="1" id="12" mode="5" article="42" amount="3600" />
-    <order orderperiod="1" id="7" mode="5" article="37" amount="900" />
-    <order orderperiod="1" id="6" mode="5" article="36" amount="900" />
-    <order orderperiod="1" id="3" mode="5" article="28" amount="4500" />
-    <order orderperiod="1" id="17" mode="5" article="58" amount="22000" />
-    <order orderperiod="1" id="16" mode="5" article="53" amount="22000" />
-    <order orderperiod="1" id="2" mode="4" article="24" amount="12200" />
-    <order orderperiod="1" id="13" mode="5" article="45" amount="900" />
-    <order orderperiod="1" id="10" mode="5" article="40" amount="900" />
-    <order orderperiod="1" id="15" mode="5" article="52" amount="900" />
-    <order orderperiod="1" id="1" mode="5" article="21" amount="300" />
-    <order orderperiod="1" id="5" mode="5" article="35" amount="3600" />
-    <order orderperiod="1" id="4" mode="5" article="32" amount="2700" />
   </futureinwardstockmovement>
   <idletimecosts>
     <workplace id="1" setupevents="5" idletime="200" wageidletimecosts="90,00" wagecosts="990,00" machineidletimecosts="2,00" />
