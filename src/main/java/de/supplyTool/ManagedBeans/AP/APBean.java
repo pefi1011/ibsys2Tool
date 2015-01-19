@@ -89,11 +89,11 @@ public class APBean {
         one.setOptionTwo("2400");
         two = new APOption();
         two.setId("2");
-        two.setOptionOne("3700");
+        two.setOptionOne("4000");
         two.setOptionTwo("4800");
         three = new APOption();
         three.setId("3");
-        three.setOptionOne("6650");
+        three.setOptionOne("6400");
         three.setOptionTwo("7200");
 
         arbeit.add(new APArbeitsplatz(null, 1, null, null, 60, null, null, 1.0));
@@ -516,7 +516,19 @@ public class APBean {
 
         ContextHelper.getManagedBean(ErgebnisBean.class).setArbeitsplaetze(
                 arbeit);
-
+        
+        // TODO VASSIL Quickfix
+        for (int n = 0; n < arbeit.size(); n++) {
+        	if(arbeit.get(n).getUeberstunden() > 7200){
+        		arbeit.get(n).setUeberstunden(7200);
+        		arbeit.get(n).setUeberstundenGut(0);
+        		arbeit.get(n).setSchicht(3);
+        	}
+        	
+        	
+        }
+        
+        
         for (int n = 0; n < arbeit.size(); n++) {
             arbeitsplaetze.add(arbeit.get(n));
             System.out.println(arbeit.get(n).getAufschlag());

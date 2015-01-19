@@ -14,7 +14,7 @@ public class EinkaufKonfiguration implements Serializable {
      */
     private static final long serialVersionUID         = -8752698074052240692L;
     private double            diskontmengeAbweichung   = 10;
-    private int               sicherheitsbestand       = 25;
+    private int               sicherheitsbestand       = 10;
     private boolean           genauNachBedarfBerechnen = false;
 
     public double getDiskontmengeAbweichung() {

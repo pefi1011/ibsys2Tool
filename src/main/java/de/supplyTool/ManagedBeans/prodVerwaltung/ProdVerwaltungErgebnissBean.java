@@ -14,7 +14,7 @@ public class ProdVerwaltungErgebnissBean {
 
     ArrayList<APTeil> teile = new ArrayList<APTeil>();
     Boolean           first = true;
-    Integer           split = 100;
+    Integer           split = 300;
 
     public void setSplit(final Integer i) {
         split = i;
