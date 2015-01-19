@@ -56,13 +56,22 @@
 	<div align="center"  style="margin-top: 20px;">
 		<h:form enctype="multipart/form-data">
 		<!-- value="#{msg['button.upload']}" -->
-			<p:commandButton id="exportXML" value="Export XML" 
+			<p:commandButton id="exportXML" value="button.exportXML" 
 				ajax="false" action="#{result.downloadFile}" />
 			<h:message for="exportXML" />
 			<h:messages />
 			
 		</h:form>
 		
+		<BR />
+		<BR />
+			<h:form enctype="multipart/form-data">
+			<p:commandButton id="resetDatabase" value="button.resetDatabase" 
+				ajax="false" action="#{result.resetDatabase}" />
+			<h:message for="resetDatabase" />
+			<h:messages />
+			
+		</h:form>
 		<BR />
 		<BR />
 		
