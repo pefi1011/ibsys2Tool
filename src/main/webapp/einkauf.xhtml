@@ -265,8 +265,17 @@
 					<p:column width="10">
 						<f:facet name="header">#{msg['teil.diskontmenge']}</f:facet>
 						<div align="right">#{ergebnis.lieferDaten.diskontMenge}	</div>	
-						
+					</p:column>	
+					
+					<p:column width="10">
+						<f:facet name="header">#{msg['teil.aktualisieren']}</f:facet>
+						<p:commandButton style="margin-top:20px;"
+							action="#{dispositionBean.aktualisiereArtikel(ergebnis.teil.nummer, ergebnis.bestellmenge)}"
+							value="#{msg['teil.aktualisiereArtikel']}" ajax="false">
+						</p:commandButton>
+
 					</p:column>
+					
 				</p:dataTable>
 			
 			</h:form>

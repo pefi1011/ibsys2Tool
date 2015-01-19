@@ -12,6 +12,7 @@ import java.util.Set;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 import javax.faces.bean.ViewScoped;
 
 import de.supplyTool.ManagedBeans.ErgebnisBean;
@@ -29,7 +30,7 @@ import de.supplyTool.util.ContextHelper;
  * 
  */
 @ManagedBean
-@ViewScoped
+@SessionScoped
 public class DispositionBean implements Serializable {
 
     private static final long                      serialVersionUID = 8535993958346608925L;
@@ -280,7 +281,10 @@ public class DispositionBean implements Serializable {
     	System.out.println();
         
     }
+
     
+    public void aktualisiereArtikel(Integer nummer, Integer bestellmenge) {
+    }
    
 
     /**
