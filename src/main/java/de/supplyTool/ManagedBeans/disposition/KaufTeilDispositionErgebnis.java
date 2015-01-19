@@ -131,8 +131,8 @@ public class KaufTeilDispositionErgebnis implements Serializable,
         final double dauerAVG = (Double.valueOf(abweichung) / 2d)
                 + wiederbeschaffungszeitTage;
 
-        if (wiederbeschaffungszeitTage > materialGehtAusAmTag
-                || dauerAVG > materialGehtAusAmTag) {
+        if (wiederbeschaffungszeitTage >= materialGehtAusAmTag
+                || dauerAVG >= materialGehtAusAmTag || gesamtLieferdauerTage >= materialGehtAusAmTag ) {
             bestellTyp = BestellTyp.F;
         } else {
             bestellTyp = BestellTyp.N;
@@ -164,7 +164,9 @@ public class KaufTeilDispositionErgebnis implements Serializable,
         	restBedarfVomTag = Math.ceil(restBedarfVomTag);
         	bestellmenge += restBedarfVomTag;
         	
-        	if ((materialGehtAusAmTag / dauerAVG) < 2d) {
+        	//if ((materialGehtAusAmTag / dauerAVG) < 2d) {
+            if ((materialGehtAusAmTag - dauerAVG) < 6d) {
+
         		int aktuellerTag = (int) Math.ceil(materialGehtAusAmTag);
         		final double aktuellePeriode = materialGehtAusInPeriode;
         		for (int i = 1; i <= dauerAVG; i++) {
