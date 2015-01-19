@@ -164,7 +164,9 @@ public class KaufTeilDispositionErgebnis implements Serializable,
         	restBedarfVomTag = Math.ceil(restBedarfVomTag);
         	bestellmenge += restBedarfVomTag;
         	
-        	if ((materialGehtAusAmTag / dauerAVG) < 2d) {
+        	//if ((materialGehtAusAmTag / dauerAVG) < 2d) {
+            if ((materialGehtAusAmTag - dauerAVG) < 6d) {
+
         		int aktuellerTag = (int) Math.ceil(materialGehtAusAmTag);
         		final double aktuellePeriode = materialGehtAusInPeriode;
         		for (int i = 1; i <= dauerAVG; i++) {
