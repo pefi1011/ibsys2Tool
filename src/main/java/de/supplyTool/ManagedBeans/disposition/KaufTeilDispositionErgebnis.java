@@ -131,8 +131,8 @@ public class KaufTeilDispositionErgebnis implements Serializable,
         final double dauerAVG = (Double.valueOf(abweichung) / 2d)
                 + wiederbeschaffungszeitTage;
 
-        if (wiederbeschaffungszeitTage > materialGehtAusAmTag
-                || dauerAVG > materialGehtAusAmTag) {
+        if (wiederbeschaffungszeitTage >= materialGehtAusAmTag
+                || dauerAVG >= materialGehtAusAmTag || gesamtLieferdauerTage >= materialGehtAusAmTag ) {
             bestellTyp = BestellTyp.F;
         } else {
             bestellTyp = BestellTyp.N;
