@@ -117,7 +117,7 @@ public class APBean {
         a3.add(new APTeil(31, null, 6));
         arbeit.get(2).setTeile(a3);
 
-        arbeit.add(new APArbeitsplatz(null, 4, null, null, 80, null, null, 1.10));
+        arbeit.add(new APArbeitsplatz(null, 4, null, null, 80, null, null, 1.08));
         final ArrayList<APTeil> a4 = new ArrayList<APTeil>();
         a4.add(new APTeil(1, null, 6));
         a4.add(new APTeil(2, null, 7));
