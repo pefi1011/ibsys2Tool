@@ -1,0 +1,14 @@
+truncate table arbeitsplatz_daten;
+truncate table bestellung;
+truncate table dispo_drei;
+truncate table dispo_drei_ergebniss;
+truncate table dispo_eins;
+truncate table dispo_eins_ergebniss;
+truncate table dispo_ergebniss;
+truncate table dispo_zwei;
+truncate table dispo_zwei_ergebniss;
+truncate table lager_disposition;
+truncate table mengen_stueckliste;
+truncate table prognose;
+truncate table teil;
+truncate table teil_ist_in_teil;
