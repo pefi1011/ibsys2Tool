@@ -14,20 +14,20 @@ public class Produktionsprogramm implements Serializable {
 
     private static final long serialVersionUID = 9179622950739280960L;
 
-    private int               p1_1             = 0;
-    private int               p1_2             = 0;
-    private int               p1_3             = 0;
-    private int               p1_4             = 0;
+    private int               p1_1             = 100;
+    private int               p1_2             = 100;
+    private int               p1_3             = 100;
+    private int               p1_4             = 100;
 
-    private int               p2_1             = 0;
-    private int               p2_2             = 0;
-    private int               p2_3             = 0;
-    private int               p2_4             = 0;
+    private int               p2_1             = 100;
+    private int               p2_2             = 100;
+    private int               p2_3             = 100;
+    private int               p2_4             = 100;
 
-    private int               p3_1             = 0;
-    private int               p3_2             = 0;
-    private int               p3_3             = 0;
-    private int               p3_4             = 0;
+    private int               p3_1             = 100;
+    private int               p3_2             = 100;
+    private int               p3_3             = 100;
+    private int               p3_4             = 100;
 
     public void weiter() {
         // final Dao dao = new Dao();
