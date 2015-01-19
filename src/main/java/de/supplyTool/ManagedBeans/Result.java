@@ -5,9 +5,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
@@ -326,5 +329,29 @@ public class Result {
     public void setResult(String result) {
         this.result = result;
     }
+    
+    public void  resetDatabase(){
+    	
+//    	FacesContext context = FacesContext.getCurrentInstance();
+//    	ResourceBundle bundle = context.getApplication().getResourceBundle(context, "msg");
+//    	
+//    	String msgTitle = bundle.getString("end.database.reset.succesful");
+//    	String msg = bundle.getString("end.database.reset.succesful.message");
+//
+//    	FacesMessage message = new FacesMessage(msgTitle, msg);
+    	
+        final Dao dao = new Dao();
+        
+        try {
+			dao.resetDatabaseQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    
+//    	FacesContext.getCurrentInstance().addMessage(null, message);
+    }
+
+
 
 }
