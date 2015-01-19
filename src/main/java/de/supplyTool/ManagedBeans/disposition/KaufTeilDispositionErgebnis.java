@@ -70,10 +70,16 @@ public class KaufTeilDispositionErgebnis implements Serializable,
     
     public String getBestellungenString(){
     	String bestellungen = "";
+    	Boolean gibESBest = false;
     	for (Bestellung x : getOffeneBestellungen()){
     		bestellungen += " (Menge " + x.getMenge() + " Periode " + x.getPeriode() + " Typ " + x.getBestellTyp() + ") ; ";
+    		gibESBest = true;
     	}
-    	return bestellungen;
+    	if (gibESBest) {
+    		return bestellungen;    		
+    	} else {
+    		return "Keine Bestellungen";
+    	}
     }
 
 	int[]                         bruttoBedarfe            = new int[4];
