@@ -23,7 +23,7 @@
     <article id="20" amount="100" startamount="100" pct="0,00" price="15,55" stockvalue="0,00" />
     <article id="21" amount="300" startamount="300" pct="50,00" price="5,00" stockvalue="750,00" />
     <article id="22" amount="300" startamount="300" pct="66,67" price="6,50" stockvalue="1300,00" />
-    <article id="23" amount="200" startamount="300" pct="66,67" price="6,50" stockvalue="1300,00" />
+    <article id="23" amount="300" startamount="300" pct="66,67" price="6,50" stockvalue="1300,00" />
     <article id="24" amount="6100" startamount="6100" pct="59,84" price="0,06" stockvalue="219,00" />
     <article id="25" amount="3600" startamount="3600" pct="61,11" price="0,06" stockvalue="132,00" />
     <article id="26" amount="300" startamount="300" pct="56,67" price="10,50" stockvalue="1975,54" />
