@@ -14,6 +14,15 @@ public class Teil_dispohelp implements Serializable {
 	Integer						auftraege_warteschlange;
 	Integer						auftrage_bearbeitung;
 	Integer						produktionsauftrag_naechste_periode;
+	Integer						warteschlangeHlep = -1;
+
+	public Integer getWarteschlangeHlep() {
+		return getProduktionsauftrag_naechste_periode() - getVertriebswunsch() - getGeplante_lagermenge() + getLagerbestand_ende_vorperiode() + getAuftraege_warteschlange() + getAuftrage_bearbeitung();
+	}
+
+	public void setWarteschlangeHlep(Integer warteschlangeHlep) {
+		this.warteschlangeHlep = warteschlangeHlep;
+	}
 
 	public Teil_dispohelp() {
 

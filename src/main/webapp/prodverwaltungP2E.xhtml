@@ -13,6 +13,13 @@
 					$('#datenTitel').text(panelTitle);
 				});
 				</script>
+				
+				<style>
+					.highlight {
+		    			background: #FFFFCC  !important ;
+					}
+				</style>
+
 	</ui:define>
 	
 	<ui:define name="prognoseTabelle">
@@ -70,31 +77,52 @@
 				value="#{prodVerwaltungBean.dispositionsErgebnisseViewZwei}"
 				var="ergebnis" styleClass="order-table"
 				headerClass="order-table-header"
-				rowClasses="order-table-odd-row,order-table-even-row">
-
+				rowStyleClass="#{ergebnis.nummer eq 2 || ergebnis.nummer eq 56 || ergebnis.nummer eq 55 || ergebnis.nummer eq 54 ? 'highlight' : ''}">
 
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.abnahme']}</f:facet>
 					<div align="right"><h:outputText value="#{ergebnis.vertriebswunsch}" /></div>	
 				</p:column>
+				
+				<p:column>
+				+
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">#{msg['prodverwaltung.warteschlangeHilfe']}</f:facet>
+					<div align="right"> <h:outputText value="#{ergebnis.warteschlangeHlep}" /> </div>	
+				</p:column>
 
+				<p:column>
+				+
+				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.geplanteLagermenge']} </f:facet>
 					<div align="right"><h:outputText value="#{ergebnis.geplante_lagermenge}" /></div>	
 				</p:column>
 
-
+				<p:column>
+				-
+				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.lagerbestandEndeVorperiode']}</f:facet>
 					<div align="right">#{ergebnis.lagerbestand_ende_vorperiode}	</div>		
 				</p:column>
+				
+				<p:column>
+				-
+				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.auftraegeWarteschlange']}</f:facet>
 					<div align="right">#{ergebnis.auftraege_warteschlange}	</div>	
+				</p:column>
+				
+				<p:column>
+				-
 				</p:column>
 
 				<p:column>
@@ -102,7 +130,9 @@
 					<div align="right">#{ergebnis.auftrage_bearbeitung}</div>	
 				</p:column>
 
-
+				<p:column>
+				=
+				</p:column>
 
 				<p:column>
 					<f:facet name="header">#{msg['prodverwaltung.produktionsauftrag']}</f:facet>
@@ -119,6 +149,11 @@
 			</p:dataTable>
 
 			</center>
+
+<br/>
+
+
+#{msg['teil.hinweis']}
 
 		</h:form>
 	</ui:define>
