@@ -1383,173 +1383,430 @@ public class Dao implements Serializable {
 
     }
 
-
-	public void resetDatabaseQuery() throws SQLException {
-		
-		
-		ProcessBuilder builder  = new ProcessBuilder("/bin/sh", "-c", "mysql -u root -p ibsys < /home/vif/git/ibsys2Tool/assets/scripts/schema.sql");
-		ProcessBuilder builder2  = new ProcessBuilder("/bin/sh", "-c", "mysql -u root -p ibsys < /home/vif/git/ibsys2Tool/assets/scripts/data.sql");
-		
-		try {
-			builder.start();
-		} catch (IOException e) {
+    public void resetDatabaseQuery(){
+    	
+    	try {
+			resetDatabaseSchema();
+		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		try {
-			builder2.start();
-		} catch (IOException e) {
+    	
+    	try {
+			resetDatabaseInitData();
+		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+    	
+    }
+    
+    public void resetDatabaseInitData() throws SQLException{
+
+        Connection connection = null;
+        Statement createStatement = null;
+        
+        try {
+            connection = getConnection();
+            createStatement = connection.createStatement();
+            
+            
+String query =   		"USE `ibsys`;";
+//createStatement.executeUpdate(query);
+createStatement.executeUpdate(query);
+
+createStatement.executeUpdate("SET FOREIGN_KEY_CHECKS=0");
+
+System.out.println("START DATA arbeitsplatz_daten");
+
+
+
+String query1 =  "LOCK TABLES `arbeitsplatz_daten` WRITE;";
+createStatement.executeUpdate(query1);
+String query1b =  "INSERT INTO `arbeitsplatz_daten` VALUES (1,0.45,0.55,0.7,0.9,0.05,0.01),(2,0.45,0.55,0.7,0.9,0.05,0.01),(3,0.45,0.55,0.7,0.9,0.05,0.01),(4,0.45,0.55,0.7,0.9,0.05,0.01),(6,0.45,0.55,0.7,0.9,0.3,0.1),(7,0.45,0.55,0.7,0.9,0.3,0.1),(8,0.45,0.55,0.7,0.9,0.3,0.1),(9,0.45,0.55,0.7,0.9,0.8,0.25),(10,0.45,0.55,0.7,0.9,0.3,0.1),(11,0.45,0.55,0.7,0.9,0.3,0.1),(12,0.45,0.55,0.7,0.9,0.3,0.1),(13,0.45,0.55,0.7,0.9,0.5,0.15),(14,0.45,0.55,0.7,0.9,0.05,0.01),(15,0.45,0.55,0.7,0.9,0.05,0.01);";
+createStatement.executeUpdate(query1b);
+String query1c =  "UNLOCK TABLES;";
+createStatement.executeUpdate(query1c);
+
+System.out.println("STOP DATA arbeitsplatz_daten");
+
+System.out.println("START DATA lager_disposition");
+
+
+
+String query2 =  "LOCK TABLES `lager_disposition` WRITE;";
+createStatement.executeUpdate(query2);
+String query2b =  "INSERT INTO `lager_disposition` VALUES (300,300,50,1.8,9,0.4,2,21),(300,300,50,1.7,9,0.4,2,22),(300,300,50,1.2,6,0.2,1,23),(6100,6100,100,3.2,16,0.3,2,24),(3600,3600,50,0.9,5,0.2,1,25),(1800,1800,75,0.9,5,0.2,1,27),(4500,4500,50,1.7,9,0.4,2,28),(2700,2700,50,2.1,11,0.5,3,32),(900,900,75,1.9,10,0.5,3,33),(22000,22000,50,1.6,8,0.3,2,34),(3600,3600,75,2.2,11,0.4,2,35),(900,900,100,1.2,6,0.1,1,36),(900,900,50,1.5,8,0.3,2,37),(300,300,50,1.7,9,0.4,2,38),(900,1800,75,1.5,8,0.3,2,39),(900,900,50,1.7,9,0.2,1,40),(900,900,50,0.9,5,0.2,1,41),(1800,1800,50,1.2,6,0.3,2,42),(1900,2700,75,2,10,0.5,3,43),(2700,900,50,1,5,0.2,1,44),(900,900,50,1.7,9,0.3,2,45),(900,900,50,0.9,5,0.3,2,46),(900,900,50,1.1,6,0.1,1,47),(1800,1800,75,1,5,0.2,1,48),(600,600,50,1.6,8,0.4,2,52),(22000,22000,50,1.6,8,0.2,1,53),(600,600,50,1.7,9,0.3,2,57),(22000,22000,50,1.6,8,0.5,3,58),(1800,1800,50,0.7,4,0.2,1,59);";
+createStatement.executeUpdate(query2b);
+String query2c =  "UNLOCK TABLES;";
+createStatement.executeUpdate(query2c);
+
+System.out.println("STOP DATA lager_disposition");
+
+System.out.println("START DATA mengen_stueckliste");
+
+
+String query3 =  "LOCK TABLES `mengen_stueckliste` WRITE;";
+createStatement.executeUpdate(query3);
+String query3b =  "INSERT INTO `mengen_stueckliste` VALUES (1,4,1),(1,7,1),(1,10,1),(1,13,1),(1,16,1),(1,17,1),(1,18,1),(1,26,1),(1,49,1),(1,50,1),(1,51,1),(1,21,1),(1,24,7),(1,25,4),(1,27,2),(1,28,4),(1,32,3),(1,35,4),(1,36,1),(1,37,1),(1,38,1),(1,39,2),(1,40,1),(1,41,1),(1,42,2),(1,43,1),(1,44,3),(1,45,1),(1,46,1),(1,47,1),(1,48,2),(1,52,2),(1,53,72),(1,59,2),(2,5,1),(2,8,1),(2,11,1),(2,14,1),(2,16,1),(2,17,1),(2,19,1),(2,26,1),(2,54,1),(2,55,1),(2,56,1),(2,22,1),(2,24,7),(2,25,4),(2,27,2),(2,28,5),(2,32,3),(2,35,4),(2,36,1),(2,37,1),(2,38,1),(2,39,2),(2,40,1),(2,41,1),(2,42,2),(2,43,1),(2,44,3),(2,45,1),(2,46,1),(2,47,1),(2,48,2),(2,57,2),(2,58,72),(2,59,2),(3,6,1),(3,9,1),(3,12,1),(3,15,1),(3,16,1),(3,17,1),(3,20,1),(3,26,1),(3,29,1),(3,30,1),(3,31,1),(3,23,1),(3,24,7),(3,25,4),(3,27,2),(3,28,6),(3,32,3),(3,33,2),(3,34,72),(3,35,4),(3,36,1),(3,37,1),(3,38,1),(3,39,2),(3,40,1),(3,41,1),(3,42,2),(3,43,1),(3,44,3),(3,45,1),(3,46,1),(3,47,1),(3,48,2),(3,59,2);";
+createStatement.executeUpdate(query3b);
+String query3c =  "UNLOCK TABLES;";
+createStatement.executeUpdate(query3c);
+
+System.out.println("STOP DATA mengen_stueckliste");
+
+System.out.println("START DATA teil");
+
+
+String query4 =  "LOCK TABLES `teil` WRITE;";
+createStatement.executeUpdate(query4);
+String query4b =  "INSERT INTO `teil` VALUES (1,'P','Kinderfahrrad','NIX',156.13),(2,'P','Damenfahrrad','NIX',163.33),(3,'P','Herrenfahrrad','NIX',165.08),(4,'E','Hinterradgruppe','K',40.85),(5,'E','Hinterradgruppe','D',39.85),(6,'E','Hinterradgruppe','H',40.85),(7,'E','Vorderradgruppe','K',35.85),(8,'E','Vorderradgruppe','D',35.85),(9,'E','Vorderradgruppe','H',35.85),(10,'E','Schutzblech h.','K',12.4),(11,'E','Schutzblech h.','D',14.65),(12,'E','Schutzblech h.','H',14.65),(13,'E','Schutzblech v.','K',12.4),(14,'E','Schutzblech v.','D',14.65),(15,'E','Schutzblech v.','H',14.65),(16,'E','Lenker cpl.','KDH',7.02),(17,'E','Sattel cpl.','KDH',7.16),(18,'E','Rahmen','K',13.15),(19,'E','Rahmen','D',14.35),(20,'E','Rahmen','H',15.55),(21,'K','Kette','K',5),(22,'K','Kette','D',6.5),(23,'K','Kette','H',6.5),(24,'K','Mutter 3/8','KDH',0.06),(25,'K','Scheibe 3/8','KDH',0.06),(26,'E','Pedal cpl.','KDH',10.5),(27,'K','Schraube 3/8','KDH',0.1),(28,'K','Rohr 3/4','KDH',1.2),(29,'E','Vorderrad mont.','H',69.29),(30,'E','Rahmen u. Raeder','H',127.53),(31,'E','Fahrrad o. Ped.','H',144.42),(32,'K','Farbe','KDH',0.75),(33,'K','Felde cpl','H',22),(34,'K','Speiche','H',0.1),(35,'K','Nabe','KDH',1),(36,'K','Freilauf','KDH',8),(37,'K','Gabel','KDH',1.5),(38,'K','Welle','KDH',1.5),(39,'K','Blech','KDH',1.5),(40,'K','Lenker','KDH',2.5),(41,'K','Mutter 3/4','KDH',0.06),(42,'K','Griff','KDH',0.1),(43,'K','Sattel','KDH',5),(44,'K','Stange 1/2','KDH',0.5),(45,'K','Mutter 1/4','KDH',0.06),(46,'K','Schraube 1/4','KDH',0.1),(47,'K','Zahnkranz','KDH',3.5),(48,'K','Pedal','KDH',1.5),(49,'E','Vorderrad cpl.','K',64.64),(50,'E','Rahmen u. Raeder','K',120.63),(51,'E','Fahrrad o. Pedal','K',137.47),(52,'K','Felge cpl.','K',22),(53,'K','Speiche','K',0.1),(54,'E','Vorderrad cpl.','D',68.09),(55,'E','Rahmen u. Raeder.','D',125.33),(56,'E','Fahrrad o. Pedal','D',142.67),(57,'K','Felge cpl.','D',22),(58,'K','Speiche','D',0.1),(59,'K','Schweissdraht','KDH',0.15);";
+createStatement.executeUpdate(query4b);
+String query4c =  "UNLOCK TABLES;";
+createStatement.executeUpdate(query4c);
+
+System.out.println("STOP DATA teil");
+
+System.out.println("START DATA teil_ist_in_teil");
+
+
+String query5 =  "LOCK TABLES `teil_ist_in_teil` WRITE;";
+createStatement.executeUpdate(query5);
+String query5b =  "INSERT INTO `teil_ist_in_teil` VALUES (13,39,1),(13,32,1),(18,28,3),(18,59,2),(18,32,1),(7,52,1),(7,53,36),(7,35,2),(7,37,1),(7,38,1),(49,13,1),(49,18,1),(49,7,1),(49,24,2),(49,25,2),(4,52,1),(4,53,36),(4,35,2),(4,36,1),(10,39,1),(10,32,1),(17,43,1),(17,44,1),(17,45,1),(17,46,1),(16,28,1),(16,24,1),(16,40,1),(16,41,1),(16,42,2),(50,49,1),(50,4,1),(50,10,1),(50,24,2),(50,25,2),(51,17,1),(51,16,1),(51,50,1),(51,24,1),(51,27,1),(26,44,2),(26,48,2),(26,47,1),(1,51,1),(1,26,1),(1,21,1),(1,24,1),(1,27,1),(2,22,1),(2,24,1),(2,27,1),(2,26,1),(2,56,1),(56,24,1),(56,27,1),(56,16,1),(56,17,1),(56,55,1),(55,24,2),(55,25,2),(55,5,1),(55,11,1),(55,54,1),(5,35,2),(5,36,1),(5,57,1),(5,58,36),(11,32,1),(11,39,1),(54,24,2),(54,25,2),(54,8,1),(54,14,1),(54,19,1),(8,35,2),(8,37,1),(8,38,1),(8,57,1),(8,58,36),(14,32,1),(14,39,1),(19,28,4),(19,32,1),(19,59,2),(3,23,1),(3,24,1),(3,27,1),(3,26,1),(3,31,1),(31,24,1),(31,27,1),(31,16,1),(31,17,1),(31,30,1),(30,24,2),(30,25,2),(30,6,1),(30,12,1),(30,29,1),(6,33,1),(6,34,36),(6,35,2),(6,36,1),(12,32,1),(12,39,1),(29,24,2),(29,25,2),(29,9,1),(29,15,1),(29,20,1),(9,33,1),(9,34,36),(9,35,2),(9,37,1),(9,38,1),(15,32,1),(15,39,1),(20,28,5),(20,32,1),(20,59,2);";
+createStatement.executeUpdate(query5b);
+String query5c =  "UNLOCK TABLES;";
+createStatement.executeUpdate(query5c);
+
+System.out.println("STOP DATA teil_ist_in_teil");
+
+createStatement.executeUpdate("SET FOREIGN_KEY_CHECKS=1");
+
+
+        } catch (final SQLException e) {
+            e.printStackTrace();
+        } finally {
+        	
+        	if(connection != null && !connection.isClosed())
+        		connection.close();
+        }
 		
-//        Connection connection = null;
-//        Statement createStatement = null;
-//        
-//        try {
-//            connection = getConnection();
-//            createStatement = connection.createStatement();
-//            
-//            
-//String query =   		"USE `ibsys`;";
-////createStatement.executeUpdate(query);
-//createStatement.addBatch(query);
-//
-//String query00 =   		"SET FOREIGN_KEY CHECKS=0;";
-////createStatement.executeUpdate(query00);
-//createStatement.addBatch(query00);
-//
-//String query13 ="truncate table `teil`;                      " ;
-////createStatement.executeUpdate(query13);
-//createStatement.addBatch(query13);
-//
-//			
-//String query1 = " truncate table `arbeitsplatz_daten`; ";
-////createStatement.executeUpdate(query1);
-//createStatement.addBatch(query1);
-//
-//String query2 =" truncate table `bestellung`;  ";
-////createStatement.executeUpdate(query2);
-//createStatement.addBatch(query2);
-//
-//
-//String query3 = "truncate table `dispo_drei`;                " ;
-////createStatement.executeUpdate(query3);
-//createStatement.addBatch(query3);
-//
-//String query4 = "truncate table `dispo_drei_ergebniss`;      " ;
-////createStatement.executeUpdate(query4);
-//createStatement.addBatch(query4);
-//
-//String query5 = "truncate table `dispo_eins`;                " ;
-////createStatement.executeUpdate(query5);
-//createStatement.addBatch(query5);
-//
-//String query6 = "truncate table `dispo_eins_ergebniss`;      " ;
-////createStatement.executeUpdate(query6);
-//createStatement.addBatch(query6);
-//
-//String query7 = "truncate table `dispo_ergebniss`;           " ;
-////createStatement.executeUpdate(query7);
-//createStatement.addBatch(query7);
-//
-//String query8 = "truncate table `dispo_zwei`;                " ;
-////createStatement.executeUpdate(query8);
-//createStatement.addBatch(query8);
-//
-//String query9 = "truncate table `dispo_zwei_ergebniss`;      " ;
-////createStatement.executeUpdate(query9);
-//createStatement.addBatch(query9);
-//
-//String query10 ="truncate table `lager_disposition`;         " ;
-////createStatement.executeUpdate(query10);
-//createStatement.addBatch(query10);
-//
-//String query11 ="truncate table `mengen_stueckliste`;        " ;
-////createStatement.executeUpdate(query11);
-//createStatement.addBatch(query11);
-//
-//String query12 ="truncate table `prognose`;                  " ;
-////createStatement.executeUpdate(query12);
-//createStatement.addBatch(query12);
-//
-//
-//String query14 = "truncate table `teil_ist_in_teil`;  " ;
-////createStatement.executeUpdate(query14);
-//createStatement.addBatch(query14);
-//
-//
-//String query01 =   		"SET FOREIGN_KEY CHECKS=1;";
-//createStatement.executeQuery(query01);
-//createStatement.addBatch(query01);
-//
-//
-//String query15 = "	LOCK TABLES `arbeitsplatz_daten` WRITE;  ";
-////createStatement.executeQuery(query15);
-//createStatement.addBatch(query15);
-//
-//String query16 =  "		INSERT INTO `arbeitsplatz_daten` VALUES (1,0.45,0.55,0.7,0.9,0.05,0.01),(2,0.45,0.55,0.7,0.9,0.05,0.01),(3,0.45,0.55,0.7,0.9,0.05,0.01),(4,0.45,0.55,0.7,0.9,0.05,0.01),(6,0.45,0.55,0.7,0.9,0.3,0.1),(7,0.45,0.55,0.7,0.9,0.3,0.1),(8,0.45,0.55,0.7,0.9,0.3,0.1),(9,0.45,0.55,0.7,0.9,0.8,0.25),(10,0.45,0.55,0.7,0.9,0.3,0.1),(11,0.45,0.55,0.7,0.9,0.3,0.1),(12,0.45,0.55,0.7,0.9,0.3,0.1),(13,0.45,0.55,0.7,0.9,0.5,0.15),(14,0.45,0.55,0.7,0.9,0.05,0.01),(15,0.45,0.55,0.7,0.9,0.05,0.01); ";
-//String query18 =  "	UNLOCK TABLES; ";
-//String query20 =  "	LOCK TABLES `bestellung` WRITE;  ";
-//String query22 =  "	UNLOCK TABLES; ";
-//String query24 =  "	LOCK TABLES `dispo_drei` WRITE; ";
-//String query25 =  "		UNLOCK TABLES; "	;
-//String query27 =  "	LOCK TABLES `dispo_drei_ergebniss` WRITE; ";
-//String query29 =  "	UNLOCK TABLES; ";
-//String query31 =  "	LOCK TABLES `dispo_eins` WRITE; ";
-//String query32 =  "		UNLOCK TABLES; ";
-//String query34 =  "	LOCK TABLES `dispo_eins_ergebniss` WRITE;  ";
-//String query36 =  "	UNLOCK TABLES;  ";
-//String query38 =  "	LOCK TABLES `dispo_ergebniss` WRITE;  ";
-//String query39 =  "	UNLOCK TABLES;  ";
-//		
-//String query40 =   "	LOCK TABLES `dispo_zwei` WRITE;  ";
-
-
-//	+ "	UNLOCK TABLES;   "
-//
-//	+ "	LOCK TABLES `dispo_zwei_ergebniss` WRITE;   "
-//		
-//	+ "	UNLOCK TABLES;   "
-//
-//	+ "	LOCK TABLES `lager_disposition` WRITE;   "
-//	 	
-//	+ "	INSERT INTO `lager_disposition` VALUES (300,300,50,1.8,9,0.4,2,21),(300,300,50,1.7,9,0.4,2,22),(300,300,50,1.2,6,0.2,1,23),(6100,6100,100,3.2,16,0.3,2,24),(3600,3600,50,0.9,5,0.2,1,25),(1800,1800,75,0.9,5,0.2,1,27),(4500,4500,50,1.7,9,0.4,2,28),(2700,2700,50,2.1,11,0.5,3,32),(900,900,75,1.9,10,0.5,3,33),(22000,22000,50,1.6,8,0.3,2,34),(3600,3600,75,2.2,11,0.4,2,35),(900,900,100,1.2,6,0.1,1,36),(900,900,50,1.5,8,0.3,2,37),(300,300,50,1.7,9,0.4,2,38),(900,1800,75,1.5,8,0.3,2,39),(900,900,50,1.7,9,0.2,1,40),(900,900,50,0.9,5,0.2,1,41),(1800,1800,50,1.2,6,0.3,2,42),(1900,2700,75,2,10,0.5,3,43),(2700,900,50,1,5,0.2,1,44),(900,900,50,1.7,9,0.3,2,45),(900,900,50,0.9,5,0.3,2,46),(900,900,50,1.1,6,0.1,1,47),(1800,1800,75,1,5,0.2,1,48),(600,600,50,1.6,8,0.4,2,52),(22000,22000,50,1.6,8,0.2,1,53),(600,600,50,1.7,9,0.3,2,57),(22000,22000,50,1.6,8,0.5,3,58),(1800,1800,50,0.7,4,0.2,1,59);   "
-//		
-//	+ "	UNLOCK TABLES;  "
-//
-//	+ "	LOCK TABLES `mengen_stueckliste` WRITE;  "
-//	+ " INSERT INTO `mengen_stueckliste` VALUES (1,4,1),(1,7,1),(1,10,1),(1,13,1),(1,16,1),(1,17,1),(1,18,1),(1,26,1),(1,49,1),(1,50,1),(1,51,1),(1,21,1),(1,24,7),(1,25,4),(1,27,2),(1,28,4),(1,32,3),(1,35,4),(1,36,1),(1,37,1),(1,38,1),(1,39,2),(1,40,1),(1,41,1),(1,42,2),(1,43,1),(1,44,3),(1,45,1),(1,46,1),(1,47,1),(1,48,2),(1,52,2),(1,53,72),(1,59,2),(2,5,1),(2,8,1),(2,11,1),(2,14,1),(2,16,1),(2,17,1),(2,19,1),(2,26,1),(2,54,1),(2,55,1),(2,56,1),(2,22,1),(2,24,7),(2,25,4),(2,27,2),(2,28,5),(2,32,3),(2,35,4),(2,36,1),(2,37,1),(2,38,1),(2,39,2),(2,40,1),(2,41,1),(2,42,2),(2,43,1),(2,44,3),(2,45,1),(2,46,1),(2,47,1),(2,48,2),(2,57,2),(2,58,72),(2,59,2),(3,6,1),(3,9,1),(3,12,1),(3,15,1),(3,16,1),(3,17,1),(3,20,1),(3,26,1),(3,29,1),(3,30,1),(3,31,1),(3,23,1),(3,24,7),(3,25,4),(3,27,2),(3,28,6),(3,32,3),(3,33,2),(3,34,72),(3,35,4),(3,36,1),(3,37,1),(3,38,1),(3,39,2),(3,40,1),(3,41,1),(3,42,2),(3,43,1),(3,44,3),(3,45,1),(3,46,1),(3,47,1),(3,48,2),(3,59,2);   "
-//	
-//	+ "	UNLOCK TABLES;  "
-//
-//		
-//	+ "	LOCK TABLES `prognose` WRITE;  "
-//		
-//	+ "	UNLOCK TABLES;  "
-//
-//	+ "	LOCK TABLES `teil` WRITE;  "
-//	+ "	INSERT INTO `teil` VALUES (1,'P','Kinderfahrrad','NIX',156.13),(2,'P','Damenfahrrad','NIX',163.33),(3,'P','Herrenfahrrad','NIX',165.08),(4,'E','Hinterradgruppe','K',40.85),(5,'E','Hinterradgruppe','D',39.85),(6,'E','Hinterradgruppe','H',40.85),(7,'E','Vorderradgruppe','K',35.85),(8,'E','Vorderradgruppe','D',35.85),(9,'E','Vorderradgruppe','H',35.85),(10,'E','Schutzblech h.','K',12.4),(11,'E','Schutzblech h.','D',14.65),(12,'E','Schutzblech h.','H',14.65),(13,'E','Schutzblech v.','K',12.4),(14,'E','Schutzblech v.','D',14.65),(15,'E','Schutzblech v.','H',14.65),(16,'E','Lenker cpl.','KDH',7.02),(17,'E','Sattel cpl.','KDH',7.16),(18,'E','Rahmen','K',13.15),(19,'E','Rahmen','D',14.35),(20,'E','Rahmen','H',15.55),(21,'K','Kette','K',5),(22,'K','Kette','D',6.5),(23,'K','Kette','H',6.5),(24,'K','Mutter 3/8','KDH',0.06),(25,'K','Scheibe 3/8','KDH',0.06),(26,'E','Pedal cpl.','KDH',10.5),(27,'K','Schraube 3/8','KDH',0.1),(28,'K','Rohr 3/4','KDH',1.2),(29,'E','Vorderrad mont.','H',69.29),(30,'E','Rahmen u. Raeder','H',127.53),(31,'E','Fahrrad o. Ped.','H',144.42),(32,'K','Farbe','KDH',0.75),(33,'K','Felde cpl','H',22),(34,'K','Speiche','H',0.1),(35,'K','Nabe','KDH',1),(36,'K','Freilauf','KDH',8),(37,'K','Gabel','KDH',1.5),(38,'K','Welle','KDH',1.5),(39,'K','Blech','KDH',1.5),(40,'K','Lenker','KDH',2.5),(41,'K','Mutter 3/4','KDH',0.06),(42,'K','Griff','KDH',0.1),(43,'K','Sattel','KDH',5),(44,'K','Stange 1/2','KDH',0.5),(45,'K','Mutter 1/4','KDH',0.06),(46,'K','Schraube 1/4','KDH',0.1),(47,'K','Zahnkranz','KDH',3.5),(48,'K','Pedal','KDH',1.5),(49,'E','Vorderrad cpl.','K',64.64),(50,'E','Rahmen u. Raeder','K',120.63),(51,'E','Fahrrad o. Pedal','K',137.47),(52,'K','Felge cpl.','K',22),(53,'K','Speiche','K',0.1),(54,'E','Vorderrad cpl.','D',68.09),(55,'E','Rahmen u. Raeder.','D',125.33),(56,'E','Fahrrad o. Pedal','D',142.67),(57,'K','Felge cpl.','D',22),(58,'K','Speiche','D',0.1),(59,'K','Schweissdraht','KDH',0.15);  "
-//	+ "	UNLOCK TABLES;  "
-//
-//	+ "	LOCK TABLES `teil_ist_in_teil` WRITE;  "
-//	+ "	INSERT INTO `teil_ist_in_teil` VALUES (13,39,1),(13,32,1),(18,28,3),(18,59,2),(18,32,1),(7,52,1),(7,53,36),(7,35,2),(7,37,1),(7,38,1),(49,13,1),(49,18,1),(49,7,1),(49,24,2),(49,25,2),(4,52,1),(4,53,36),(4,35,2),(4,36,1),(10,39,1),(10,32,1),(17,43,1),(17,44,1),(17,45,1),(17,46,1),(16,28,1),(16,24,1),(16,40,1),(16,41,1),(16,42,2),(50,49,1),(50,4,1),(50,10,1),(50,24,2),(50,25,2),(51,17,1),(51,16,1),(51,50,1),(51,24,1),(51,27,1),(26,44,2),(26,48,2),(26,47,1),(1,51,1),(1,26,1),(1,21,1),(1,24,1),(1,27,1),(2,22,1),(2,24,1),(2,27,1),(2,26,1),(2,56,1),(56,24,1),(56,27,1),(56,16,1),(56,17,1),(56,55,1),(55,24,2),(55,25,2),(55,5,1),(55,11,1),(55,54,1),(5,35,2),(5,36,1),(5,57,1),(5,58,36),(11,32,1),(11,39,1),(54,24,2),(54,25,2),(54,8,1),(54,14,1),(54,19,1),(8,35,2),(8,37,1),(8,38,1),(8,57,1),(8,58,36),(14,32,1),(14,39,1),(19,28,4),(19,32,1),(19,59,2),(3,23,1),(3,24,1),(3,27,1),(3,26,1),(3,31,1),(31,24,1),(31,27,1),(31,16,1),(31,17,1),(31,30,1),(30,24,2),(30,25,2),(30,6,1),(30,12,1),(30,29,1),(6,33,1),(6,34,36),(6,35,2),(6,36,1),(12,32,1),(12,39,1),(29,24,2),(29,25,2),(29,9,1),(29,15,1),(29,20,1),(9,33,1),(9,34,36),(9,35,2),(9,37,1),(9,38,1),(15,32,1),(15,39,1),(20,28,5),(20,32,1),(20,59,2);  "
-//		
-//	+ "	UNLOCK TABLES;  ";
-	
-//int[] count  = createStatement.executeBatch();
-//connection.commit();
-//
-//
-//        } catch (final SQLException e) {
-//            e.printStackTrace();
-//        } finally {
-//        	
-//        	if(connection != null && !connection.isClosed())
-//        		connection.close();
-//        }
-//		
-//	}
-}
 	}
+    	
+    
+
+	public void resetDatabaseSchema() throws SQLException {
+		
+        Connection connection = null;
+        Statement createStatement = null;
+        
+        try {
+            connection = getConnection();
+            createStatement = connection.createStatement();
+            
+            
+String query =   		"USE `ibsys`;";
+createStatement.executeUpdate(query);
+
+System.out.println("START arbeitsplatz_daten");
+
+String query1 =  "DROP TABLE IF EXISTS `arbeitsplatz_daten`";
+createStatement.executeUpdate(query1);
+
+String query2 =  "CREATE TABLE `arbeitsplatz_daten` ("
+ +" `nummer` int(11) NOT NULL,"
+ +" `lohn_schicht_eins` double DEFAULT NULL,"
+ +" `lohn_schicht_zwei` double DEFAULT NULL,"
+ +" `lohn_schicht_drei` double DEFAULT NULL,"
+ +" `lohn_ueberstunden` double DEFAULT NULL,"
+ +" `var_masch_kos` double DEFAULT NULL,"
+ +" `fix_masch_kos` double DEFAULT NULL,"
+ +" PRIMARY KEY (`nummer`)"
++" ) ENGINE=InnoDB DEFAULT CHARSET=latin1;";
+createStatement.executeUpdate(query2);
+
+System.out.println("STOP arbeitsplatz_daten");
+
+System.out.println("START bestellung");
+
+
+String query3 =  "DROP TABLE IF EXISTS `bestellung`";
+createStatement.executeUpdate(query3);
+
+                                                                                                
+String query3b =  "CREATE TABLE `bestellung` (                                                  "
++" `periode` int(11) DEFAULT NULL,                                                              "
++" `bestell_typ` varchar(1) DEFAULT NULL,                                                       "
++" `menge` int(11) DEFAULT NULL,                                                                "
++" `teile_nummer_fk` int(11) DEFAULT NULL,                                                      "
++" `eingetroffen` tinyint(1) NOT NULL DEFAULT '0',                                              "
++" KEY `teile_nummer_fk` (`teile_nummer_fk`),                                                   "
++" CONSTRAINT `bestellung_ibfk_1` FOREIGN KEY (`teile_nummer_fk`) REFERENCES `teil` (`nummer`)  "
++" ) ENGINE=InnoDB DEFAULT CHARSET=latin1;";
+createStatement.executeUpdate(query3b);
+
+
+System.out.println("STOP bestellung");
+
+System.out.println("START dispo_drei");
+
+String query4 =  "DROP TABLE IF EXISTS `dispo_drei`";
+createStatement.executeUpdate(query4);
+
+String query4b = "CREATE TABLE `dispo_drei` (                       "
++" `reihe` int(11) NOT NULL AUTO_INCREMENT,                         "
++" `nummer` int(11) DEFAULT NULL,                                   "
++" `geplante_lagermenge` int(11) DEFAULT NULL,                      "
++" `lagerbestand_ende_vorperiode` int(11) DEFAULT NULL,             "
++" `auftraege_warteschlange` int(11) DEFAULT NULL,                  "
++" `auftrage_bearbeitung` int(11) DEFAULT NULL,                     "
++" `produktionsauftrag_naechste_periode` int(11) DEFAULT NULL,      "
++" `vertriebswunsch` int(11) DEFAULT NULL,                          "
++" `helpint` int(11) DEFAULT NULL,                                  "
++" PRIMARY KEY (`reihe`)                                            "
++" ) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=latin1;        ";
+
+createStatement.executeUpdate(query4b);
+
+System.out.println("STOP dispo_drei");
+
+System.out.println("START dispo_drei_ergebniss");
+
+
+String query5 =  "DROP TABLE IF EXISTS `dispo_drei_ergebniss`";
+createStatement.executeUpdate(query5);
+
+String query5b = "CREATE TABLE `dispo_drei_ergebniss` (         "
++"  `reihe` int(11) NOT NULL AUTO_INCREMENT,                    "
++"  `nummer` int(11) DEFAULT NULL,                              "
++"  `geplante_lagermenge` int(11) DEFAULT NULL,                 "
++"  `lagerbestand_ende_vorperiode` int(11) DEFAULT NULL,        "
++"  `auftraege_warteschlange` int(11) DEFAULT NULL,             "
++"  `auftrage_bearbeitung` int(11) DEFAULT NULL,                "
++"  `produktionsauftrag_naechste_periode` int(11) DEFAULT NULL, "
++"  `vertriebswunsch` int(11) DEFAULT NULL,                     "
++"  `helpint` int(11) DEFAULT NULL,                             "
++"  PRIMARY KEY (`reihe`)                                       "
++") ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;     ";
+
+createStatement.executeUpdate(query5b);
+
+System.out.println("STOP dispo_drei_ergebniss");
+
+System.out.println("START dispo_eins");
+
+String query6 =  "DROP TABLE IF EXISTS `dispo_eins`";
+createStatement.executeUpdate(query6);
+
+String query6b = "CREATE TABLE `dispo_eins` (                       "
++" `reihe` int(11) NOT NULL AUTO_INCREMENT,                         "
++" `nummer` int(11) DEFAULT NULL,                                   "
++" `geplante_lagermenge` int(11) DEFAULT NULL,                      "
++" `lagerbestand_ende_vorperiode` int(11) DEFAULT NULL,             "
++" `auftraege_warteschlange` int(11) DEFAULT NULL,                  "
++" `auftrage_bearbeitung` int(11) DEFAULT NULL,                     "
++" `produktionsauftrag_naechste_periode` int(11) DEFAULT NULL,      "
++" `vertriebswunsch` int(11) DEFAULT NULL,                          "
++" `helpint` int(11) DEFAULT NULL,                                  "
++" PRIMARY KEY (`reihe`)                                            "
++" ) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=latin1;        ";
+
+createStatement.executeUpdate(query6b);
+
+System.out.println("STOP dispo_eins");
+
+System.out.println("START dispo_eins_ergebniss");
+
+
+String query7 =  "DROP TABLE IF EXISTS `dispo_eins_ergebniss`";
+createStatement.executeUpdate(query7);
+
+String query7b = "CREATE TABLE `dispo_eins_ergebniss` (         "
++"  `reihe` int(11) NOT NULL AUTO_INCREMENT,                    "
++"  `nummer` int(11) DEFAULT NULL,                              "
++"  `geplante_lagermenge` int(11) DEFAULT NULL,                 "
++"  `lagerbestand_ende_vorperiode` int(11) DEFAULT NULL,        "
++"  `auftraege_warteschlange` int(11) DEFAULT NULL,             "
++"  `auftrage_bearbeitung` int(11) DEFAULT NULL,                "
++"  `produktionsauftrag_naechste_periode` int(11) DEFAULT NULL, "
++"  `vertriebswunsch` int(11) DEFAULT NULL,                     "
++"  `helpint` int(11) DEFAULT NULL,                             "
++"  PRIMARY KEY (`reihe`)                                       "
++") ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;     ";
+
+createStatement.executeUpdate(query7b);
+
+System.out.println("STOP dispo_eins_ergebniss");
+
+System.out.println("START dispo_ergebniss");
+
+
+String query8 =  "DROP TABLE IF EXISTS `dispo_ergebniss`";
+createStatement.executeUpdate(query8);
+
+String query8b = "CREATE TABLE `dispo_ergebniss` ("
++"  `nummer` int(11) DEFAULT NULL,"
++"  `menge` int(11) DEFAULT NULL"
++") ENGINE=InnoDB DEFAULT CHARSET=latin1;";
+createStatement.executeUpdate(query8b);
+
+System.out.println("STOP dispo_ergebniss");
+
+System.out.println("START dispo_zwei");
+
+
+String query9 =  "DROP TABLE IF EXISTS `dispo_zwei`";
+createStatement.executeUpdate(query9);
+
+String query9b = "CREATE TABLE `dispo_zwei` (                       "
++" `reihe` int(11) NOT NULL AUTO_INCREMENT,                         "
++" `nummer` int(11) DEFAULT NULL,                                   "
++" `geplante_lagermenge` int(11) DEFAULT NULL,                      "
++" `lagerbestand_ende_vorperiode` int(11) DEFAULT NULL,             "
++" `auftraege_warteschlange` int(11) DEFAULT NULL,                  "
++" `auftrage_bearbeitung` int(11) DEFAULT NULL,                     "
++" `produktionsauftrag_naechste_periode` int(11) DEFAULT NULL,      "
++" `vertriebswunsch` int(11) DEFAULT NULL,                          "
++" `helpint` int(11) DEFAULT NULL,                                  "
++" PRIMARY KEY (`reihe`)                                            "
++" ) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=latin1;        ";
+
+createStatement.executeUpdate(query9b);
+
+System.out.println("STOP dispo_zwei");
+
+System.out.println("START dispo_zwei_ergebniss");
+
+String query10 =  "DROP TABLE IF EXISTS `dispo_zwei_ergebniss`";
+createStatement.executeUpdate(query10);
+
+String query10b = "CREATE TABLE `dispo_zwei_ergebniss` (         "
++"  `reihe` int(11) NOT NULL AUTO_INCREMENT,                    "
++"  `nummer` int(11) DEFAULT NULL,                              "
++"  `geplante_lagermenge` int(11) DEFAULT NULL,                 "
++"  `lagerbestand_ende_vorperiode` int(11) DEFAULT NULL,        "
++"  `auftraege_warteschlange` int(11) DEFAULT NULL,             "
++"  `auftrage_bearbeitung` int(11) DEFAULT NULL,                "
++"  `produktionsauftrag_naechste_periode` int(11) DEFAULT NULL, "
++"  `vertriebswunsch` int(11) DEFAULT NULL,                     "
++"  `helpint` int(11) DEFAULT NULL,                             "
++"  PRIMARY KEY (`reihe`)                                       "
++") ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;     ";
+
+createStatement.executeUpdate(query10b);
+
+System.out.println("STOP dispo_zwei_ergebniss");
+
+System.out.println("START lager_disposition");
+
+
+String query11 =  "DROP TABLE IF EXISTS `lager_disposition`";
+createStatement.executeUpdate(query11);
+
+String query11b = "CREATE TABLE `lager_disposition` (                                                  "
++"  `lager_menge` int(11) DEFAULT NULL,                                                                  "
++"  `diskont_menge` int(11) DEFAULT NULL,                                                                "
++"  `bestellkosten` double DEFAULT NULL,                                                                 "
++"  `wiederbeschaffungszeit_periode` double DEFAULT NULL,                                                "
++"  `wiederbeschaffungszeit_tage` int(11) DEFAULT NULL,                                                  "
++"  `abweichung_periode` double DEFAULT NULL,                                                            "
++"  `abweichung_tage` int(11) DEFAULT NULL,                                                              "
++"  `teile_nummer_fk` int(11) DEFAULT NULL,                                                              "
++"  KEY `teile_nummer_fk` (`teile_nummer_fk`),                                                           "
++"  CONSTRAINT `lager_disposition_ibfk_1` FOREIGN KEY (`teile_nummer_fk`) REFERENCES `teil` (`nummer`)   "
++") ENGINE=InnoDB DEFAULT CHARSET=latin1;      "
++ "                                                          ";
+createStatement.executeUpdate(query11b);
+
+System.out.println("STOP lager_disposition");
+
+System.out.println("START mengen_stueckliste");
+
+
+String query12 =  "DROP TABLE IF EXISTS `mengen_stueckliste`";
+createStatement.executeUpdate(query12);
+
+String query12b = "CREATE TABLE `mengen_stueckliste` ("
++"  `fahrrad_nummer` int(11) DEFAULT NULL,"
++"  `teile_nummer` int(11) DEFAULT NULL,"
++"  `anzahl` int(11) DEFAULT NULL"
++") ENGINE=InnoDB DEFAULT CHARSET=latin1;";
+
+createStatement.executeUpdate(query12b);
+
+System.out.println("STOP mengen_stueckliste");
+
+System.out.println("START prognose");
+
+
+String query13 =  "DROP TABLE IF EXISTS `prognose`";
+createStatement.executeUpdate(query13);
+
+String query13b =  "CREATE TABLE `prognose` (                                                   "
++"  `aktuelle_periode` int(11) DEFAULT NULL,                                                    "
++"  `teile_nummer_fk` int(11) DEFAULT NULL,                                                     "
++"  `aktuelle_menge` int(11) DEFAULT NULL,                                                      "
++"  `plus_eins_menge` int(11) DEFAULT NULL,                                                     "
++"  `plus_zwei_menge` int(11) DEFAULT NULL,                                                     "
++"  `plus_drei_menge` int(11) DEFAULT NULL,                                                     "
++"  KEY `teile_nummer_fk` (`teile_nummer_fk`),                                                  "
++"  CONSTRAINT `prognose_ibfk_1` FOREIGN KEY (`teile_nummer_fk`) REFERENCES `teil` (`nummer`)   "
++") ENGINE=InnoDB DEFAULT CHARSET=latin1;                                                       ";
+
+createStatement.executeUpdate(query13b);
+
+System.out.println("STOP prognose");
+
+System.out.println("START teil");
+
+
+createStatement.executeUpdate("SET FOREIGN_KEY_CHECKS=0");
+
+
+String query14 =  "DROP TABLE IF EXISTS `teil`";
+createStatement.executeUpdate(query14);
+
+String query14b =  "CREATE TABLE `teil` (      "
++"  `nummer` int(11) NOT NULL,                 "
++"  `buchstabe` varchar(1) DEFAULT NULL,       "
++"  `bezeichnung` varchar(100) DEFAULT NULL,   "
++"  `verwendung` varchar(3) DEFAULT NULL,      "
++"  `wert` double DEFAULT NULL,                "
++"  PRIMARY KEY (`nummer`)                     "
++") ENGINE=InnoDB DEFAULT CHARSET=latin1;      ";
+
+createStatement.executeUpdate(query14b);
+
+createStatement.executeUpdate("SET FOREIGN_KEY_CHECKS=1");
+
+System.out.println("STOP teil");
+
+System.out.println("START teil_ist_in_teil");
+
+String query15 =  "DROP TABLE IF EXISTS `teil_ist_in_teil`";
+createStatement.executeUpdate(query15);
+
+String query15b =  "CREATE TABLE `teil_ist_in_teil` (                                                "
++"   `nummer_neu` int(11) NOT NULL,                                                                 "
++"   `nummer` int(11) NOT NULL,                                                                     "
++"   `menge` int(11) DEFAULT NULL,                                                                  "
++"   KEY `nummer` (`nummer`),                                                                       "
++"   KEY `nummer_neu` (`nummer_neu`),                                                               "
++"   CONSTRAINT `teil_ist_in_teil_ibfk_1` FOREIGN KEY (`nummer`) REFERENCES `teil` (`nummer`),      "
++"   CONSTRAINT `teil_ist_in_teil_ibfk_2` FOREIGN KEY (`nummer_neu`) REFERENCES `teil` (`nummer`)   "
++" ) ENGINE=InnoDB DEFAULT CHARSET=latin1;                                                          ";
+
+createStatement.executeUpdate(query15b);
+
+System.out.println("STOP teil_ist_in_teil");
+
+
+        } catch (final SQLException e) {
+            e.printStackTrace();
+        } finally {
+        	
+        	if(connection != null && !connection.isClosed())
+        		connection.close();
+        }
+		
+	}
+}

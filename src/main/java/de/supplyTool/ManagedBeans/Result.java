@@ -330,26 +330,21 @@ public class Result {
         this.result = result;
     }
     
-    public void  resetDatabase(){
+    public void  resetDatabase() throws SQLException{
     	
-//    	FacesContext context = FacesContext.getCurrentInstance();
-//    	ResourceBundle bundle = context.getApplication().getResourceBundle(context, "msg");
-//    	
-//    	String msgTitle = bundle.getString("end.database.reset.succesful");
-//    	String msg = bundle.getString("end.database.reset.succesful.message");
-//
-//    	FacesMessage message = new FacesMessage(msgTitle, msg);
+    	FacesContext context = FacesContext.getCurrentInstance();
+    	ResourceBundle bundle = context.getApplication().getResourceBundle(context, "msg");
+    	
+    	String msgTitle = bundle.getString("end.database.reset.succesful");
+    	String msg = bundle.getString("end.database.reset.succesful.message");
+
+    	FacesMessage message = new FacesMessage(msgTitle, msg);
     	
         final Dao dao = new Dao();
         
-        try {
-			dao.resetDatabaseQuery();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        dao.resetDatabaseQuery();
     
-//    	FacesContext.getCurrentInstance().addMessage(null, message);
+    	FacesContext.getCurrentInstance().addMessage(null, message);
     }
 
 

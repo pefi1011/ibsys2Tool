@@ -58,18 +58,16 @@
 		<!-- value="#{msg['button.upload']}" -->
 			<p:commandButton id="exportXML" value="#{msg['button.exportXML']}" 
 				ajax="false" action="#{result.downloadFile}" />
-			<h:message for="exportXML" />
-			<h:messages />
 			
 		</h:form>
 		
 		<BR />
 		<BR />
 			<h:form enctype="multipart/form-data">
-			<p:commandButton id="resetDatabase" value="#{msg['button.resetDatabase']}" 
+
+<p:commandButton id="resetDatabase" value="#{msg['button.resetDatabase']}" 
 				ajax="false" action="#{result.resetDatabase}" />
-			<h:message for="resetDatabase" />
-			<h:messages />
+				<p:growl id="resetDatabaseGrowl" showDetail="true" life="4000" />
 			
 		</h:form>
 		<BR />
