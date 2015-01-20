@@ -31,6 +31,12 @@
 				background-color: DarkSeaGreen ;
 				width: 100%;
 			}
+			
+				.warning {
+				color: white;
+				background-color: #FCA464 ;
+				width: 100%;
+			}
 			.mt {
 			margin-top: 5px;
 			}
@@ -265,6 +271,15 @@
 					<p:column width="10">
 						<f:facet name="header">#{msg['teil.diskontmenge']}</f:facet>
 						<div align="right">#{ergebnis.lieferDaten.diskontMenge}	</div>	
+					</p:column>	
+					
+					<p:column width="20" styleClass="#{empty ergebnis.bestellungenString ? '' : 'warning'}">
+						<f:facet name="header">Offene Bestellungen</f:facet>
+						<h:outputText value=""/>
+						<h:outputLink id="fade" value="#">
+							<h:outputText value="Bestellungen"/>
+						</h:outputLink>
+						<p:tooltip id="ttFade" for="fade" value="#{ergebnis.bestellungenString}"/>						
 					</p:column>				
 					
 					<p:column width="10">
@@ -274,15 +289,6 @@
 							value="#{msg['teil.aktualisiereArtikel']}" ajax="false">
 						</p:commandButton>
 					</p:column>
-					
-					<p:column width="20">
-						<f:facet name="header">Offene Bestellungen</f:facet>
-						<h:outputText value=""/>
-						<h:outputLink id="fade" value="#">
-							<h:outputText value="Bestellungen"/>
-						</h:outputLink>
-						<p:tooltip id="ttFade" for="fade" value="#{ergebnis.bestellungenString}"/>						
-					</p:column>	
 					
 				</p:dataTable>
 			

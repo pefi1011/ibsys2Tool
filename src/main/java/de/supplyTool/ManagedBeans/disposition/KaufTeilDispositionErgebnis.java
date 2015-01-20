@@ -78,7 +78,7 @@ public class KaufTeilDispositionErgebnis implements Serializable,
     	if (gibESBest) {
     		return bestellungen;    		
     	} else {
-    		return "Keine Bestellungen";
+    		return null;
     	}
     }
 
